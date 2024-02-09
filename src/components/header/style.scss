@@ -1,0 +1,120 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 20px;
+  .logo {
+    width: 150px;
+    height: auto;
+  }
+
+  .navbtn {
+    margin-left: auto;
+    cursor: pointer;
+    span {
+      background: #ee5174;
+      height: 5px;
+      width: 40px;
+      margin: 3px 0;
+      transition: 0.3s;
+    }
+  }
+  .active {
+    span {
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(1) {
+        transform-origin: top left;
+        transform: translateX(-2px) translateY(25px) rotate(-45deg);
+      }
+      &:nth-child(3) {
+        transform-origin: top left;
+        transform: translateX(2px) translateY(-25px) rotate(45deg);
+      }
+    }
+  }
+}
+
+.popup_menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  padding: 5%;
+  padding-top: 150px;
+  overflow: auto;
+  background-color: black;
+
+  nav {
+    .nav_item {
+      .mainlink {
+        font-weight: bold;
+        font-size: 5vw;
+        align-items: baseline;
+        white-space: nowrap;
+        transition: 0.3s;
+        &::after {
+          content: "";
+          height: 2px;
+          width: 0;
+          margin-left: 1vw;
+          background: linear-gradient(to right, transparent, white);
+          transition: width ease-in-out 1s;
+        }
+      }
+
+      .sublinks {
+        align-self: flex-end;
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 0.2s ease-in;
+
+        .sublinks_content {
+          width: 100%;
+          overflow: hidden;
+        }
+
+        a {
+          font-size: 2vw;
+          transition: opacity 0.3s;
+          opacity: 0;
+
+          &:hover {
+            transform: scale(0.95);
+            filter: drop-shadow(0 0 5px white);
+          }
+        }
+      }
+
+      &:hover {
+        .mainlink {
+          color: white !important;
+          &::after {
+            width: 100%;
+          }
+        }
+        .sublinks {
+          grid-template-rows: 1fr;
+
+          a {
+            transition-delay: 0.5s;
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    &:hover {
+      .nav_item {
+        .mainlink {
+          color: #231f20;
+        }
+      }
+    }
+  }
+}
