@@ -2,9 +2,7 @@ import React from 'react'
 
 function BOD() {
   return (
-    <div>
-      
-    </div>
+    <div>BOD</div>
   )
 }
 

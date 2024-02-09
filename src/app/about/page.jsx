@@ -1,8 +1,8 @@
 
-function page() {
+function About() {
   return (
-    <div>page</div>
+    <div>About</div>
   )
 }
 
-export default page
+export default About

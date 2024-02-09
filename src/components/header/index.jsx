@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Logo from '../../assets/img/logo.png'
 import Link from 'next/link'
-import { usePathname, useSearchParams } from 'next/navigation'
+import { usePathname } from 'next/navigation'
 import './style.scss'
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -11,11 +11,10 @@ import { motion, AnimatePresence } from "framer-motion";
 function Header() {
   const [isOpen,setIsOpen] = useState(false);
   const pathname = usePathname()
-  const searchParams = useSearchParams()
 
   useEffect(()=>{
     setIsOpen(false);
-  },[pathname, searchParams])
+  },[pathname])
 
   return (
     <>
