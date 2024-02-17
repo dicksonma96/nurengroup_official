@@ -1,0 +1,179 @@
+.about {
+  .snapshot {
+    background: url("https://media.nurengroup.com/About/snapshot_bg.jpg");
+    background-size: cover;
+    position: relative;
+    .snapshot_abstract {
+      height: 100vh;
+      margin-left: auto;
+    }
+    .text {
+      position: absolute;
+      left: 10%;
+      width: 80%;
+      max-width: 1000px;
+      font-size: 3vmin;
+      h1 {
+        white-space: nowrap;
+        font-size: 8vmin;
+        line-height: 110%;
+      }
+      .bottom {
+        position: relative;
+        margin-top: 4vmin;
+        padding-left: 10vmin;
+
+        .tag {
+          position: absolute;
+          left: 0;
+          top: 1vmin;
+          font-size: 3vmin;
+          white-space: nowrap;
+          transform-origin: left top;
+          transform: rotate(-90deg) translateX(-100%);
+          &::after {
+            content: "";
+            height: 2px;
+            width: 5vmin;
+            margin-left: 2vmin;
+            background-color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .groups {
+    padding: 5%;
+    justify-content: center;
+    overflow: hidden;
+    .text {
+      h1 {
+        font-size: 7vmin;
+        margin: 1vmin 0;
+        line-height: 105%;
+      }
+      .yellow {
+        color: #d8b189;
+      }
+      .green {
+        color: #5e7174;
+      }
+      .pink_bg {
+        background-color: #f25075;
+      }
+      .purple {
+        color: #44394d;
+      }
+    }
+    .stroke_text {
+      text-shadow: 1px 1px 0 #44394d, -1px -1px 0 #44394d, 1px -1px 0 #44394d,
+        -1px 1px 0 #44394d, 1px 1px 0 #44394d;
+    }
+    .womens_model {
+      align-self: flex-end;
+      width: 80%;
+      max-width: 1200px;
+      margin-top: 10vmin;
+    }
+  }
+
+  .vision_mission {
+    background: url("https://media.nurengroup.com/About/vision_mission_bg.jpg");
+    background-size: cover;
+    justify-content: center;
+    padding: 10%;
+    position: relative;
+    align-items: center;
+
+    p {
+      font-size: 2.5vmin;
+      width: 80%;
+    }
+    h1 {
+      color: #f4af67;
+      font-size: 8vmin;
+      line-height: 110%;
+      margin: 5vmin 0;
+    }
+    .tag {
+      position: absolute;
+      right: -5%;
+      top: 50%;
+      font-size: 3vmin;
+      white-space: nowrap;
+      transform: translateY(-50%) rotate(-90deg);
+      color: #f4af67;
+      &::after {
+        content: "";
+        height: 2px;
+        width: 5vmin;
+        margin-left: 2vmin;
+        background-color: #f4af67;
+      }
+    }
+  }
+
+  .stay_mission {
+    padding: 5%;
+    padding-bottom: 0;
+    h1 {
+      font-size: 8vmin;
+      margin: 1vmin 0;
+      line-height: 105%;
+      text-align: center;
+      color: #44394d;
+      margin-bottom: 10vmin;
+    }
+    .cards {
+      align-self: center;
+      width: 60%;
+      gap: 0.5vmin;
+      p {
+        margin-right: 5%;
+        font-size: 2.5vmin;
+        color: black;
+        font-weight: 500;
+      }
+      .card {
+        background-color: white;
+        justify-content: space-between;
+        padding: 2vmin 0;
+        border-radius: 1vmin;
+        gap: 2vmin;
+        .top {
+          align-items: flex-end;
+          .number {
+            font-size: 7vmin;
+            background-color: red;
+            width: 7vmin;
+            text-align: center;
+            margin-right: 1vmin;
+            font-weight: bold;
+            line-height: 100%;
+          }
+          img {
+            border-radius: 0.5vmin;
+            width: 12vmin;
+          }
+        }
+        .desc {
+          color: black;
+          font-size: 2.5vmin;
+          padding: 0 2vmin;
+        }
+      }
+    }
+    .deco {
+      margin-top: 10vmin;
+      justify-content: center;
+      background-image: url("https://media.nurengroup.com/About/skyscraper.png");
+      background-repeat: repeat-x;
+
+      .womens {
+        width: 80%;
+        max-width: 1000px;
+      }
+    }
+  }
+}

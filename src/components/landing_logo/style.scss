@@ -1,0 +1,44 @@
+.landing_logo {
+  width: 85%;
+  margin: auto;
+  cursor: pointer;
+  .letter {
+    width: 20%;
+    aspect-ratio: 1/ 1;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      transition: 0.3s;
+    }
+  }
+
+  .subline {
+    width: 30%;
+    aspect-ratio: 3.1 / 1;
+    overflow: hidden;
+    align-self: flex-end;
+    margin-right: 7%;
+    margin-top: 3%;
+    align-items: flex-end;
+    transition: 0.1s;
+    transition-delay: 1s;
+    img {
+      width: 100%;
+      transition: 0.3s;
+      transition-delay: 1s;
+    }
+  }
+
+  &:hover {
+    .letter,
+    .subline {
+      img {
+        transform: translateY(-100%);
+      }
+    }
+    .subline {
+      transform: translateY(-40%);
+    }
+  }
+}

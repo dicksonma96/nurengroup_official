@@ -1,7 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/header";
 import "./style.scss";
+import { AppContextProvider } from "./context";
+import GlobalClient from "./globalClient";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,10 +16,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <Header />
-        {children}
-      </body>
+      <AppContextProvider>
+        <GlobalClient>{children}</GlobalClient>
+      </AppContextProvider>
     </html>
   );
 }

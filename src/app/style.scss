@@ -1,11 +1,21 @@
 $color1: #ee5174;
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   box-sizing: border-box;
   font-family: "Jost", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+}
+
+.urban_text {
+  font-family: "Urbanist", sans-serif;
+}
+
+img {
+  height: auto;
+  width: auto;
 }
 
 body {
@@ -33,5 +43,84 @@ body {
   align-items: center;
 }
 
+.section {
+  padding-top: 90px;
+  min-height: 100vh;
+}
+
+.transition_overlay {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f25075;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+}
+
 .landing {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  overflow: clip;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  .grid_content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 23% 23% 23% 15%;
+    gap: 1%;
+    height: 100%;
+    width: 100%;
+    min-height: 800px;
+    min-width: 1000px;
+  }
+
+  .grid_row {
+    width: 100%;
+    gap: 10px;
+    .grid_box {
+      flex: 1;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .grid_image {
+      flex: 1;
+      border-radius: 10px;
+      overflow: hidden;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .video {
+    iframe {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .yellow {
+    background-color: #fcb913;
+  }
+  .grey {
+    background-color: #e6e6e6;
+  }
+  .pink {
+    background-color: #ef5174;
+  }
+  .green {
+    background-color: #00999e;
+  }
+}
+
+.pink_text {
+  color: #f25075;
 }

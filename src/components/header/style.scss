@@ -8,6 +8,10 @@
   .logo {
     width: 150px;
     height: auto;
+
+    img {
+      width: 100%;
+    }
   }
 
   .navbtn {
@@ -46,15 +50,15 @@
   height: 100%;
   z-index: 998;
   padding: 5%;
-  padding-top: 150px;
-  overflow: auto;
+  padding-top: 15vh;
+  overflow: hide;
   background-color: black;
 
   nav {
     .nav_item {
       .mainlink {
         font-weight: bold;
-        font-size: 5vw;
+        font-size: 8vh;
         align-items: baseline;
         white-space: nowrap;
         transition: 0.3s;
@@ -80,7 +84,7 @@
         }
 
         a {
-          font-size: 2vw;
+          font-size: 3vh;
           transition: opacity 0.3s;
           opacity: 0;
 
