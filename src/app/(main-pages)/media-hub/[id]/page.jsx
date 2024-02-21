@@ -1,5 +1,6 @@
 import { promises as fs } from "fs";
 import ShareBtn from "./sharebtn";
+import Overlay from "./overlay";
 
 export async function generateMetadata({ params }) {
   return {
@@ -21,7 +22,7 @@ async function NewsDetail({ params }) {
     const detail = data.data.find((info) => info.id == params.id);
 
     return (
-      <>
+      <Overlay>
         <div className="news_detail col">
           <img src={detail.img} alt={detail.title} />
           <span className="date">{detail.date}</span>
@@ -33,10 +34,14 @@ async function NewsDetail({ params }) {
         <span href={"/media-hub"} className="close_label">
           Click anywhere outside to close
         </span>
-      </>
+      </Overlay>
     );
   } catch (e) {
-    return <main className="mediahub col section">Something Wrong</main>;
+    return (
+      <Overlay>
+        <main className="mediahub col section">Something Wrong</main>
+      </Overlay>
+    );
   }
 }
 
