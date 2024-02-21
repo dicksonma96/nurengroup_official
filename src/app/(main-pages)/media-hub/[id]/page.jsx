@@ -1,19 +1,23 @@
 import { promises as fs } from "fs";
 import ShareBtn from "./sharebtn";
 
-// export async function generateMetadata({ params }) {
-//   const detail = await GetDetail(params.id);
-//   return {
-//     title: detail.title,
-//     description: detail.description,
-//     openGraph: {
-//       images: [detail.img],
-//     },
-//   };
-// }
+export async function generateMetadata({ params }) {
+  return {
+    title: `title`,
+    description: `test ${params.id}`,
+    // openGraph: {
+    //   images: [detail.img],
+    // },
+  };
+}
 
 async function NewsDetail({ params }) {
-  const detail = await GetDetail(params.id);
+  const file = await fs.readFile(
+    process.cwd() + "/src/data/mediahub.json",
+    "utf8"
+  );
+  const data = JSON.parse(file);
+  const detail = data.data.find((info) => info.id == params.id);
 
   return (
     <>
@@ -30,15 +34,6 @@ async function NewsDetail({ params }) {
       </span>
     </>
   );
-}
-
-async function GetDetail(id) {
-  const file = await fs.readFile(
-    process.cwd() + "/src/data/mediahub.json",
-    "utf8"
-  );
-  const data = JSON.parse(file);
-  return data.data.find((info) => info.id == id);
 }
 
 export default NewsDetail;
