@@ -1,16 +1,16 @@
 import { promises as fs } from "fs";
-import Link from "next/link";
 import ShareBtn from "./sharebtn";
-export async function generateMetadata({ params }) {
-  const detail = await GetDetail(params.id);
-  return {
-    title: detail.title,
-    description: detail.description,
-    openGraph: {
-      images: [detail.img],
-    },
-  };
-}
+
+// export async function generateMetadata({ params }) {
+//   const detail = await GetDetail(params.id);
+//   return {
+//     title: detail.title,
+//     description: detail.description,
+//     openGraph: {
+//       images: [detail.img],
+//     },
+//   };
+// }
 
 async function NewsDetail({ params }) {
   const detail = await GetDetail(params.id);
