@@ -5,6 +5,11 @@ import { usePathname } from "next/navigation";
 
 function GlobalClient({ children }) {
   const pathname = usePathname();
+  const exceptionTransition = ["/media-hub/"];
+
+  function SkipTransition() {
+    return exceptionTransition.some((except) => pathname.includes(except));
+  }
 
   return (
     <AnimatePresence mode="wait">

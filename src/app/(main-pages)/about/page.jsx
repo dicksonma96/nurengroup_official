@@ -39,7 +39,7 @@ function About() {
             <span className="pink_bg">DELIVERING</span>
             <span className="pink_text"> METERNITY</span>
           </h1>
-          <h1 class="stroke_text">
+          <h1 className="stroke_text">
             CHILDREN <span className="purple">HEALTH</span>CARE
           </h1>
         </div>

@@ -9,7 +9,7 @@ export const menu = [
       },
       {
         label: "Founder and Chairman",
-        path: "/",
+        path: "/founder-and-chairman",
       },
       {
         label: "Board of Directors",
@@ -27,7 +27,7 @@ export const menu = [
   },
   {
     label: "Media Hub",
-    path: "/",
+    path: "/media-hub",
   },
   {
     label: "Jobs",
