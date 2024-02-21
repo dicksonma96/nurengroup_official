@@ -33,7 +33,7 @@ async function MediaHubLayout({ children }) {
       </main>
     );
   } catch (e) {
-    return <main className="mediahub col section">Something Wrong~</main>;
+    return <main className="mediahub col section">Something Wrong</main>;
   }
 }
 
