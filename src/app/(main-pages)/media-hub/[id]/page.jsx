@@ -17,7 +17,6 @@ async function NewsDetail({ params }) {
       process.cwd() + "/src/data/mediahub.json",
       "utf8"
     );
-    console.log("innerpage:" + process.cwd() + "/src/data/mediahub.json");
     const data = JSON.parse(file);
     const detail = data.data.find((info) => info.id == params.id);
 
@@ -31,9 +30,6 @@ async function NewsDetail({ params }) {
 
           <ShareBtn />
         </div>
-        <span href={"/media-hub"} className="close_label">
-          Click anywhere outside to close
-        </span>
       </>
     );
   } catch (e) {
