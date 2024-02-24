@@ -1,10 +1,7 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
 import "./style.scss";
 import { AppContextProvider } from "./context";
 import GlobalClient from "./globalClient";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title:

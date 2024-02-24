@@ -1,18 +1,9 @@
-"use client";
-import { useRouter } from "next/navigation";
-
+import Link from "next/link";
 function Overlay({ children }) {
-  const router = useRouter();
-
   return (
     <div className="detail_overlay colc">
       {children}
-      <div
-        className="outside"
-        onClick={() => {
-          router.push("/media-hub");
-        }}
-      ></div>
+      <Link href={"/media-hub"} className="outside"></Link>
     </div>
   );
 }
