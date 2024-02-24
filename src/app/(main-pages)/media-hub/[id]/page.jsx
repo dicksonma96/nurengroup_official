@@ -1,20 +1,20 @@
 import { promises as fs } from "fs";
 import ShareBtn from "./sharebtn";
 
-export async function generateMetadata({ params }) {
-  return {
-    title: `title`,
-    description: `test ${params.id}`,
-    // openGraph: {
-    //   images: [detail.img],
-    // },
-  };
-}
+// export async function generateMetadata({ params }) {
+//   return {
+//     title: `title`,
+//     description: `test ${params.id}`,
+//     openGraph: {
+//       images: [detail.img],
+//     },
+//   };
+// }
 
 async function NewsDetail({ params }) {
   try {
     const file = await fs.readFile(
-      process.cwd() + "/src/data/mediahub.json",
+      process.cwd() + "/src/data/mediahub.json?v123",
       "utf8"
     );
     const data = JSON.parse(file);
