@@ -4,7 +4,7 @@ import NewsItem from "./newsItem";
 async function Mediahub() {
   try {
     const file = await fs.readFile(
-      process.cwd() + "/src/data/mediahub.json?v=123",
+      process.cwd() + "/src/app/data/mediahub.json",
       "utf8"
     );
     const data = JSON.parse(file);
@@ -17,7 +17,7 @@ async function Mediahub() {
       </div>
     );
   } catch (e) {
-    return <main className="mediahub col section">Something Wrong</main>;
+    return <main className="mediahub col section">{JSON.stringify(e)}</main>;
   }
 }
 

@@ -14,7 +14,7 @@ import ShareBtn from "./sharebtn";
 async function NewsDetail({ params }) {
   try {
     const file = await fs.readFile(
-      process.cwd() + "/src/data/mediahub.json?v123",
+      process.cwd() + "/src/app/data/mediahub.json",
       "utf8"
     );
     const data = JSON.parse(file);
