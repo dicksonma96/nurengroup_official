@@ -14,7 +14,12 @@ import mediaNews from "../../../../data/mediahub.json";
 
 async function NewsDetail({ params }) {
   try {
-    const detail = mediaNews.news.find((info) => info.id == params.id);
+    const file = await fs.readFile(
+      path.join(process.cwd()) + "/src/data/mediahub.json",
+      "utf8"
+    );
+    const data = JSON.parse(file);
+    const detail = data.news.find((info) => info.id == params.id);
     return (
       <>
         <div className="news_detail col">
