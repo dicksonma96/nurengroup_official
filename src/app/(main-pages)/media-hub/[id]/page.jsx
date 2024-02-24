@@ -1,5 +1,5 @@
+import { promises as fs } from "fs";
 import ShareBtn from "./sharebtn";
-import { GetMediaDetail } from "@/app/utils/GetMediaDetail";
 
 export async function generateMetadata({ params }) {
   return {
@@ -13,15 +13,20 @@ export async function generateMetadata({ params }) {
 
 async function NewsDetail({ params }) {
   try {
-    const data = await GetMediaDetail(params.id);
-    if (data == undefined) throw "News Not found";
+    const file = await fs.readFile(
+      process.cwd() + "/data/mediahub.json",
+      "utf8"
+    );
+    const data = JSON.parse(file);
+    const detail = data.data.find((info) => info.id == params.id);
+
     return (
       <>
         <div className="news_detail col">
-          <img src={data.img} alt={data.title} />
-          <span className="date">{data.date}</span>
-          <strong>{data.title}</strong>
-          <p>{data.description}</p>
+          <img src={detail.img} alt={detail.title} />
+          <span className="date">{detail.date}</span>
+          <strong>{detail.title}</strong>
+          <p>{detail.description}</p>
 
           <ShareBtn />
         </div>
@@ -31,7 +36,7 @@ async function NewsDetail({ params }) {
       </>
     );
   } catch (e) {
-    return <main className="mediahub col section">{e}</main>;
+    return <main className="mediahub col section">{JSON.stringify(e)}</main>;
   }
 }
 
