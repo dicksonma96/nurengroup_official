@@ -1,5 +1,6 @@
 import { promises as fs } from "fs";
 import ShareBtn from "./sharebtn";
+import mediaNews from "../../../../data/mediahub.json";
 
 // export async function generateMetadata({ params }) {
 //   return {
@@ -13,13 +14,7 @@ import ShareBtn from "./sharebtn";
 
 async function NewsDetail({ params }) {
   try {
-    const file = await fs.readFile(
-      process.cwd() + "/src/data/mediahub.json",
-      "utf8"
-    );
-    const data = JSON.parse(file);
-    const detail = data.news.find((info) => info.id == params.id);
-
+    const detail = mediaNews.news.find((info) => info.id == params.id);
     return (
       <>
         <div className="news_detail col">
