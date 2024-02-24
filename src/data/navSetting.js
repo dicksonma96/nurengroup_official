@@ -15,15 +15,31 @@ export const menu = [
         label: "Board of Directors",
         path: "/board-of-directors",
       },
+      {
+        label: "Leadership",
+        path: "/leadership",
+      },
     ],
   },
   {
     label: "Brands",
     path: "/",
+    subMenu: [
+      {
+        label: "Our Brands",
+        path: "our-brands",
+      },
+    ],
   },
   {
     label: "Investors",
     path: "/",
+    subMenu: [
+      {
+        label: "Corperate Governance",
+        path: "/",
+      },
+    ],
   },
   {
     label: "Media Hub",

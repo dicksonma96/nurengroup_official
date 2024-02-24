@@ -2,7 +2,7 @@ import "./style.scss";
 import Link from "next/link";
 import Logo from "../../assets/img/logo.png";
 import Image from "next/image";
-import { menu } from "@/app/data/navSetting";
+import { menu } from "@/data/navSetting";
 
 function Footer() {
   const quicklinks = [

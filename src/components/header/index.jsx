@@ -6,7 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import "./style.scss";
 import { motion, AnimatePresence } from "framer-motion";
-import { menu } from "../../app/data/navSetting";
+import { menu } from "../../data/navSetting";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
