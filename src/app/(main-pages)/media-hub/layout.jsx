@@ -9,6 +9,8 @@ async function MediaHubLayout({ children }) {
       process.cwd() + "/src/data/mediahub.json",
       "utf8"
     );
+    console.log(process.cwd() + "/src/data/mediahub.json");
+
     const data = JSON.parse(file);
     return (
       <main className="mediahub col">

@@ -14,9 +14,10 @@ export async function generateMetadata({ params }) {
 async function NewsDetail({ params }) {
   try {
     const file = await fs.readFile(
-      process.cwd() + "/data/mediahub.json",
+      process.cwd() + "/src/data/mediahub.json",
       "utf8"
     );
+    console.log("innerpage:" + process.cwd() + "/src/data/mediahub.json");
     const data = JSON.parse(file);
     const detail = data.data.find((info) => info.id == params.id);
 
