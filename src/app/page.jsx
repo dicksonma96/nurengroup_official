@@ -1,6 +1,6 @@
 import "./style.scss";
 import LandingLogo from "@/components/landing_logo";
-import AssetPath from "@/utils/assetpath";
+import AssetPath from "@/app/utils/assetpath";
 
 export default function Home() {
   return (

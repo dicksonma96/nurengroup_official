@@ -1,5 +1,5 @@
 import React from "react";
-import AssetPath from "@/utils/assetpath";
+import AssetPath from "@/app/utils/assetpath";
 import "./style.scss";
 
 function FounderAndChairman({ children }) {

@@ -2,14 +2,11 @@ import React from "react";
 import "./style.scss";
 import { promises as fs } from "fs";
 import NewsItem from "./newsItem";
+import { GetMedias } from "@/app/utils/GetMedias";
 
 async function MediaHubLayout({ children }) {
   try {
-    const file = await fs.readFile(
-      process.cwd() + "/src/data/mediahub.json",
-      "utf8"
-    );
-    const data = JSON.parse(file);
+    const data = await GetMedias();
     return (
       <main className="mediahub col">
         {children}
