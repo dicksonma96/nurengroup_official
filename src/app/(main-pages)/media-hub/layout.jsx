@@ -6,11 +6,11 @@ import { GetMedias } from "@/app/utils/GetMedias";
 
 async function MediaHubLayout({ children }) {
   try {
-    const data = await GetMedias();
+    // const data = await GetMedias();
     return (
       <main className="mediahub col">
         {children}
-        <div className="banner rowc">
+        {/* <div className="banner rowc">
           <div className="banner_content rowc">
             <div className="text">
               <h1>MEDIAHUB</h1>
@@ -26,7 +26,7 @@ async function MediaHubLayout({ children }) {
               <NewsItem key={index} data={info} />
             ))}
           </div>
-        </div>
+        </div> */}
       </main>
     );
   } catch (e) {
