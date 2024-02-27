@@ -45,10 +45,10 @@ export const menu = [
     label: "Media Hub",
     path: "/media-hub",
   },
-  {
-    label: "Jobs",
-    path: "/",
-  },
+  // {
+  //   label: "Jobs",
+  //   path: "/",
+  // },
   {
     label: "Enquire",
     path: "/enquire",
