@@ -1,0 +1,79 @@
+.enquire {
+  background-color: #f9f5f4;
+  .enquire_banner {
+    position: relative;
+    padding-bottom: 50px;
+    img {
+      margin: 0 auto;
+      width: 80%;
+      max-width: 1500px;
+    }
+    h1 {
+      position: absolute;
+      left: 50%;
+      top: 20%;
+      transform: translateX(-50%);
+      color: #937e88;
+      font-size: clamp(20px, 12vw, 150px);
+      line-height: 100%;
+    }
+  }
+
+  .enquire_content {
+    flex: 1;
+    background-color: white;
+    .addresses {
+      flex: 1;
+      background-color: red;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      .address {
+        padding: 10%;
+
+        strong {
+          color: #f25075;
+          font-size: 30px;
+        }
+        .addr {
+          color: black;
+          width: 100%;
+          max-width: 400px;
+          font-size: 20px;
+        }
+        .phone {
+          color: #f25075;
+          font-weight: bold;
+          margin-top: 25px;
+        }
+      }
+    }
+  }
+  .contact_form {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    input,
+    select,
+    textarea {
+      width: 90%;
+      max-width: 500px;
+      background: white;
+      border: solid 2px black;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 15px;
+      margin: 10px 0;
+      color: black;
+    }
+    button {
+      background-color: #f25075;
+      color: white;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 15px;
+      width: 90%;
+      max-width: 500px;
+      margin-top: 20px;
+    }
+  }
+}

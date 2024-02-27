@@ -1,0 +1,55 @@
+.our_brand {
+  .brand_banner {
+    .text {
+      flex: 1;
+      padding: 80px 30px;
+
+      h1 {
+        font-size: clamp(20px, 12vw, 150px);
+        line-height: 100%;
+        color: #fcb640;
+      }
+      p {
+        font-size: clamp(13px, 3vw, 25px);
+        color: #c8a6a6;
+      }
+    }
+    .abstract {
+      flex: 1;
+      background: url("https://media.nurengroup.com/brand/our_brand_abstract.svg");
+    }
+  }
+
+  .brand_logos {
+    background-color: #b92057;
+    .content {
+      width: 100%;
+      max-width: 1500px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 30px 0;
+      .brand {
+        position: relative;
+        img {
+          width: 80%;
+          transition: 0.2s;
+        }
+        .colorize {
+          position: absolute;
+          opacity: 0;
+          transition: 0.2s;
+        }
+
+        &:hover {
+          img {
+            opacity: 0;
+          }
+          img.colorize {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

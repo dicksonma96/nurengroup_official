@@ -1,8 +1,9 @@
 import React from "react";
 import AssetPath from "@/app/utils/assetpath";
 import "./style.scss";
+import Link from "next/link";
 
-function FounderAndChairman({ children }) {
+function FounderAndChairman() {
   const imgs1 = [
     AssetPath("Landing/1.jpg"),
     AssetPath("Landing/2.jpg"),
@@ -34,7 +35,10 @@ function FounderAndChairman({ children }) {
         <div style={{ height: "10vh", minHeight: "120px" }}></div>
         <div className="ppl_row rowc" style={{ justifyContent: "flex-start" }}>
           <h1>CHAIRMAN</h1>
-          <div className="avatar colc">
+          <Link
+            href="/about/board-of-directors/dr_wong"
+            className="avatar colc"
+          >
             <img
               src={AssetPath("FounderChairman/chairman.png")}
               alt="Chairman Dr Wong"
@@ -45,13 +49,16 @@ function FounderAndChairman({ children }) {
             </strong>
             <span>Chairman, Non-executive</span>
             <span>Independent Director</span>
-          </div>
+          </Link>
         </div>
         <div
           className="ppl_row rowc"
           style={{ justifyContent: "flex-end", alignItems: "flex-end" }}
         >
-          <div className="avatar colc">
+          <Link
+            href="/about/board-of-directors/petrina_goh"
+            className="avatar colc"
+          >
             <img
               src={AssetPath("FounderChairman/founder.png")}
               alt="Founder Petrina"
@@ -61,9 +68,8 @@ function FounderAndChairman({ children }) {
             </strong>
             <span>Founder, Chief Executive Officer,</span>
             <span>Executive, Independent Director</span>
-          </div>
+          </Link>
           <h1>FOUNDER</h1>
-          {children}
         </div>
       </div>
     </main>

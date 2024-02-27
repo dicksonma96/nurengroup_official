@@ -62,6 +62,8 @@
         align-items: baseline;
         white-space: nowrap;
         transition: 0.3s;
+        color: white;
+
         &::after {
           content: "";
           height: 2px;
@@ -87,6 +89,7 @@
           font-size: 3vh;
           transition: opacity 0.3s;
           opacity: 0;
+          color: white;
 
           &:hover {
             transform: scale(0.95);

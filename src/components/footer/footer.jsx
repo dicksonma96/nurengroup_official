@@ -3,6 +3,7 @@ import Link from "next/link";
 import Logo from "../../assets/img/logo.png";
 import Image from "next/image";
 import { menu } from "@/data/navSetting";
+import AssetPath from "@/app/utils/assetpath";
 
 function Footer() {
   const quicklinks = [
@@ -33,6 +34,19 @@ function Footer() {
     { label: "Our Untold Story", href: "/" },
     { label: "Malaysia Supermom", href: "/" },
   ];
+  const social_medias = [
+    { img: "facebook", link: "https://www.facebook.com/NurenGroup/" },
+    { img: "instagram", link: "https://www.instagram.com/motherhood.com.my/" },
+    { img: "linkedin", link: "https://www.linkedin.com/company/nurengroup/" },
+    {
+      img: "tiktok",
+      link: "https://www.tiktok.com/@motherhood.com.my?lang=en",
+    },
+    {
+      img: "xhs",
+      link: "https://www.xiaohongshu.com/user/profile/6502662c0000000002010e22",
+    },
+  ];
 
   return (
     <section className="footer colc">
@@ -56,13 +70,22 @@ function Footer() {
                 {link.label}
               </Link>
             ))}
+            <Link className="urban_text" href="/">
+              Sitemap
+            </Link>
           </nav>
           <footer className="urban_text">
             © 2023-2024 NurenGroup | All Rights Reserved
           </footer>
         </div>
         <div className="col">
-          <div className="sm rowc"></div>
+          <div className="sm rowc">
+            {social_medias.map((sm, index) => (
+              <Link href={sm.link} className="rowc" target="_blank">
+                <img src={AssetPath(`icon/${sm.img}.svg`)} alt={sm.img} />
+              </Link>
+            ))}
+          </div>
           <a className="urban_text" href="mailto:admin@nurengroup.com">
             admin@nurengroup.com
           </a>

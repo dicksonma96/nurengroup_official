@@ -1,11 +1,7 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
-import bod1 from "../../../../assets/img/bod/m1.png";
-import bod3 from "../../../../assets/img/bod/m2.png";
-import bod2 from "../../../../assets/img/bod/w1.png";
-import bod4 from "../../../../assets/img/bod/w2.png";
 import "./style.scss";
+import AssetPath from "@/app/utils/assetpath";
 
 export const metadata = {
   title: "Nuren Group | Board of Directors",
@@ -41,24 +37,24 @@ function BOD() {
       </div>
       <div className="middlerow rowc">
         <h1>BOARD OF DIRECTORS</h1>
-        <Link href="board-of-directors/">
-          <Image src={bod1} />
+        <Link href="board-of-directors/dr_wong">
+          <img src={AssetPath("BOD/prof-dr-wong.png")} />
         </Link>
-        <Link href="board-of-directors/">
-          <Image src={bod2} />
+        <Link href="board-of-directors/leigh_zhang">
+          <img src={AssetPath("BOD/leigh-zhang.png")} />
         </Link>
-        <Link href="board-of-directors/">
-          <Image src={bod3} />
+        <Link href="board-of-directors/kelvin_leow">
+          <img src={AssetPath("BOD/kelvin-leow.png")} />
         </Link>
-        <Link href="board-of-directors/">
-          <Image src={bod4} />
+        <Link href="board-of-directors/petrina_goh">
+          <img src={AssetPath("BOD/petrina-goh.png")} />
         </Link>
       </div>
       <div className="gridrow bottomrow row">
         <div className="grid col"></div>
         <div className="grid col">
           <h2>
-            LEIGHT
+            LEIGH
             <br />
             ZHANG LI HUA
           </h2>

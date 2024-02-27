@@ -23,11 +23,11 @@ export const menu = [
   },
   {
     label: "Brands",
-    path: "/",
+    path: "/brands",
     subMenu: [
       {
         label: "Our Brands",
-        path: "our-brands",
+        path: "/our-brands",
       },
     ],
   },
@@ -51,6 +51,6 @@ export const menu = [
   },
   {
     label: "Enquire",
-    path: "/",
+    path: "/enquire",
   },
 ];

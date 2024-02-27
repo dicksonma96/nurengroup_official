@@ -1,4 +1,5 @@
 import "./style.scss";
+import AssetPath from "@/app/utils/assetpath";
 
 function About() {
   return (
@@ -6,7 +7,7 @@ function About() {
       <section className="snapshot rowc">
         <img
           className="snapshot_abstract"
-          src="https://media.nurengroup.com/About/snap_shot_abstract.png"
+          src={AssetPath("About/snap_shot_abstract.png")}
           alt="motherhood flowers decoration"
         />
         <div className="text col">
@@ -44,10 +45,27 @@ function About() {
           </h1>
         </div>
         <img
-          src="https://media.nurengroup.com/About/womens.png"
+          src={AssetPath("About/talks.jpg")}
           alt=""
           className="womens_model"
         />
+        <div
+          className="ball"
+          style={{ background: "#C84A67", top: "50%" }}
+        ></div>
+        <div
+          className="ball"
+          style={{ background: "#F25075", top: "60%", left: "2%" }}
+        ></div>
+        <div
+          className="ball"
+          style={{
+            background: "#F25075",
+            top: "15%",
+            left: "auto",
+            right: "-10%",
+          }}
+        ></div>
       </section>
       <section className="vision_mission col">
         <p className="urban_text">
@@ -77,7 +95,7 @@ function About() {
                 1
               </div>
               <img
-                src="https://media.nurengroup.com/Landing/color4.jpg"
+                src="https://media.nurengroup.com/About/mission1.jpg"
                 alt=""
               />
             </div>
@@ -95,7 +113,7 @@ function About() {
                 2
               </div>
               <img
-                src="https://media.nurengroup.com/Landing/color4.jpg"
+                src="https://media.nurengroup.com/About/mission2.jpg"
                 alt=""
               />
             </div>
@@ -106,7 +124,7 @@ function About() {
                 3
               </div>
               <img
-                src="https://media.nurengroup.com/Landing/color4.jpg"
+                src="https://media.nurengroup.com/About/mission3.jpg"
                 alt=""
               />
             </div>
@@ -120,7 +138,7 @@ function About() {
         <div className="deco rowc">
           <img
             className="womens"
-            src="https://media.nurengroup.com/About/city_womens.svg"
+            src={AssetPath("About/city_womens.png")}
             alt=""
           />
         </div>

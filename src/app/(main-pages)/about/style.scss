@@ -46,8 +46,11 @@
 
   .groups {
     padding: 5%;
+    padding-right: 0;
+    padding-bottom: 0;
     justify-content: center;
     overflow: hidden;
+    position: relative;
     .text {
       h1 {
         font-size: 7vmin;
@@ -74,9 +77,19 @@
     }
     .womens_model {
       align-self: flex-end;
-      width: 80%;
+      width: 70%;
       max-width: 1200px;
-      margin-top: 10vmin;
+      margin-bottom: -15%;
+      border-radius: 100% 100% 0 0;
+    }
+
+    .ball {
+      position: absolute;
+      left: 0;
+      transform: translateX(-50%);
+      height: 10vw;
+      width: 10vw;
+      border-radius: 10vw;
     }
   }
 

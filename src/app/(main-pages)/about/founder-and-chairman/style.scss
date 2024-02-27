@@ -49,14 +49,24 @@ $gap: 1vh;
         width: 25vmin;
         min-width: 170px;
         margin-bottom: -5vmin;
+        transition: 0.2s;
       }
       strong {
         font-size: clamp(20px, 3.5vmin, 3.5vmin);
         line-height: 110%;
+        z-index: 2;
+        color: white;
       }
       span {
         font-size: clamp(12px, 2vmin, 2vmin);
         font-weight: 300;
+        z-index: 2;
+        color: white;
+      }
+      &:hover {
+        img {
+          transform: translateY(-5%);
+        }
       }
     }
   }
