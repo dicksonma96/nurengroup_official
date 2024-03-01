@@ -13,6 +13,15 @@
         font-size: clamp(13px, 3vw, 25px);
         color: #c8a6a6;
       }
+      .download_btn {
+        background-color: #f25075;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        align-self: flex-start;
+        margin-top: 20px;
+        font-size: 30px;
+      }
     }
     .abstract {
       flex: 1;
@@ -21,7 +30,7 @@
   }
 
   .brand_logos {
-    background-color: #b92057;
+    background-color: #357f8b;
     .content {
       width: 100%;
       max-width: 1500px;
@@ -44,6 +53,7 @@
         &:hover {
           img {
             opacity: 0;
+            filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
           }
           img.colorize {
             opacity: 1;

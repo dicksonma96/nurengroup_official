@@ -1,6 +1,7 @@
 import React from "react";
 import AssetPath from "@/app/utils/assetpath";
 import "./style.scss";
+import Link from "next/link";
 
 function OurBrands() {
   const brands = [
@@ -28,6 +29,9 @@ function OurBrands() {
             initiatives designed to support and empower mothers, fathers, and
             caregivers on their extraordinary journey.
           </p>
+          <Link className="download_btn" href="">
+            Download Parenting Playbook
+          </Link>
         </div>
         <div className="abstract"></div>
       </section>
