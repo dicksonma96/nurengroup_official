@@ -1,0 +1,1 @@
+self.__NEXT_FONT_MANIFEST='{"pages":{},"app":{"/Users/FIX000008954-wengsley/Desktop/Projects/Web/nurengroup_website_2/src/app/layout":["static/media/4c472ffaefe8ebfa-s.p.woff2","static/media/01af0fc7b4278e65-s.p.woff2"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}';

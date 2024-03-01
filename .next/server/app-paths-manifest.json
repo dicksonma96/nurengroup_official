@@ -1,0 +1,17 @@
+{
+  "/_not-found": "app/_not-found.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js",
+  "/(main-pages)/about/board-of-directors/dr_wong/page": "app/(main-pages)/about/board-of-directors/dr_wong/page.js",
+  "/(main-pages)/about/board-of-directors/leigh_zhang/page": "app/(main-pages)/about/board-of-directors/leigh_zhang/page.js",
+  "/(main-pages)/about/board-of-directors/petrina_goh/page": "app/(main-pages)/about/board-of-directors/petrina_goh/page.js",
+  "/(main-pages)/about/board-of-directors/kelvin_leow/page": "app/(main-pages)/about/board-of-directors/kelvin_leow/page.js",
+  "/(main-pages)/about/founder-and-chairman/page": "app/(main-pages)/about/founder-and-chairman/page.js",
+  "/(main-pages)/about/page": "app/(main-pages)/about/page.js",
+  "/(main-pages)/brands/our-brands/page": "app/(main-pages)/brands/our-brands/page.js",
+  "/(main-pages)/enquire/page": "app/(main-pages)/enquire/page.js",
+  "/(main-pages)/about/leadership/page": "app/(main-pages)/about/leadership/page.js",
+  "/(main-pages)/about/board-of-directors/page": "app/(main-pages)/about/board-of-directors/page.js",
+  "/(main-pages)/media-hub/page": "app/(main-pages)/media-hub/page.js",
+  "/(main-pages)/media-hub/[id]/page": "app/(main-pages)/media-hub/[id]/page.js"
+}
