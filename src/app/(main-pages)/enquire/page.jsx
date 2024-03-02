@@ -24,7 +24,7 @@ function Enquire() {
       });
 
       const mailSetting = {
-        from: formData.get("email"),
+        from: process.env.SMTP_USERNAME,
         to: process.env.CONTACT_RECIPIENT,
         subject: `Inquiry from Nurengroup Website`,
         html: `
