@@ -1,9 +1,77 @@
-"use client";
-
 import AssetPath from "@/app/utils/assetpath";
 import "./style.scss";
+import EnquireForm from "./enquire_form";
+import nodemailer from "nodemailer";
 
 function Enquire() {
+  const handleSubmit = async (event) => {
+    "use server";
+    let formData = event;
+
+    try {
+      const transporter = nodemailer.createTransport({
+        host: process.env.SMTP_HOST,
+        port: process.env.SMTP_PORT,
+        tls: {
+          ciphers: "SSLv3",
+          rejectUnauthorized: false,
+        },
+
+        auth: {
+          user: process.env.SMTP_USERNAME,
+          pass: process.env.SMTP_PASSWORD,
+        },
+      });
+
+      const mailSetting = {
+        from: formData.get("email"),
+        to: process.env.CONTACT_RECIPIENT,
+        subject: `Inquiry from Nurengroup Website`,
+        html: `
+        <p><strong>Subject:</strong> New Inquiry from ${formData.get(
+          "name"
+        )}</p>
+          <br>
+          <p>Dear Team,</p>
+          <br>
+          <p>You have received a new inquiry with the following details:</p>
+          <ul>
+            <li>User Type: ${formData.get("userType")}</li>
+            <li>Enquiry Type: ${formData.get("enquiryType")}</li>
+            <li>Name: ${formData.get("name")}</li>
+            <li>Email: ${formData.get("email")}</li>
+            <li>Phone: ${formData.get("phone")}</li>
+            ${
+              formData.get("fileUri") ? "<li>With file attached below</li>" : ""
+            }
+          </ul>
+          <p><strong>Message:</strong></p>
+          <p>${formData.get("message")}</p>
+          <br>
+          <p>Please take appropriate action to address this inquiry promptly.</p>
+          <br>
+          <p>Best regards,</p>
+          <p>Nurengroup official website</p>
+        `,
+      };
+
+      if (formData.get("fileUri")) {
+        mailSetting["attachments"] = [
+          {
+            filename: formData.get("file").name,
+            path: formData.get("fileUri"),
+          },
+        ];
+      }
+
+      const mail = await transporter.sendMail(mailSetting);
+      return true;
+    } catch (e) {
+      console.log(e);
+      return false;
+    }
+  };
+
   return (
     <main className="section enquire col">
       <div className="enquire_banner rowc">
@@ -52,25 +120,7 @@ function Enquire() {
             </div>
           </div>
         </div>
-        <div className="contact_form col">
-          <select>
-            <option value="0" disabled selected>
-              I am
-            </option>
-          </select>
-          <select>
-            <option value="0" disabled selected>
-              I am interested in
-            </option>
-          </select>
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Email" />
-          <input type="text" placeholder="Mobile Number" />
-          <input type="text" placeholder="Attach Resume" />
-          <textarea placeholder="Message" name=""></textarea>
-
-          <button>Submit</button>
-        </div>
+        <EnquireForm handleSubmit={handleSubmit} />
       </div>
     </main>
   );

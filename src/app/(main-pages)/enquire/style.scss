@@ -53,6 +53,7 @@
     flex: 1;
     align-items: center;
     justify-content: center;
+    padding: 50px 20px;
     input,
     select,
     textarea {
@@ -77,6 +78,29 @@
       max-width: 500px;
       margin-top: 20px;
       border: none;
+    }
+
+    .errormessage {
+      background-color: #ffdddd;
+      border: solid 1px #db0d0d;
+      color: #db0d0d;
+      font-size: 15px;
+      width: 90%;
+      max-width: 500px;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  .submit_success {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    img {
+      width: 200px;
+    }
+    strong {
+      font-size: 40px;
     }
   }
 }
