@@ -1,0 +1,141 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[13].use[5]!./src/app/(main-pages)/about/board-of-directors/style.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.bod {
+  height: 100vh;
+}
+.bod .gridrow {
+  flex: 2 1;
+}
+.bod .gridrow .grid {
+  background-color: #f25075;
+  flex: 1 1;
+  padding: 1.5vh;
+  justify-content: space-between;
+  font-size: 2vh;
+}
+.bod .gridrow .grid h2 {
+  font-size: 5vh;
+  line-height: 110%;
+}
+.bod .gridrow .grid h4 {
+  font-weight: normal;
+}
+.bod .gridrow .grid:nth-child(2) {
+  background-color: #463157;
+}
+.bod .gridrow .grid:nth-child(3) {
+  background-color: #f4af67;
+}
+.bod .gridrow .grid:nth-child(4) {
+  background-color: #357f8b;
+}
+.bod .middlerow {
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  height: 15vw;
+}
+.bod .middlerow a {
+  display: flex;
+}
+.bod .middlerow img {
+  height: 22vw;
+  max-height: 450px;
+  width: auto;
+  margin: 0 -2vw;
+  transform-origin: bottom;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.bod .middlerow img:hover {
+  transform: scale(1.05);
+}
+.bod .middlerow h1 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  bottom: 3%;
+  font-size: 5vw;
+  text-shadow: 2px 2px 2px rgb(50, 50, 50);
+  pointer-events: none;
+  z-index: 2;
+}
+.bod .bottomrow .grid {
+  background-color: #357f8b;
+}
+.bod .bottomrow .grid:nth-child(2) {
+  background-color: #f25075;
+}
+.bod .bottomrow .grid:nth-child(3) {
+  background-color: #463157;
+}
+.bod .bottomrow .grid:nth-child(4) {
+  background-color: #f4af67;
+}
+
+.person_detail {
+  z-index: 999;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+.person_detail::before {
+  content: attr(data-name);
+  font-size: 15vw;
+  line-height: 110%;
+  padding: 0 5%;
+  color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  z-index: 1;
+}
+.person_detail .backBtn {
+  position: absolute;
+  top: 4vmin;
+  left: 3vmin;
+  z-index: 3;
+  width: 5vmin;
+}
+.person_detail .backBtn img {
+  width: 100%;
+}
+.person_detail .left {
+  position: relative;
+  flex: 1 1;
+}
+.person_detail .left img {
+  width: 70%;
+  margin-top: auto;
+  z-index: 2;
+}
+.person_detail .left .title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5% 20%;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+  z-index: 2;
+}
+.person_detail .left .title strong {
+  font-size: clamp(25px, 5vmin, 50px);
+  color: white;
+}
+.person_detail .left .title span {
+  color: white;
+  font-size: clamp(15px, 4vmin, 30px);
+}
+.person_detail .description {
+  z-index: 2;
+  flex: 1 1;
+  padding: 5vmin;
+  overflow: auto;
+  font-size: clamp(15px, 4vmin, 30px);
+  color: white;
+}

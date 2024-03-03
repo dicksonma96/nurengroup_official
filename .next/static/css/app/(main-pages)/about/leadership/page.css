@@ -1,0 +1,42 @@
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[13].use[5]!./src/app/(main-pages)/about/leadership/style.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.leadership .banner {
+  background-color: #121426;
+}
+.leadership .banner .banner_content {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+  padding: 5vmin 0 10vmin;
+}
+.leadership .banner .banner_content img {
+  width: 100%;
+}
+.leadership .banner .banner_content .text {
+  margin-top: -12vmin;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.leadership .banner .banner_content .text h1 {
+  font-size: 6vmin;
+  color: white;
+}
+.leadership .banner .banner_content .text p {
+  font-size: 2.5vmin;
+  width: 100%;
+  max-width: 700px;
+  color: white;
+}
+.leadership .leadership_grid {
+  width: 100%;
+}
+.leadership .leadership_grid .grid_row {
+  width: 100%;
+}
+.leadership .leadership_grid .grid_row img {
+  width: 40%;
+}
+.leadership .leadership_grid .grid_row .square {
+  width: 20%;
+}

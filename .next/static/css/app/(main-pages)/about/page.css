@@ -1,0 +1,186 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[13].use[5]!./src/app/(main-pages)/about/style.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.about .snapshot {
+  background: url("https://media.nurengroup.com/About/snapshot_bg.jpg");
+  background-size: cover;
+  position: relative;
+}
+.about .snapshot .snapshot_abstract {
+  height: 100vh;
+  margin-left: auto;
+}
+.about .snapshot .text {
+  position: absolute;
+  left: 10%;
+  width: 80%;
+  max-width: 1000px;
+  font-size: 3vmin;
+  color: white;
+}
+.about .snapshot .text h1 {
+  white-space: nowrap;
+  font-size: 8vmin;
+  line-height: 110%;
+}
+.about .snapshot .text .bottom {
+  position: relative;
+  margin-top: 4vmin;
+  padding-left: 10vmin;
+}
+.about .snapshot .text .bottom .tag {
+  position: absolute;
+  left: 0;
+  top: 1vmin;
+  font-size: 3vmin;
+  white-space: nowrap;
+  transform-origin: left top;
+  transform: rotate(-90deg) translateX(-100%);
+}
+.about .snapshot .text .bottom .tag::after {
+  content: "";
+  height: 2px;
+  width: 5vmin;
+  margin-left: 2vmin;
+  background-color: white;
+}
+.about .groups {
+  padding: 5%;
+  padding-right: 0;
+  padding-bottom: 0;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+.about .groups .text h1 {
+  font-size: 7vmin;
+  margin: 1vmin 0;
+  line-height: 105%;
+  color: white;
+}
+.about .groups .text .yellow {
+  color: #d8b189;
+}
+.about .groups .text .green {
+  color: #5e7174;
+}
+.about .groups .text .pink_bg {
+  background-color: #f25075;
+}
+.about .groups .text .purple {
+  color: #44394d;
+}
+.about .groups .stroke_text {
+  text-shadow: 1px 1px 0 #44394d, -1px -1px 0 #44394d, 1px -1px 0 #44394d, -1px 1px 0 #44394d, 1px 1px 0 #44394d;
+}
+.about .groups .womens_model {
+  align-self: flex-end;
+  width: 70%;
+  max-width: 1200px;
+  margin-bottom: -15%;
+  border-radius: 100% 100% 0 0;
+}
+.about .groups .ball {
+  position: absolute;
+  left: 0;
+  transform: translateX(-50%);
+  height: 10vw;
+  width: 10vw;
+  border-radius: 10vw;
+}
+.about .vision_mission {
+  background: url("https://media.nurengroup.com/About/vision_mission_bg.jpg");
+  background-size: cover;
+  justify-content: center;
+  padding: 10%;
+  position: relative;
+  align-items: center;
+}
+.about .vision_mission p {
+  font-size: 2.5vmin;
+  width: 80%;
+  color: white;
+}
+.about .vision_mission h1 {
+  color: #f4af67;
+  font-size: 8vmin;
+  line-height: 110%;
+  margin: 5vmin 0;
+}
+.about .vision_mission .tag {
+  position: absolute;
+  right: -5%;
+  top: 50%;
+  font-size: 3vmin;
+  white-space: nowrap;
+  transform: translateY(-50%) rotate(-90deg);
+  color: #f4af67;
+}
+.about .vision_mission .tag::after {
+  content: "";
+  height: 2px;
+  width: 5vmin;
+  margin-left: 2vmin;
+  background-color: #f4af67;
+}
+.about .stay_mission {
+  padding: 5%;
+  padding-bottom: 0;
+}
+.about .stay_mission h1 {
+  font-size: 8vmin;
+  margin: 1vmin 0;
+  line-height: 105%;
+  text-align: center;
+  color: #44394d;
+  margin-bottom: 10vmin;
+}
+.about .stay_mission .cards {
+  align-self: center;
+  width: 60%;
+  gap: 0.5vmin;
+}
+.about .stay_mission .cards p {
+  margin-right: 5%;
+  font-size: 2.5vmin;
+  color: black;
+  font-weight: 500;
+}
+.about .stay_mission .cards .card {
+  background-color: white;
+  justify-content: space-between;
+  padding: 2vmin 0;
+  border-radius: 1vmin;
+  gap: 2vmin;
+}
+.about .stay_mission .cards .card .top {
+  align-items: flex-end;
+}
+.about .stay_mission .cards .card .top .number {
+  font-size: 7vmin;
+  background-color: red;
+  width: 7vmin;
+  text-align: center;
+  margin-right: 1vmin;
+  font-weight: bold;
+  line-height: 100%;
+}
+.about .stay_mission .cards .card .top img {
+  border-radius: 0.5vmin;
+  width: 12vmin;
+}
+.about .stay_mission .cards .card .desc {
+  color: black;
+  font-size: 2.5vmin;
+  padding: 0 2vmin;
+}
+.about .stay_mission .deco {
+  margin-top: 10vmin;
+  justify-content: center;
+  background-image: url("https://media.nurengroup.com/About/skyscraper.png");
+  background-repeat: repeat-x;
+}
+.about .stay_mission .deco .womens {
+  width: 80%;
+  max-width: 1000px;
+}
