@@ -23,7 +23,8 @@ export const menu = [
   },
   {
     label: "Brands",
-    path: "/brands",
+    path: "/brands/our-brands",
+    disabled: true,
     subMenu: [
       {
         label: "Our Brands",
@@ -33,11 +34,12 @@ export const menu = [
   },
   {
     label: "Investors",
-    path: "/",
+    path: "/investors/corperate-governance",
+    disabled: true,
     subMenu: [
       {
         label: "Corperate Governance",
-        path: "/",
+        path: "/corperate-governance",
       },
     ],
   },

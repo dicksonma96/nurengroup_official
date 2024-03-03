@@ -5,24 +5,30 @@ import Link from "next/link";
 
 function FounderAndChairman() {
   const imgs1 = [
-    AssetPath("Landing/1.jpg"),
-    AssetPath("Landing/2.jpg"),
-    AssetPath("Landing/3.jpg"),
-    AssetPath("Landing/4.jpg"),
-    AssetPath("Landing/5.jpg"),
-    AssetPath("Landing/6.jpg"),
-    AssetPath("Landing/7.jpg"),
-    AssetPath("Landing/8.jpg"),
+    AssetPath("Image+Content/Breastfeeding+event+2023/IMG_6801.jpg"),
+    AssetPath("Image+Content/Mother's+Day+SuperApp+Launch+2023/IMG_0194.jpg"),
+    AssetPath("Image+Content/Ibuencer+Awards/IMG_1476_IG.jpg "),
+    AssetPath("Image+Content/Baby+Fairs/IMG_0180.jpg"),
+    AssetPath(
+      "Image+Content/New+Mom+Webinar/WhatsApp+Image+2024-02-19+at+13.59.22+(12).jpeg "
+    ),
+    AssetPath("Image+Content/Parentcraft+Workshop/msg838316852-3454.jpg "),
+    AssetPath("Image+Content/Super+Kids/IMG_5074.JPG "),
+    AssetPath("Image+Content/Brand+Showcase+2022/IMG_4972.jpg "),
   ];
   const imgs2 = [
-    AssetPath("Landing/1.jpg"),
-    AssetPath("Landing/2.jpg"),
-    AssetPath("Landing/3.jpg"),
-    AssetPath("Landing/4.jpg"),
-    AssetPath("Landing/5.jpg"),
-    AssetPath("Landing/6.jpg"),
-    AssetPath("Landing/7.jpg"),
-    AssetPath("Landing/8.jpg"),
+    AssetPath("Image+Content/Breastfeeding+event+2023/IMG_7212.jpg "),
+    AssetPath("Image+Content/Mother's+Day+SuperApp+Launch+2023/IMG_0069.jpg "),
+    AssetPath("Image+Content/Ibuencer+Awards/IMG_1734_IG.jpg"),
+    AssetPath("Image+Content/Baby+Fairs/IMG_0205.jpg"),
+    AssetPath(
+      "Image+Content/New+Mom+Webinar/WhatsApp+Image+2024-02-19+at+14.00.17+(3).jpeg"
+    ),
+    AssetPath(
+      "Image+Content/Parentcraft+Workshop/WhatsApp+Image+2024-02-18+at+11.14.09_ca8bb7c9.jpg"
+    ),
+    AssetPath("Image+Content/Super+Kids/IMG_1983.JPG "),
+    AssetPath("Image+Content/Brand+Showcase+2022/IMG_4844.jpg "),
   ];
 
   return (

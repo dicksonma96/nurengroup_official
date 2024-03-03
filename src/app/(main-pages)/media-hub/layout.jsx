@@ -7,7 +7,9 @@ function MediaHubLayout({ children }) {
       <div className="banner rowc">
         <div className="banner_content rowc">
           <div className="text">
-            <h1>MEDIAHUB</h1>
+            <h1>
+              MEDIA<span style={{ color: "#F77F9A" }}>HUB</span>
+            </h1>
             <h3>News, Insights and Collaborative Culture from Nuren Group</h3>
           </div>
           <div className="cylinder"></div>

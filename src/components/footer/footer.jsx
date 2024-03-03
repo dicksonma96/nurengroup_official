@@ -7,9 +7,12 @@ import AssetPath from "@/app/utils/assetpath";
 
 function Footer() {
   const quicklinks = [
-    { label: "Newsroom", href: "/" },
-    { label: "Enquiry", href: "/" },
-    { label: "Supermums Survey", href: "/" },
+    { label: "Mediahub", href: "/media-hub" },
+    { label: "Enquiry", href: "/enquire" },
+    {
+      label: "Supermums Survey",
+      href: "https://www.motherhood.com.my/events/motherhood-survey",
+    },
     { label: "Motherhood Parenting SuperApp", href: "/" },
     { label: "Motherhood Instagram", href: "/" },
     { label: "Facebook", href: "/" },
@@ -54,7 +57,7 @@ function Footer() {
       <div className="quicklinks rowc">
         {quicklinks.map((link, index) => {
           return (
-            <Link className="urban_text" href={link.href}>
+            <Link className="urban_text" href={link.href} target="_blank">
               {link.label}
             </Link>
           );

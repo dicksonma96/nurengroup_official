@@ -55,7 +55,10 @@ function Menu() {
               <div className="sublinks">
                 <div className="sublinks_content col">
                   {item.subMenu?.map((sub, index) => (
-                    <Link key={index} href={item.path + sub.path}>
+                    <Link
+                      key={index}
+                      href={item.path.match(/\/\w+/)[0] + sub.path}
+                    >
                       {sub.label}
                     </Link>
                   ))}

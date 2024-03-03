@@ -84,8 +84,8 @@ function Enquire() {
           <div className="address col" style={{ background: "#F8F7F3" }}>
             <strong>MALAYSIA</strong>
             <div className="addr">
-              Nuren Group H-89-1, Block H, Jaya One, 72A Jalan Profesor Diraja
-              Ungku Aziz, 46200 Petaling Jaya, Selangor, Malaysia
+              Nuren Group <br /> H-89-1, Block H, Jaya One, 72A Jalan Profesor
+              Diraja Ungku Aziz, 46200 Petaling Jaya, Selangor, Malaysia
             </div>
             <a href="tel:60379320050" className="phone">
               +603 7932 0050
@@ -94,8 +94,8 @@ function Enquire() {
           <div className="address col" style={{ background: "#E6E6E6" }}>
             <strong>SINGAPORE</strong>
             <div className="addr">
-              Nuren Group 151 Chin Swee Road, #07-12 Manhattan House, Singapore
-              16987
+              Nuren Group <br /> 151 Chin Swee Road, #07-12 Manhattan House,
+              Singapore 16987
             </div>
             <a href="tel:6531591211" className="phone">
               +65 3159 1211
@@ -104,9 +104,9 @@ function Enquire() {
           <div className="address col" style={{ background: "#D3DBF9" }}>
             <strong>THAILAND</strong>
             <div className="addr">
-              Nuren Group 50 GMM Grammy Place, Unit 2301-2303, 23rd Floor,
-              Sukhumvit21 (Asoke) Rd, Khlong Toei Nuea, Watthana, Bangkok 10110
-              Thailand
+              Nuren Group <br /> 50 GMM Grammy Place, Unit 2301-2303, 23rd
+              Floor, Sukhumvit21 (Asoke) Rd, Khlong Toei Nuea, Watthana, Bangkok
+              10110 Thailand
             </div>
             <a href="tel:6620261126" className="phone">
               +662 026 1126
@@ -115,8 +115,8 @@ function Enquire() {
           <div className="address col" style={{ background: "#F9D3E1" }}>
             <strong>AUSTRALIA</strong>
             <div className="addr">
-              Nuren Group Level 6, 414 La Trobe Street, Melbourne Vic 3000,
-              Australia
+              Nuren Group <br /> Level 16, 414 La Trobe Street, Melbourne Vic
+              3000, Australia
             </div>
           </div>
         </div>

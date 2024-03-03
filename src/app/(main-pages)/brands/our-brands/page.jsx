@@ -29,7 +29,11 @@ function OurBrands() {
             initiatives designed to support and empower mothers, fathers, and
             caregivers on their extraordinary journey.
           </p>
-          <Link className="download_btn" href="">
+          <Link
+            className="download_btn"
+            href={AssetPath("Supermums+Survey+2023.pdf")}
+            target="_blank"
+          >
             Download Parenting Playbook
           </Link>
         </div>
@@ -44,7 +48,10 @@ function OurBrands() {
                 src={AssetPath(`brand/logo/${brand}.png`)}
                 alt={brand}
               />
-              <img src={AssetPath(`brand/logo/${brand}_w.png`)} alt={brand} />
+              <img
+                src={AssetPath(`brand/logo/${brand}_w.png?v=1`)}
+                alt={brand}
+              />
             </div>
           ))}
         </div>

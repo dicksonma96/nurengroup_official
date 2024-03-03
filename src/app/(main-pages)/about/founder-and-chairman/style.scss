@@ -18,6 +18,8 @@ $gap: 1vh;
         margin-bottom: $gap;
         object-fit: cover;
         animation: carousel 15s linear infinite;
+        filter: grayscale(1);
+        opacity: 0.3;
       }
     }
   }
