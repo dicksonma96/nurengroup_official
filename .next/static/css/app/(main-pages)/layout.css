@@ -144,6 +144,7 @@
 }
 .popup_menu nav .nav_item:hover .mainlink {
   color: white !important;
+  opacity: 1 !important;
 }
 .popup_menu nav .nav_item:hover .mainlink::after {
   width: 100%;
@@ -156,5 +157,5 @@
   opacity: 1;
 }
 .popup_menu nav:hover .nav_item .mainlink {
-  color: #231f20;
+  opacity: 0.3;
 }

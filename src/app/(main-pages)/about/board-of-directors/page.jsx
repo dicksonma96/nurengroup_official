@@ -37,16 +37,16 @@ function BOD() {
       </div>
       <div className="middlerow rowc">
         <h1>BOARD OF DIRECTORS</h1>
-        <Link href="board-of-directors/dr_wong">
+        <Link href="board-of-directors/dr_wong" target="_blank">
           <img src={AssetPath("BOD/prof-dr-wong.png")} />
         </Link>
-        <Link href="board-of-directors/leigh_zhang">
+        <Link href="board-of-directors/leigh_zhang" target="_blank">
           <img src={AssetPath("BOD/leigh-zhang.png")} />
         </Link>
-        <Link href="board-of-directors/kelvin_leow">
+        <Link href="board-of-directors/kelvin_leow" target="_blank">
           <img src={AssetPath("BOD/kelvin-leow.png")} />
         </Link>
-        <Link href="board-of-directors/petrina_goh">
+        <Link href="board-of-directors/petrina_goh" target="_blank">
           <img src={AssetPath("BOD/petrina-goh.png")} />
         </Link>
       </div>

@@ -1,4 +1,4 @@
-// File: /Users/FIX000008954-wengsley/Desktop/Projects/Web/nurengroup_website_2/src/app/layout.js
+// File: C:\Users\User\Documents\MOTHERHOOD-CLARITAS\nurengroup_website\src\app\layout.js
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

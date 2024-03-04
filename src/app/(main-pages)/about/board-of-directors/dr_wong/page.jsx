@@ -2,6 +2,16 @@ import AssetPath from "@/app/utils/assetpath";
 import "../style.scss";
 import BackBtn from "@/components/backBtn";
 
+export async function generateMetadata() {
+  return {
+    title: "PROF DR WONG KONG YEW",
+    description: "NurenGroup | Chairman, Non-Executive | Independent Director",
+    openGraph: {
+      images: [AssetPath("BOD/prof-dr-wong.png")],
+    },
+  };
+}
+
 function DrWong() {
   return (
     <main

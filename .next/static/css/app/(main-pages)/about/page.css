@@ -158,12 +158,12 @@
 }
 .about .stay_mission .cards .card .top .number {
   font-size: 7vmin;
-  background-color: red;
   width: 7vmin;
   text-align: center;
   margin-right: 1vmin;
   font-weight: bold;
   line-height: 100%;
+  color: white;
 }
 .about .stay_mission .cards .card .top img {
   border-radius: 0.5vmin;

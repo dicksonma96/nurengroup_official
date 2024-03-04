@@ -2,6 +2,16 @@ import AssetPath from "@/app/utils/assetpath";
 import "../style.scss";
 import BackBtn from "@/components/backBtn";
 
+export async function generateMetadata() {
+  return {
+    title: "KELVIN LEOW WEE KEAT",
+    description: "NurenGroup | Chief Technology Officer | Executive Director",
+    openGraph: {
+      images: [AssetPath("BOD/kelvin-leow.png")],
+    },
+  };
+}
+
 function KelvinLeow() {
   return (
     <main

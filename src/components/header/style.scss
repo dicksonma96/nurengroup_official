@@ -101,6 +101,7 @@
       &:hover {
         .mainlink {
           color: white !important;
+          opacity: 1 !important;
           &::after {
             width: 100%;
           }
@@ -119,7 +120,7 @@
     &:hover {
       .nav_item {
         .mainlink {
-          color: #231f20;
+          opacity: 0.3;
         }
       }
     }

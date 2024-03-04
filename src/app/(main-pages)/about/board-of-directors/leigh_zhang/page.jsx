@@ -2,6 +2,16 @@ import AssetPath from "@/app/utils/assetpath";
 import "../style.scss";
 import BackBtn from "@/components/backBtn";
 
+export async function generateMetadata() {
+  return {
+    title: "LEIGH ZHANG LI HUA",
+    description: "NurenGroup | Non-Executive | Independent Director",
+    openGraph: {
+      images: [AssetPath("BOD/leigh-zhang.png")],
+    },
+  };
+}
+
 function LeighZhang() {
   return (
     <main

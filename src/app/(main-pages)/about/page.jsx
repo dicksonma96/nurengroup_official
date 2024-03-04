@@ -13,17 +13,17 @@ function About() {
         <div className="text col">
           <h1>SNAPSHOT OF</h1>
           <h1 className="pink_text">NUREN Group</h1>
-          <div className="bottom row">
+          <div className="bottom col">
             <div className="tag  rowc">NUREN GROUP</div>
 
             <p className="urban_text">
-              <span className="pink_text">Nuren Group</span> is a leading
+              <span className="pink_text">Nuren Group </span> is a leading
               Malaysian-based technology company, which is female-led and
               VC-funded. We are the leading Digital Content provider, focusing
               on parenting education, maternity wellness and women livelihood.
               Our digital products include Motherhood.com.my, Kelabmama.com,
               Ibuencer.com & the recently launched Motherhood Parenting
-              SuperApp. To date, our community consist of 5,000+
+              Superapp. To date, our community consist of 5,000+
               merchants/brands and 5 million+ active users across 3 countries
               (Malaysia, Singapore, Thailand).
             </p>

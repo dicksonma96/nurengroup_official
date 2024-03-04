@@ -13,13 +13,16 @@
   padding: 1.5vh;
   justify-content: space-between;
   font-size: 2vh;
+  color: white;
 }
 .bod .gridrow .grid h2 {
   font-size: 5vh;
   line-height: 110%;
+  color: white;
 }
 .bod .gridrow .grid h4 {
   font-weight: normal;
+  color: white;
 }
 .bod .gridrow .grid:nth-child(2) {
   background-color: #463157;
@@ -61,6 +64,7 @@
   text-shadow: 2px 2px 2px rgb(50, 50, 50);
   pointer-events: none;
   z-index: 2;
+  color: white;
 }
 .bod .bottomrow .grid {
   background-color: #357f8b;
