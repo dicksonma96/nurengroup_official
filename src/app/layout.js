@@ -28,6 +28,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <link
+          rel="icon"
+          href="https://media.nurengroup.com/lib/images/favicon/nuren_favicon2.ico"
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
