@@ -17,7 +17,7 @@ function About() {
             <div className="tag  rowc">NUREN GROUP</div>
 
             <p className="urban_text">
-              <span className="pink_text">Nuren Group </span> is a leading
+              <strong className="pink_text">Nuren Group </strong> is a leading
               Malaysian-based technology company, which is female-led and
               VC-funded. We are the leading Digital Content provider, focusing
               on parenting education, maternity wellness and women livelihood.
@@ -28,6 +28,37 @@ function About() {
               (Malaysia, Singapore, Thailand).
             </p>
           </div>
+        </div>
+      </section>
+      <section className="description row">
+        <div className="des_item rowc">
+          <p className="urban_text" style={{ color: "#403C47" }}>
+            <strong>Nuren Group</strong> is a strong supporter on women-in-tech
+            and career-comeback-program. Our mission is to build an innovative
+            and AI-driven platform to effectively deliver sustainable, quality
+            health, wellness and education to our community of mothers and
+            children. With this, we are aiming to drive growth in our domestic
+            digital economy through technology adoption, as well as increasing
+            digital export sales, by becoming the tech-enablers and superapp
+            bridging the engagement between brands and our community across
+            Southeast Asia. We are committed to invest over USD30 million and
+            hire a minimum of 80 Malaysian knowledge workers who specialize in
+            AI, big data, digital media and ecommerce space.
+          </p>
+        </div>
+        <div className="des_item rowc" style={{ background: "#C84A67" }}>
+          <p className="urban_text">
+            Under the leadership of Petrina (CEO & Founder),{" "}
+            <strong>Nuren Group</strong> is fortunate to have received backing &
+            support from corporates such as Gobi Partners, Malaysia Debt Venture
+            (MDV), 500 Startups and Innoven Capital. Throughout the years,
+            Petrina and the company has also received awards & recognitions such
+            as Southeast Asia Top 50 Rising Women in Tech 2021, Top 12 Best
+            Startup in Asia 2019, MVCA Outstanding Women Entrepreneur 2018,
+            APICTA Malaysia Award 2017, Inti Alumni Young Entrepreneur of the
+            Year Award 2016. We are also gearing for a NSX IPO in 2023 and
+            NASDAQ IPO in 2025.
+          </p>
         </div>
       </section>
       <section className="groups col">

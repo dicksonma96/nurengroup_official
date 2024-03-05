@@ -24,18 +24,6 @@
       "static/css/app/(main-pages)/about/page.css",
       "static/chunks/app/(main-pages)/about/page.js"
     ],
-    "/(main-pages)/about/board-of-directors/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(main-pages)/about/board-of-directors/page.css",
-      "static/chunks/app/(main-pages)/about/board-of-directors/page.js"
-    ],
-    "/(main-pages)/about/board-of-directors/kelvin_leow/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(main-pages)/about/board-of-directors/kelvin_leow/page.css",
-      "static/chunks/app/(main-pages)/about/board-of-directors/kelvin_leow/page.js"
-    ],
     "/(main-pages)/media-hub/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -52,24 +40,6 @@
       "static/chunks/main-app.js",
       "static/css/app/(main-pages)/enquire/page.css",
       "static/chunks/app/(main-pages)/enquire/page.js"
-    ],
-    "/(main-pages)/about/board-of-directors/dr_wong/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(main-pages)/about/board-of-directors/dr_wong/page.css",
-      "static/chunks/app/(main-pages)/about/board-of-directors/dr_wong/page.js"
-    ],
-    "/(main-pages)/about/founder-and-chairman/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(main-pages)/about/founder-and-chairman/page.css",
-      "static/chunks/app/(main-pages)/about/founder-and-chairman/page.js"
-    ],
-    "/(main-pages)/about/board-of-directors/petrina_goh/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(main-pages)/about/board-of-directors/petrina_goh/page.css",
-      "static/chunks/app/(main-pages)/about/board-of-directors/petrina_goh/page.js"
     ]
   }
 }

@@ -51,7 +51,7 @@ function Enquire() {
           <p>Please take appropriate action to address this inquiry promptly.</p>
           <br>
           <p>Best regards,</p>
-          <p>Nurengroup official website</p>
+          <p>nurengroup.com</p>
         `,
       };
 

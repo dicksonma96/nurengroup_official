@@ -44,6 +44,14 @@
   margin-left: 2vmin;
   background-color: white;
 }
+.about .description .des_item {
+  background-color: #f4af67;
+  padding: 5vmin;
+}
+.about .description .des_item p {
+  color: white;
+  font-size: 3vmin;
+}
 .about .groups {
   padding: 5%;
   padding-right: 0;
