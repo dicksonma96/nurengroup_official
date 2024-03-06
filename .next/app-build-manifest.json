@@ -24,6 +24,36 @@
       "static/css/app/(main-pages)/about/page.css",
       "static/chunks/app/(main-pages)/about/page.js"
     ],
+    "/(main-pages)/about/board-of-directors/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(main-pages)/about/board-of-directors/page.css",
+      "static/chunks/app/(main-pages)/about/board-of-directors/page.js"
+    ],
+    "/(main-pages)/about/board-of-directors/petrina_goh/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(main-pages)/about/board-of-directors/petrina_goh/page.css",
+      "static/chunks/app/(main-pages)/about/board-of-directors/petrina_goh/page.js"
+    ],
+    "/(main-pages)/investors/corperate-governance/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(main-pages)/investors/corperate-governance/page.css",
+      "static/chunks/app/(main-pages)/investors/corperate-governance/page.js"
+    ],
+    "/(main-pages)/brands/our-brands/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(main-pages)/brands/our-brands/page.css",
+      "static/chunks/app/(main-pages)/brands/our-brands/page.js"
+    ],
+    "/(main-pages)/about/founder-and-chairman/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(main-pages)/about/founder-and-chairman/page.css",
+      "static/chunks/app/(main-pages)/about/founder-and-chairman/page.js"
+    ],
     "/(main-pages)/media-hub/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -35,11 +65,27 @@
       "static/css/app/(main-pages)/media-hub/layout.css",
       "static/chunks/app/(main-pages)/media-hub/layout.js"
     ],
+    "/(main-pages)/about/board-of-directors/dr_wong/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(main-pages)/about/board-of-directors/dr_wong/page.css",
+      "static/chunks/app/(main-pages)/about/board-of-directors/dr_wong/page.js"
+    ],
     "/(main-pages)/enquire/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/(main-pages)/enquire/page.css",
       "static/chunks/app/(main-pages)/enquire/page.js"
+    ],
+    "/(main-pages)/media-hub/[id]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(main-pages)/media-hub/[id]/page.js"
+    ],
+    "/not-found": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/not-found.js"
     ]
   }
 }

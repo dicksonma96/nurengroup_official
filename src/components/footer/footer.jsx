@@ -1,6 +1,6 @@
 import "./style.scss";
 import Link from "next/link";
-import Logo from "../../assets/img/logo.png";
+import Logo from "../../assets/img/logo.svg";
 import Image from "next/image";
 import { menu } from "@/data/navSetting";
 import AssetPath from "@/app/utils/assetpath";

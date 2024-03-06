@@ -20,7 +20,7 @@ function BOD() {
         </div>
         <div className="grid col"></div>
         <div className="grid col">
-          <h2>
+          {/* <h2>
             KELVIN <br /> LEOW WEE KEAT
           </h2>
           <h4
@@ -31,7 +31,7 @@ function BOD() {
             }}
           >
             CTO, <br /> Executive Director
-          </h4>
+          </h4> */}
         </div>
         <div className="grid col"></div>
       </div>
@@ -43,9 +43,9 @@ function BOD() {
         <Link href="board-of-directors/leigh_zhang">
           <img src={AssetPath("BOD/leigh-zhang.png")} />
         </Link>
-        <Link href="board-of-directors/kelvin_leow">
+        {/* <Link href="board-of-directors/kelvin_leow">
           <img src={AssetPath("BOD/kelvin-leow.png")} />
-        </Link>
+        </Link> */}
         <Link href="board-of-directors/petrina_goh">
           <img src={AssetPath("BOD/petrina-goh.png")} />
         </Link>
