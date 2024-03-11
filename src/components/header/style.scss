@@ -5,6 +5,7 @@
   width: 100%;
   z-index: 999;
   padding: 20px;
+  transition: 0.3s;
   .logo {
     width: 150px;
     height: auto;
@@ -42,6 +43,15 @@
   }
 }
 
+.header_top {
+  background-color: white;
+  box-shadow: 0 0px 3px rgb(0, 0, 0, 0.3);
+}
+.scrollingDown {
+  transform: translateY(-105%);
+  box-shadow: none;
+}
+
 .popup_menu {
   position: fixed;
   top: 0;
@@ -52,7 +62,8 @@
   padding: 5%;
   padding-top: 15vh;
   overflow: hide;
-  background-color: black;
+  background-color: #282127;
+  backdrop-filter: blur(5px);
 
   nav {
     .nav_item {

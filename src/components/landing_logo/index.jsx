@@ -11,7 +11,7 @@ import "./style.scss";
 
 function LandingLogo() {
   return (
-    <Link href="/about" className="landing_logo col">
+    <Link href="/home#snapshot" className="landing_logo col">
       <div className="top_row rowc">
         <div className="letter colc">
           <Image src={N} />

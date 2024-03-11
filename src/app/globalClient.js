@@ -14,14 +14,14 @@ function GlobalClient({ children }) {
   const pathname = usePathname();
   return (
     <AnimatePresence mode="wait">
-      <body key={pathname}>
+      <body>
         {/* exit */}
-        <motion.div
+        {/* <motion.div
           className="transition_overlay"
           animate={{ height: 0 }}
           exit={{ height: "140vh" }}
           transition={{ duration: 0.2, ease: "easeOut" }}
-        ></motion.div>
+        ></motion.div> */}
         {/* entrance */}
         <motion.div
           className="transition_overlay"

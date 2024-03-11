@@ -10,6 +10,10 @@
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .urban_text {
   font-family: "Urbanist", sans-serif;
 }
@@ -49,6 +53,10 @@ body {
   min-height: 100vh;
 }
 
+.scrollsnap {
+  scroll-snap-align: start;
+}
+
 .transition_overlay {
   height: 100vh;
   width: 100vw;
@@ -78,62 +86,6 @@ body {
   width: 20%;
   margin-bottom: -1.5vmin;
   animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
-}
-
-.landing {
-  height: 100vh;
-  width: 100%;
-  background-color: white;
-  overflow: clip;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-.landing .grid_content {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 15% 23% 23% 23% 15%;
-  grid-gap: 1%;
-  gap: 1%;
-  height: 100%;
-  width: 100%;
-  min-height: 800px;
-  min-width: 1000px;
-}
-.landing .grid_row {
-  width: 100%;
-  gap: 10px;
-}
-.landing .grid_row .grid_box {
-  flex: 1 1;
-  border-radius: 10px;
-  overflow: hidden;
-}
-.landing .grid_row .grid_image {
-  flex: 1 1;
-  border-radius: 10px;
-  overflow: hidden;
-}
-.landing .grid_row .grid_image img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-.landing .video iframe {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.landing .yellow {
-  background-color: #fcb913;
-}
-.landing .grey {
-  background-color: #e6e6e6;
-}
-.landing .pink {
-  background-color: #ef5174;
-}
-.landing .green {
-  background-color: #00999e;
 }
 
 .pink_text {

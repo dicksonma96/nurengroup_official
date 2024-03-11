@@ -63,6 +63,7 @@
   width: 100%;
   z-index: 999;
   padding: 20px;
+  transition: 0.3s;
 }
 .navbar .logo {
   width: 150px;
@@ -94,6 +95,16 @@
   transform: translateX(2px) translateY(-25px) rotate(45deg);
 }
 
+.header_top {
+  background-color: white;
+  box-shadow: 0 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+.scrollingDown {
+  transform: translateY(-105%);
+  box-shadow: none;
+}
+
 .popup_menu {
   position: fixed;
   top: 0;
@@ -104,7 +115,9 @@
   padding: 5%;
   padding-top: 15vh;
   overflow: hide;
-  background-color: black;
+  background-color: #282127;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 .popup_menu nav .nav_item .mainlink {
   font-weight: bold;

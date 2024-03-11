@@ -9,6 +9,10 @@ $color1: #ee5174;
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .urban_text {
   font-family: "Urbanist", sans-serif;
 }
@@ -17,7 +21,6 @@ img {
   height: auto;
   width: auto;
 }
-
 body {
   margin: 0;
   background: #ece9de !important;
@@ -46,6 +49,10 @@ body {
 .section {
   padding-top: 90px;
   min-height: 100vh;
+}
+
+.scrollsnap {
+  scroll-snap-align: start;
 }
 
 .transition_overlay {
@@ -79,69 +86,6 @@ body {
     -webkit-animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715)
       both;
     animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
-  }
-}
-
-.landing {
-  height: 100vh;
-  width: 100%;
-  background-color: white;
-  overflow: clip;
-  justify-content: flex-end;
-  align-items: flex-end;
-
-  .grid_content {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 15% 23% 23% 23% 15%;
-    gap: 1%;
-    height: 100%;
-    width: 100%;
-    min-height: 800px;
-    min-width: 1000px;
-  }
-
-  .grid_row {
-    width: 100%;
-    gap: 10px;
-    .grid_box {
-      flex: 1;
-      border-radius: 10px;
-      overflow: hidden;
-    }
-
-    .grid_image {
-      flex: 1;
-      border-radius: 10px;
-      overflow: hidden;
-
-      img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-      }
-    }
-  }
-
-  .video {
-    iframe {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  .yellow {
-    background-color: #fcb913;
-  }
-  .grey {
-    background-color: #e6e6e6;
-  }
-  .pink {
-    background-color: #ef5174;
-  }
-  .green {
-    background-color: #00999e;
   }
 }
 

@@ -1,0 +1,84 @@
+$n: 8; /* number of images*/
+$img_height: 30vh;
+$gap: 1vh;
+
+.founder {
+  height: 100vh;
+  .vertical_carousel {
+    overflow: hidden;
+    background-color: white;
+    gap: $gap;
+    padding: 0 $gap;
+    .carousel {
+      overflow: hidden;
+      img {
+        width: 15vw;
+        max-width: 240px;
+        min-height: $img_height;
+        margin-bottom: $gap;
+        object-fit: cover;
+        animation: carousel 15s linear infinite;
+        filter: grayscale(1);
+        opacity: 0.3;
+      }
+    }
+  }
+
+  .content {
+    background: url("https://media.nurengroup.com/FounderChairman/bg.jpg");
+    background-size: cover;
+    flex: 1;
+    justify-content: center;
+
+    .ppl_row {
+      width: 100%;
+      padding: 0 5%;
+      height: 40vh;
+    }
+
+    h1 {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      transform: rotate(180deg);
+      font-size: 9vmin;
+      color: #f25075;
+    }
+
+    .avatar {
+      align-items: flex-start;
+      padding: 3vmin;
+      img {
+        width: 25vmin;
+        min-width: 170px;
+        margin-bottom: -5vmin;
+        transition: 0.2s;
+      }
+      strong {
+        font-size: clamp(20px, 3.5vmin, 3.5vmin);
+        line-height: 110%;
+        z-index: 2;
+        color: white;
+      }
+      span {
+        font-size: clamp(12px, 2vmin, 2vmin);
+        font-weight: 300;
+        z-index: 2;
+        color: white;
+      }
+      &:hover {
+        img {
+          transform: translateY(-5%);
+        }
+      }
+    }
+  }
+}
+
+@keyframes carousel {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY($n * ($img_height + $gap) * -1);
+  }
+}

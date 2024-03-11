@@ -1,11 +1,5 @@
 {
   "pages": {
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
-    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -18,29 +12,11 @@
       "static/css/app/(main-pages)/layout.css",
       "static/chunks/app/(main-pages)/layout.js"
     ],
-    "/(main-pages)/about/page": [
+    "/(main-pages)/home/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(main-pages)/about/page.css",
-      "static/chunks/app/(main-pages)/about/page.js"
-    ],
-    "/(main-pages)/about/board-of-directors/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(main-pages)/about/board-of-directors/page.css",
-      "static/chunks/app/(main-pages)/about/board-of-directors/page.js"
-    ],
-    "/(main-pages)/about/board-of-directors/petrina_goh/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(main-pages)/about/board-of-directors/petrina_goh/page.css",
-      "static/chunks/app/(main-pages)/about/board-of-directors/petrina_goh/page.js"
-    ],
-    "/(main-pages)/investors/corperate-governance/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(main-pages)/investors/corperate-governance/page.css",
-      "static/chunks/app/(main-pages)/investors/corperate-governance/page.js"
+      "static/css/app/(main-pages)/home/page.css",
+      "static/chunks/app/(main-pages)/home/page.js"
     ],
     "/(main-pages)/brands/our-brands/page": [
       "static/chunks/webpack.js",
@@ -48,44 +24,23 @@
       "static/css/app/(main-pages)/brands/our-brands/page.css",
       "static/chunks/app/(main-pages)/brands/our-brands/page.js"
     ],
-    "/(main-pages)/about/founder-and-chairman/page": [
+    "/(main-pages)/home/founder-and-chairman/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(main-pages)/about/founder-and-chairman/page.css",
-      "static/chunks/app/(main-pages)/about/founder-and-chairman/page.js"
+      "static/css/app/(main-pages)/home/founder-and-chairman/page.css",
+      "static/chunks/app/(main-pages)/home/founder-and-chairman/page.js"
     ],
-    "/(main-pages)/media-hub/page": [
+    "/(main-pages)/home/board-of-directors/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(main-pages)/media-hub/page.js"
+      "static/css/app/(main-pages)/home/board-of-directors/page.css",
+      "static/chunks/app/(main-pages)/home/board-of-directors/page.js"
     ],
-    "/(main-pages)/media-hub/layout": [
+    "/(main-pages)/home/board-of-directors/details/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(main-pages)/media-hub/layout.css",
-      "static/chunks/app/(main-pages)/media-hub/layout.js"
-    ],
-    "/(main-pages)/about/board-of-directors/dr_wong/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(main-pages)/about/board-of-directors/dr_wong/page.css",
-      "static/chunks/app/(main-pages)/about/board-of-directors/dr_wong/page.js"
-    ],
-    "/(main-pages)/enquire/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(main-pages)/enquire/page.css",
-      "static/chunks/app/(main-pages)/enquire/page.js"
-    ],
-    "/(main-pages)/media-hub/[id]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(main-pages)/media-hub/[id]/page.js"
-    ],
-    "/not-found": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/not-found.js"
+      "static/css/app/(main-pages)/home/board-of-directors/details/page.css",
+      "static/chunks/app/(main-pages)/home/board-of-directors/details/page.js"
     ]
   }
 }

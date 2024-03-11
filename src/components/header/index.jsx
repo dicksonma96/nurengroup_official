@@ -6,20 +6,47 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import "./style.scss";
 import { motion, AnimatePresence } from "framer-motion";
-import { menu } from "../../data/navSetting";
+import { menu } from "../../app/utils/navSetting";
+import footer_copywriting from "@/app/utils/footer_copywriting";
 
 function Header() {
+  const [OnTop, setOnTop] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const pathname = usePathname();
+  const [ScrollDirection, setScrollDirection] = useState("scrollingUp");
 
   useEffect(() => {
-    setIsOpen(false);
-  }, [pathname]);
+    let lastScrollTop = 0;
+    const HeaderIsOnTop = () => {
+      if (window.scrollY === 0) {
+        setOnTop(true);
+      } else setOnTop(false);
+
+      let currentScroll = document.documentElement.scrollTop;
+
+      if (currentScroll > lastScrollTop) {
+        setScrollDirection("scrollingDown");
+      } else {
+        setScrollDirection("scrollingUp");
+      }
+
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    };
+    addEventListener("scroll", HeaderIsOnTop);
+    HeaderIsOnTop();
+
+    return () => {
+      removeEventListener("scroll", HeaderIsOnTop);
+    };
+  }, []);
 
   return (
     <>
-      <header className="navbar rowc">
-        <Link href="/about" className="logo rowc">
+      <header
+        className={`navbar rowc ${isOpen || OnTop ? "" : "header_top"} ${
+          isOpen || OnTop ? "" : ScrollDirection
+        }`}
+      >
+        <Link href="/home" className="logo rowc">
           <Image src={Logo} alt="Nuren group" />
         </Link>
 
@@ -32,12 +59,14 @@ function Header() {
           <span></span>
         </div>
       </header>
-      <AnimatePresence>{isOpen && <Menu />}</AnimatePresence>
+      <AnimatePresence>
+        {isOpen && <Menu setIsOpen={setIsOpen} />}
+      </AnimatePresence>
     </>
   );
 }
 
-function Menu() {
+function Menu({ setIsOpen }) {
   return (
     <motion.div
       className="popup_menu"
@@ -49,7 +78,11 @@ function Menu() {
         {menu.map((item, index) => {
           return (
             <div key={index} className="nav_item col">
-              <Link href={item.path} className="mainlink row">
+              <Link
+                href={item.path}
+                className="mainlink row"
+                onClick={() => setIsOpen(false)}
+              >
                 {item.label}
               </Link>
               <div className="sublinks">
@@ -58,6 +91,7 @@ function Menu() {
                     <Link
                       key={index}
                       href={item.path.match(/\/\w+/)[0] + sub.path}
+                      onClick={() => setIsOpen(false)}
                     >
                       {sub.label}
                     </Link>
@@ -68,6 +102,12 @@ function Menu() {
           );
         })}
       </nav>
+
+      {/* <div className="menu_footer col">
+        <div className="menu_sm rowc"></div>
+        <hr />
+        <footer>{footer_copywriting}</footer>
+      </div> */}
     </motion.div>
   );
 }
