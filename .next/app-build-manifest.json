@@ -18,29 +18,22 @@
       "static/css/app/(main-pages)/home/page.css",
       "static/chunks/app/(main-pages)/home/page.js"
     ],
-    "/(main-pages)/brands/our-brands/page": [
+    "/(main-pages)/enquire/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(main-pages)/brands/our-brands/page.css",
-      "static/chunks/app/(main-pages)/brands/our-brands/page.js"
+      "static/css/app/(main-pages)/enquire/page.css",
+      "static/chunks/app/(main-pages)/enquire/page.js"
     ],
-    "/(main-pages)/home/founder-and-chairman/page": [
+    "/(main-pages)/media-hub/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(main-pages)/home/founder-and-chairman/page.css",
-      "static/chunks/app/(main-pages)/home/founder-and-chairman/page.js"
+      "static/chunks/app/(main-pages)/media-hub/page.js"
     ],
-    "/(main-pages)/home/board-of-directors/page": [
+    "/(main-pages)/media-hub/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(main-pages)/home/board-of-directors/page.css",
-      "static/chunks/app/(main-pages)/home/board-of-directors/page.js"
-    ],
-    "/(main-pages)/home/board-of-directors/details/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(main-pages)/home/board-of-directors/details/page.css",
-      "static/chunks/app/(main-pages)/home/board-of-directors/details/page.js"
+      "static/css/app/(main-pages)/media-hub/layout.css",
+      "static/chunks/app/(main-pages)/media-hub/layout.js"
     ]
   }
 }

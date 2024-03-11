@@ -3,11 +3,12 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Logo from "../../assets/img/logo.svg";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import "./style.scss";
 import { motion, AnimatePresence } from "framer-motion";
 import { menu } from "../../app/utils/navSetting";
 import footer_copywriting from "@/app/utils/footer_copywriting";
+import social_medias from "@/app/utils/social_medias";
+import AssetPath from "@/app/utils/assetpath";
 
 function Header() {
   const [OnTop, setOnTop] = useState(false);
@@ -69,12 +70,12 @@ function Header() {
 function Menu({ setIsOpen }) {
   return (
     <motion.div
-      className="popup_menu"
+      className="popup_menu colc"
       initial={{ opacity: 0, scale: 1.1 }}
       animate={{ opacity: 100, scale: 1 }}
       exit={{ opacity: 0, scale: 1.1 }}
     >
-      <nav className="col">
+      <nav>
         {menu.map((item, index) => {
           return (
             <div key={index} className="nav_item col">
@@ -85,29 +86,33 @@ function Menu({ setIsOpen }) {
               >
                 {item.label}
               </Link>
-              <div className="sublinks">
-                <div className="sublinks_content col">
-                  {item.subMenu?.map((sub, index) => (
-                    <Link
-                      key={index}
-                      href={item.path.match(/\/\w+/)[0] + sub.path}
-                      onClick={() => setIsOpen(false)}
-                    >
-                      {sub.label}
-                    </Link>
-                  ))}
-                </div>
+              <div className="sublinks col">
+                {item.subMenu?.map((sub, index) => (
+                  <Link
+                    key={index}
+                    href={item.path.match(/\/\w+/)[0] + sub.path}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {sub.label}
+                  </Link>
+                ))}
               </div>
             </div>
           );
         })}
       </nav>
 
-      {/* <div className="menu_footer col">
-        <div className="menu_sm rowc"></div>
+      <div className="menu_footer col">
+        <div className="menu_sm rowc">
+          {social_medias.map((sm, index) => (
+            <Link key={index} href={sm.link} className="rowc" target="_blank">
+              <img src={AssetPath(`icon/${sm.img}.svg`)} alt={sm.img} />
+            </Link>
+          ))}
+        </div>
         <hr />
         <footer>{footer_copywriting}</footer>
-      </div> */}
+      </div>
     </motion.div>
   );
 }

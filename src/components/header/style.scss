@@ -64,76 +64,63 @@
   overflow: hide;
   background-color: #282127;
   backdrop-filter: blur(5px);
+  justify-content: center;
 
   nav {
+    margin: 0 auto;
+    margin-bottom: 10%;
+    width: 90%;
+    max-width: 1500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 50px;
+    column-gap: 10%;
     .nav_item {
+      padding-bottom: 20px;
+      border-bottom: solid 1px rgba(255, 255, 255, 0.3);
       .mainlink {
-        font-weight: bold;
-        font-size: 8vh;
-        align-items: baseline;
-        white-space: nowrap;
-        transition: 0.3s;
-        color: white;
-
-        &::after {
-          content: "";
-          height: 2px;
-          width: 0;
-          margin-left: 1vw;
-          background: linear-gradient(to right, transparent, white);
-          transition: width ease-in-out 1s;
-        }
+        font-size: 35px;
+        margin-bottom: 10px;
       }
-
       .sublinks {
-        align-self: flex-end;
-        display: grid;
-        grid-template-rows: 0fr;
-        transition: grid-template-rows 0.2s ease-in;
-
-        .sublinks_content {
-          width: 100%;
-          overflow: hidden;
-        }
-
         a {
-          font-size: 3vh;
-          transition: opacity 0.3s;
-          opacity: 0;
-          color: white;
-
-          &:hover {
-            transform: scale(0.95);
-            filter: drop-shadow(0 0 5px white);
-          }
-        }
-      }
-
-      &:hover {
-        .mainlink {
-          color: white !important;
-          opacity: 1 !important;
-          &::after {
-            width: 100%;
-          }
-        }
-        .sublinks {
-          grid-template-rows: 1fr;
-
-          a {
-            transition-delay: 0.5s;
-            opacity: 1;
-          }
+          font-size: 18px;
+          color: #937e88;
         }
       }
     }
-
-    &:hover {
-      .nav_item {
-        .mainlink {
-          opacity: 0.3;
-        }
-      }
+    a {
+      transition: 0.2s;
     }
+    a:hover {
+      letter-spacing: 2px;
+    }
+  }
+}
+
+.menu_footer {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  max-width: 1500px;
+  left: 50%;
+  transform: translateX(-50%);
+  .menu_sm {
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    img {
+      width: 20px;
+    }
+  }
+  hr {
+    opacity: 0.3;
+  }
+  footer {
+    padding: 15px;
+    font-size: 18px;
+
+    text-align: center;
+    color: #937e88;
   }
 }

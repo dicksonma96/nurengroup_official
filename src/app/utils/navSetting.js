@@ -4,6 +4,10 @@ export const menu = [
     path: "/home",
     subMenu: [
       {
+        label: "Snapshot of Nuren Group",
+        path: "#snapshot",
+      },
+      {
         label: "Founder and Chairman",
         path: "/founder-and-chairman",
       },
@@ -20,7 +24,6 @@ export const menu = [
   {
     label: "Brands",
     path: "/brands/our-brands",
-    disabled: true,
     subMenu: [
       {
         label: "Our Brands",
@@ -31,7 +34,6 @@ export const menu = [
   {
     label: "Investors",
     path: "/investors/corperate-governance",
-    disabled: true,
     subMenu: [
       {
         label: "Corperate Governance",
@@ -41,14 +43,26 @@ export const menu = [
   },
   {
     label: "Media Hub",
-    path: "/media-hub",
+    path: "/mediahub",
+    subMenu: [
+      {
+        label: "Newsroom",
+        path: "",
+      },
+    ],
   },
   // {
   //   label: "Jobs",
   //   path: "/",
   // },
   {
-    label: "Enquire",
+    label: "Contact Us",
     path: "/enquire",
+    subMenu: [
+      {
+        label: "Enquiry",
+        path: "",
+      },
+    ],
   },
 ];

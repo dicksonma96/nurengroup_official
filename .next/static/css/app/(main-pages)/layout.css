@@ -118,57 +118,61 @@
   background-color: #282127;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
+  justify-content: center;
+}
+.popup_menu nav {
+  margin: 0 auto;
+  margin-bottom: 10%;
+  width: 90%;
+  max-width: 1500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 50px;
+  row-gap: 50px;
+  grid-column-gap: 10%;
+  column-gap: 10%;
+}
+.popup_menu nav .nav_item {
+  padding-bottom: 20px;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.3);
 }
 .popup_menu nav .nav_item .mainlink {
-  font-weight: bold;
-  font-size: 8vh;
-  align-items: baseline;
-  white-space: nowrap;
-  transition: 0.3s;
-  color: white;
-}
-.popup_menu nav .nav_item .mainlink::after {
-  content: "";
-  height: 2px;
-  width: 0;
-  margin-left: 1vw;
-  background: linear-gradient(to right, transparent, white);
-  transition: width ease-in-out 1s;
-}
-.popup_menu nav .nav_item .sublinks {
-  align-self: flex-end;
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 0.2s ease-in;
-}
-.popup_menu nav .nav_item .sublinks .sublinks_content {
-  width: 100%;
-  overflow: hidden;
+  font-size: 35px;
+  margin-bottom: 10px;
 }
 .popup_menu nav .nav_item .sublinks a {
-  font-size: 3vh;
-  transition: opacity 0.3s;
-  opacity: 0;
-  color: white;
+  font-size: 18px;
+  color: #937e88;
 }
-.popup_menu nav .nav_item .sublinks a:hover {
-  transform: scale(0.95);
-  filter: drop-shadow(0 0 5px white);
+.popup_menu nav a {
+  transition: 0.2s;
 }
-.popup_menu nav .nav_item:hover .mainlink {
-  color: white !important;
-  opacity: 1 !important;
+.popup_menu nav a:hover {
+  letter-spacing: 2px;
 }
-.popup_menu nav .nav_item:hover .mainlink::after {
-  width: 100%;
+
+.menu_footer {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  max-width: 1500px;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.popup_menu nav .nav_item:hover .sublinks {
-  grid-template-rows: 1fr;
+.menu_footer .menu_sm {
+  justify-content: center;
+  gap: 10px;
+  padding: 15px;
 }
-.popup_menu nav .nav_item:hover .sublinks a {
-  transition-delay: 0.5s;
-  opacity: 1;
+.menu_footer .menu_sm img {
+  width: 20px;
 }
-.popup_menu nav:hover .nav_item .mainlink {
+.menu_footer hr {
   opacity: 0.3;
+}
+.menu_footer footer {
+  padding: 15px;
+  font-size: 18px;
+  text-align: center;
+  color: #937e88;
 }

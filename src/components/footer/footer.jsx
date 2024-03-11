@@ -6,6 +6,7 @@ import { menu } from "@/app/utils/navSetting";
 import AssetPath from "@/app/utils/assetpath";
 import social_medias from "@/app/utils/social_medias";
 import quicklinks from "@/app/utils/quicklinks";
+import footer_copywriting from "@/app/utils/footer_copywriting";
 
 function Footer() {
   return (
@@ -36,9 +37,7 @@ function Footer() {
               </Link>
             ))}
           </nav>
-          <footer className="urban_text">
-            © 2023-2024 NurenGroup | All Rights Reserved
-          </footer>
+          <footer className="urban_text">{footer_copywriting}</footer>
         </div>
         <div className="col">
           <div className="sm rowc">
