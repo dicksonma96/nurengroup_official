@@ -47,9 +47,7 @@ function Footer() {
               </Link>
             ))}
           </div>
-          <a className="urban_text" href="mailto:admin@nurengroup.com">
-            www.nurengroup.com
-          </a>
+          <a href="tel:+60379320050">+603 7932 0050</a>
         </div>
       </div>
     </section>

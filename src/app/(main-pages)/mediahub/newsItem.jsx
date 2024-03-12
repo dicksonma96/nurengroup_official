@@ -10,7 +10,7 @@ function NewsItem({ data }) {
       <div className="overlay col">
         <span className="date">{data.date}</span>
         <strong>{data.title}</strong>
-        <Link href={`${pathname}/${data.id}`}>Read More</Link>
+        <Link href={`${pathname}/${data.id}/${data.slug}`}>Read More</Link>
       </div>
       <img src={data.img} alt={data.title} />
     </div>

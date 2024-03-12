@@ -5,14 +5,12 @@ import Image from "next/image";
 import Check from "../../../assets/img/icon/check.svg";
 
 function EnquireForm({ handleSubmit }) {
-  const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(null);
 
   const onSubmit = async (e) => {
     try {
       setError(null);
-      setLoading(true);
       let formData = e;
       let file = formData.get("file");
 
@@ -41,15 +39,13 @@ function EnquireForm({ handleSubmit }) {
       if (res == false) throw "error";
     } catch (e) {
       setError("Submission failed, please try again later.");
-    } finally {
-      setLoading(false);
     }
   };
 
   return (
     <>
       {submitted ? (
-        <div className="contact_form submit_success colc">
+        <div className="submit_success colc">
           <Image src={Check} alt="Success check icon" />
           <strong>Thank You</strong>
           <p className="urban_text">
@@ -58,37 +54,53 @@ function EnquireForm({ handleSubmit }) {
           </p>
         </div>
       ) : (
-        <form action={onSubmit} className="contact_form col">
-          {error && <div className="errormessage">{error}</div>}
-          <select name="userType" required>
-            <option value="Prospective Client">
-              I am a Prospective Client
-            </option>
-            <option value="Media Prospect">I am a Media Prospect</option>
-            <option value="Career Explorer">I am a Career Explorer</option>
-            <option value="Investor">I am an Investor</option>
-          </select>
+        <>
+          <h1>Say Hello to us!</h1>
+          <p className="urban_text">
+            Let’s talk business or just have a coffee. We would love to hear
+            from you!
+          </p>
+          <br />
 
-          <select name="enquiryType" required>
-            <option value="General Enquiries">General Enquiries</option>
-            <option value="Media Enquiries">Media Enquiries</option>
-            <option value="Job Application">Job Application</option>
-            <option value="Investors Relations">Investors Relations</option>
-          </select>
+          <hr />
+          <br />
+          <form action={onSubmit} className="contact_form">
+            {error && <div className="errormessage">{error}</div>}
+            <select name="userType" required>
+              <option value="Prospective Client">
+                I am a Prospective Client
+              </option>
+              <option value="Media Prospect">I am a Media Prospect</option>
+              <option value="Career Explorer">I am a Career Explorer</option>
+              <option value="Investor">I am an Investor</option>
+            </select>
 
-          <input name="name" type="text" placeholder="Name" required />
-          <input name="email" type="text" placeholder="Email" required />
-          <input
-            name="phone"
-            type="text"
-            placeholder="Mobile Number"
-            required
-          />
-          <input name="file" type="file" placeholder="Attach Resume" />
-          <textarea name="message" placeholder="Message" required></textarea>
+            <select name="enquiryType" required>
+              <option value="General Enquiries">General Enquiries</option>
+              <option value="Media Enquiries">Media Enquiries</option>
+              <option value="Job Application">Job Application</option>
+              <option value="Investors Relations">Investors Relations</option>
+            </select>
 
-          <SubmitBtn />
-        </form>
+            <input name="name" type="text" placeholder="Name" required />
+            <input name="email" type="text" placeholder="Email" required />
+            <input
+              name="phone"
+              type="text"
+              placeholder="Mobile Number"
+              required
+            />
+            <input name="file" type="file" placeholder="Attach Resume" />
+            <textarea
+              name="message"
+              placeholder="Message"
+              required
+              style={{ gridColumn: "1/3" }}
+            ></textarea>
+
+            <SubmitBtn />
+          </form>
+        </>
       )}
     </>
   );

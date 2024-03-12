@@ -1,5 +1,8 @@
 {
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/(main-pages)/enquire/page": "app/(main-pages)/enquire/page.js",
   "/(main-pages)/home/page": "app/(main-pages)/home/page.js",
-  "/(main-pages)/brands/our-brands/page": "app/(main-pages)/brands/our-brands/page.js",
-  "/(main-pages)/brands/parenting-playbook/page": "app/(main-pages)/brands/parenting-playbook/page.js"
+  "/(main-pages)/brands/parenting-playbook/page": "app/(main-pages)/brands/parenting-playbook/page.js",
+  "/(main-pages)/mediahub/[...news]/page": "app/(main-pages)/mediahub/[...news]/page.js",
+  "/(main-pages)/mediahub/page": "app/(main-pages)/mediahub/page.js"
 }

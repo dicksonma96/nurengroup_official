@@ -1,72 +1,94 @@
 .enquire {
-  background-color: #f9f5f4;
-  .enquire_banner {
-    position: relative;
-    padding-bottom: 50px;
-    img {
-      margin: 0 auto;
-      width: 80%;
-      max-width: 1500px;
-    }
-    h1 {
-      position: absolute;
-      left: 50%;
-      top: 20%;
-      transform: translateX(-50%);
-      color: #937e88;
-      font-size: clamp(20px, 12vw, 150px);
-      line-height: 100%;
-    }
-  }
-
+  background-color: #463157;
+  padding-bottom: 100px;
+  min-height: 850px;
   .enquire_content {
-    flex: 1;
-    background-color: white;
-    .addresses {
-      flex: 1;
-      background-color: red;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      .address {
-        padding: 10%;
+    background-color: #281323;
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
 
-        strong {
-          color: #f25075;
-          font-size: 30px;
-        }
-        .addr {
-          color: black;
-          width: 100%;
-          max-width: 400px;
-          font-size: 20px;
-          font-weight: bold;
-        }
-        .phone {
-          color: #f25075;
-          font-weight: bold;
-          margin-top: 25px;
-        }
+    * {
+      z-index: 2;
+    }
+
+    h1 {
+      font-size: 50px;
+    }
+    hr {
+      opacity: 0.1;
+      z-index: 1;
+      width: 50%;
+    }
+    p {
+      font-size: 15px;
+      opacity: 0.5;
+    }
+
+    .map {
+      position: absolute;
+      right: -2%;
+      top: -5%;
+      height: 100%;
+      z-index: 1;
+
+      img {
+        height: 120%;
+        z-index: 1;
+      }
+
+      .pin {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        z-index: 2;
+        justify-content: center;
+      }
+
+      .pin1,
+      .pin2,
+      .pin3 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        background-color: rgba(#f25075, 0.3);
+        animation: blinking 1s infinite;
+      }
+      .pin2 {
+        width: 80%;
+        height: 80%;
+        background-color: rgba(#f25075, 0.5);
+        animation: blinking 1s infinite 0.5s;
+      }
+      .pin3 {
+        width: 40%;
+        height: 40%;
+        background-color: rgba(#f25075, 1);
+        animation: none;
       }
     }
   }
+
   .contact_form {
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 20px;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    row-gap: 20px;
     input,
     select,
     textarea {
-      width: 90%;
-      max-width: 500px;
-      background: white;
-      border: solid 2px black;
-      border-radius: 5px;
+      border: none;
+      border-radius: 3px;
+      background-color: #1c0617;
       padding: 10px;
+      color: white;
       font-size: 15px;
-      margin: 10px 0;
-      color: black;
-      font-weight: bold;
     }
     button {
       background-color: #f25075;
@@ -74,8 +96,7 @@
       border-radius: 5px;
       padding: 10px;
       font-size: 15px;
-      width: 90%;
-      max-width: 500px;
+      width: 100%;
       margin-top: 20px;
       border: none;
     }
@@ -93,14 +114,25 @@
     }
   }
   .submit_success {
-    color: black;
+    color: white;
     text-align: center;
     font-size: 20px;
     img {
-      width: 200px;
+      width: 150px;
     }
     strong {
       font-size: 40px;
     }
+  }
+}
+
+@keyframes blinking {
+  from {
+    opacity: 1;
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1.1);
+    opacity: 0.5;
   }
 }

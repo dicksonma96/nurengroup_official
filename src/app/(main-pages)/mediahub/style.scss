@@ -85,8 +85,8 @@
           height: 100%;
           padding: 20px;
           align-items: flex-start;
-          background: linear-gradient(transparent, rgba(0, 0, 0, 0.3), black);
-          backdrop-filter: blur(1px);
+          background: rgba(0, 0, 0, 0.6);
+          backdrop-filter: blur(2px);
           transition: 0.3s;
           color: white;
 
@@ -111,7 +111,7 @@
         &:hover {
           .overlay {
             top: 0;
-            background-color: rgba(0, 0, 0, 0.6);
+            background-color: rgba(0, 0, 0, 0.8);
 
             strong {
               -webkit-line-clamp: 3;

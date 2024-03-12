@@ -1,8 +1,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import { useFormStatus } from "react-dom";
 
-function InfoForm() {
-  const [loading, setLoading] = useState(false);
+function InfoForm({ handleSubmit }) {
   const [error, setError] = useState(null);
   const [lock, setLock] = useState(true);
 
@@ -13,50 +13,43 @@ function InfoForm() {
     }
   }, []);
 
-  const handleSubmit = async (e) => {
+  const onSubmit = async (e) => {
     try {
       setError(null);
-      setLoading(true);
-      let res = await fetch(
-        "https://login.nuren.co/api/lead/collect_data_form",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            name: e.get("name"),
-            phone: e.get("phone"),
-            email: e.get("email"),
-          }),
-        }
-      );
-      let resJson = await res.json();
-      localStorage.setItem("nurengroup_unlock", true);
-      setLock(false);
+      let res = await handleSubmit(e);
+      if (res.ok) {
+        setLock(false);
+        localStorage.setItem("nurengroup_unlock", true);
+      } else throw res.message;
     } catch (e) {
-      setError(e.message);
-    } finally {
-      setLoading(false);
+      setError(e);
     }
   };
 
   return lock ? (
     <div className="pdf_blocker colc">
-      <form className="colc" action={handleSubmit}>
+      <form className="colc" action={onSubmit}>
         <span>Fill in our quick form to view full insights!</span>
         <br />
         {error && <div className="error_msg">{error}</div>}
         <input type="text" name="name" placeholder="Name" required />
         <input type="text" name="phone" placeholder="Phone" required />
         <input type="text" name="email" placeholder="Email" required />
-        <button type="submit" disabled={loading}>
-          {loading ? "Submiting..." : "Unlock Now"}
-        </button>
+        <SubmitBtn />
       </form>
     </div>
   ) : (
     <></>
+  );
+}
+
+function SubmitBtn() {
+  const { pending } = useFormStatus();
+
+  return (
+    <button type="submit" disabled={pending}>
+      {pending ? "Submiting..." : "Unlock Now"}
+    </button>
   );
 }
 
