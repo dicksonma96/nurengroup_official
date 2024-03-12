@@ -1,5 +1,5 @@
 export default [
-  { label: "Mediahub", href: "/media-hub", newTab: false },
+  { label: "Mediahub", href: "/mediahub", newTab: false },
   { label: "Enquiry", href: "/enquire", newTab: false },
   {
     label: "Supermums Survey",

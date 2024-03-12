@@ -29,13 +29,6 @@ function OurBrands() {
             initiatives designed to support and empower mothers, fathers, and
             caregivers on their extraordinary journey.
           </p>
-          <Link
-            className="download_btn"
-            href={AssetPath("Supermums+Survey+2023.pdf")}
-            target="_blank"
-          >
-            Download Parenting Playbook
-          </Link>
         </div>
         <div className="abstract"></div>
       </section>

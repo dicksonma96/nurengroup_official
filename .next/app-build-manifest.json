@@ -1,5 +1,11 @@
 {
   "pages": {
+    "/(main-pages)/home/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(main-pages)/home/page.css",
+      "static/chunks/app/(main-pages)/home/page.js"
+    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -12,28 +18,17 @@
       "static/css/app/(main-pages)/layout.css",
       "static/chunks/app/(main-pages)/layout.js"
     ],
-    "/(main-pages)/home/page": [
+    "/(main-pages)/brands/our-brands/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(main-pages)/home/page.css",
-      "static/chunks/app/(main-pages)/home/page.js"
+      "static/css/app/(main-pages)/brands/our-brands/page.css",
+      "static/chunks/app/(main-pages)/brands/our-brands/page.js"
     ],
-    "/(main-pages)/enquire/page": [
+    "/(main-pages)/brands/parenting-playbook/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(main-pages)/enquire/page.css",
-      "static/chunks/app/(main-pages)/enquire/page.js"
-    ],
-    "/(main-pages)/media-hub/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(main-pages)/media-hub/page.js"
-    ],
-    "/(main-pages)/media-hub/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(main-pages)/media-hub/layout.css",
-      "static/chunks/app/(main-pages)/media-hub/layout.js"
+      "static/css/app/(main-pages)/brands/parenting-playbook/page.css",
+      "static/chunks/app/(main-pages)/brands/parenting-playbook/page.js"
     ]
   }
 }

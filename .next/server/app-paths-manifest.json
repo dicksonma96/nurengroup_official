@@ -1,5 +1,5 @@
 {
   "/(main-pages)/home/page": "app/(main-pages)/home/page.js",
-  "/(main-pages)/enquire/page": "app/(main-pages)/enquire/page.js",
-  "/(main-pages)/media-hub/page": "app/(main-pages)/media-hub/page.js"
+  "/(main-pages)/brands/our-brands/page": "app/(main-pages)/brands/our-brands/page.js",
+  "/(main-pages)/brands/parenting-playbook/page": "app/(main-pages)/brands/parenting-playbook/page.js"
 }

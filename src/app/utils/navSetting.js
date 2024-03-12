@@ -29,6 +29,14 @@ export const menu = [
         label: "Our Brands",
         path: "/our-brands",
       },
+      {
+        label: "Parenting Playbook",
+        path: "/parenting-playbook",
+      },
+      {
+        label: "Supermums Survey",
+        path: "/supermums-survey",
+      },
     ],
   },
   {
