@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import localFont from "next/font/local";
@@ -12,6 +12,11 @@ const gothamFont = localFont({
 
 function GlobalClient({ children }) {
   const pathname = usePathname();
+  const [logged, setLogged] = useState(false);
+
+  useEffect(() => {
+    setLogged(localStorage.getItem("nurengroup_dev"));
+  }, []);
   return (
     <AnimatePresence mode="wait">
       <body>
@@ -35,9 +40,40 @@ function GlobalClient({ children }) {
           </div>
         </motion.div>
 
-        {children}
+        {logged ? children : <DevProtection setLogged={setLogged} />}
       </body>
     </AnimatePresence>
+  );
+}
+
+function DevProtection({ setLogged }) {
+  const password = "Nuren1234%";
+  const inputRef = useRef(null);
+  const [error, setError] = useState(false);
+  const handleSubmit = () => {
+    if (inputRef.current.value == password) {
+      localStorage.setItem("nurengroup_dev", "true");
+      setLogged(true);
+    } else setError(true);
+  };
+
+  return (
+    <div className="protection colc">
+      <strong>Nurengroup Admin</strong>
+      {error && <span>Incorrect Password!</span>}
+      <input
+        onChange={() => setError(false)}
+        onKeyDown={(e) => {
+          if (e.key === "Enter") {
+            handleSubmit();
+          }
+        }}
+        ref={inputRef}
+        type="password"
+        placeholder="Password"
+      />
+      <button onClick={handleSubmit}>SIGN IN</button>
+    </div>
   );
 }
 

@@ -93,6 +93,49 @@ body {
   color: #f25075;
 }
 
+.protection {
+  justify-content: center;
+  height: 100vh;
+  strong {
+    color: black;
+    margin-bottom: 20px;
+  }
+  span {
+    background-color: #ffdddd;
+    border: solid 1px #db0d0d;
+    color: #db0d0d;
+    font-size: 15px;
+    width: 90%;
+    max-width: 300px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  input {
+    border: 1px solid #dcdcdc;
+    border-radius: 3px;
+    background-color: white;
+    padding: 10px;
+    width: 90%;
+
+    max-width: 300px;
+    color: black;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  button {
+    max-width: 300px;
+    background-color: #f25075;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    width: 90%;
+
+    border: none;
+  }
+}
+
 /**
  * ----------------------------------------
  * animation puff-in-center
