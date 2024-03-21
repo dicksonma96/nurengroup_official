@@ -32,7 +32,6 @@ function FounderAndChairman() {
         <VerticalCarousel imgs={imgs2} />
       </div>
       <div className="content colc">
-        <div style={{ height: "10vh", minHeight: "120px" }}></div>
         <div className="ppl_row rowc" style={{ justifyContent: "flex-start" }}>
           <h1>CHAIRMAN</h1>
           <Link
@@ -78,7 +77,7 @@ function FounderAndChairman() {
 
 function VerticalCarousel({ imgs, reverse = false }) {
   return (
-    <div className="carousel colc">
+    <div className={`carousel colc ${reverse ? "carousel2" : ""}`}>
       {imgs.map((img, index) => (
         <img
           src={img}

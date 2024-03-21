@@ -46,6 +46,9 @@ function Header() {
         className={`navbar rowc ${isOpen || OnTop ? "" : "header_top"} ${
           isOpen || OnTop ? "" : ScrollDirection
         }`}
+        style={{
+          background: isOpen ? "#282127" : OnTop ? "transparent" : "white",
+        }}
       >
         <Link href="/home" className="logo rowc">
           <Image src={Logo} alt="Nuren group" />

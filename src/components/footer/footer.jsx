@@ -29,7 +29,7 @@ function Footer() {
 
       <div className="bottom_row rowc">
         <Image className="logo" src={Logo} alt="NurenGroup logo" />
-        <div className="col">
+        <div className="col f_middle">
           <nav className="rowc">
             {menu.map((link, index) => (
               <Link key={index} className="urban_text" href={link.path}>
@@ -39,7 +39,7 @@ function Footer() {
           </nav>
           <footer className="urban_text">{footer_copywriting}</footer>
         </div>
-        <div className="col">
+        <div className="col f_right">
           <div className="sm rowc">
             {social_medias.map((sm, index) => (
               <Link key={index} href={sm.link} className="rowc" target="_blank">

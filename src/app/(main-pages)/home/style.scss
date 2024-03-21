@@ -77,7 +77,6 @@
 
   .snapshot {
     scroll-snap-align: start;
-
     background: url("https://media.nurengroup.com/About/snapshot_bg.jpg");
     background-size: cover;
     position: relative;
@@ -90,7 +89,7 @@
       left: 10%;
       width: 80%;
       max-width: 1000px;
-      font-size: 3vmin;
+      font-size: clamp(15px, 3vmin, 35px);
       color: white;
       h1 {
         white-space: nowrap;
@@ -123,13 +122,15 @@
   }
   .description {
     scroll-snap-align: start;
-
     .des_item {
       background-color: #f4af67;
       padding: 5vmin;
+      flex: 1;
+      justify-content: center;
       p {
+        width: 90%;
         color: white;
-        font-size: 2.5vmin;
+        font-size: clamp(15px, 3vmin, 35px);
       }
     }
   }
@@ -164,8 +165,9 @@
       }
     }
     .stroke_text {
-      text-shadow: 1px 1px 0 #44394d, -1px -1px 0 #44394d, 1px -1px 0 #44394d,
-        -1px 1px 0 #44394d, 1px 1px 0 #44394d;
+      // text-shadow: 1px 1px 0 #44394d, -1px -1px 0 #44394d, 1px -1px 0 #44394d,
+      //   -1px 1px 0 #44394d, 1px 1px 0 #44394d;
+      text-shadow: 1px 1px #44394d;
     }
     .womens_model {
       align-self: flex-end;
@@ -194,7 +196,7 @@
     align-items: center;
 
     p {
-      font-size: 2.5vmin;
+      font-size: clamp(15px, 3vmin, 35px);
       width: 80%;
       color: white;
     }
@@ -235,11 +237,12 @@
     }
     .cards {
       align-self: center;
-      width: 60%;
+      width: 90%;
+      max-width: 1500px;
       gap: 0.5vmin;
       p {
         margin-right: 5%;
-        font-size: 2.5vmin;
+        font-size: clamp(15px, 3vmin, 35px);
         color: black;
         font-weight: 500;
       }
@@ -267,7 +270,7 @@
         }
         .desc {
           color: black;
-          font-size: 2.5vmin;
+          font-size: clamp(15px, 3vmin, 30px);
           padding: 0 2vmin;
         }
       }
@@ -322,5 +325,57 @@
     -webkit-transform-origin: bottom;
     transform-origin: bottom;
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .about {
+    .landing {
+      .mobile_hide {
+        display: none !important;
+      }
+    }
+
+    .snapshot {
+      .snapshot_abstract {
+        height: 60vh;
+        opacity: 0.5;
+      }
+    }
+    .description {
+      flex-direction: column;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .about {
+    .stay_mission {
+      .cards {
+        position: relative;
+        padding-top: 50px;
+        gap: 10px;
+        flex-direction: column;
+        p {
+          position: absolute;
+          top: 0;
+          left: 0;
+          text-align: center;
+          width: 100%;
+        }
+        .card {
+          flex-direction: row;
+          .top {
+            img {
+              border-radius: 0.5vmin;
+              width: 100px;
+            }
+          }
+          .desc {
+            padding: 1vmin 2vmin;
+          }
+        }
+      }
+    }
   }
 }

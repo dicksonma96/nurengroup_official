@@ -16,9 +16,12 @@
         h1 {
           font-size: 6vmin;
           color: white;
+          line-height: 100%;
+          margin-bottom: 3vmin;
         }
         p {
-          font-size: 2.5vmin;
+          font-size: clamp(15px, 3vmin, 35px);
+
           width: 100%;
           max-width: 700px;
           color: white;
@@ -36,6 +39,22 @@
       }
       .square {
         width: 20%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .leadership {
+    .leadership_grid {
+      .grid_row {
+        flex-direction: column;
+        img {
+          width: 100%;
+        }
+        .square {
+          display: none;
+        }
       }
     }
   }

@@ -68,7 +68,7 @@ export default function Landing() {
             <LandingLogo />
           </div>
 
-          <GridImage src={AssetPath("Landing/9.jpg")} />
+          <GridImage className="mobile_hide" src={AssetPath("Landing/9.jpg")} />
         </div>
         <div className="grid_row row">
           <GridBox color="pink" style={{ flex: 2 }} />
@@ -87,10 +87,10 @@ function GetRandomSpeed() {
   return speed[Math.floor(Math.random() * speed.length)];
 }
 
-function GridImage({ src, style }) {
+function GridImage({ src, style, className = "" }) {
   return (
     <div
-      className="grid_image rowc"
+      className={`grid_image rowc ${className}`}
       style={{ ...style, animationDelay: `${GetRandomSpeed()}s` }}
     >
       <img className="grayscale" src={src} />

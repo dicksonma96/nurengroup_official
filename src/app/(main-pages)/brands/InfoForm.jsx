@@ -29,7 +29,9 @@ function InfoForm({ handleSubmit }) {
   return lock ? (
     <div className="pdf_blocker colc">
       <form className="colc" action={onSubmit}>
-        <span>Fill in our quick form to view full insights!</span>
+        <span style={{ textAlign: "center" }}>
+          Fill in our quick form to view full insights!
+        </span>
         <br />
         {error && <div className="error_msg">{error}</div>}
         <input type="text" name="name" placeholder="Name" required />
