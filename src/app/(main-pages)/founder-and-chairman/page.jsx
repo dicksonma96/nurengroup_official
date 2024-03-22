@@ -35,7 +35,7 @@ function FounderAndChairman() {
         <div className="ppl_row rowc" style={{ justifyContent: "flex-start" }}>
           <h1>CHAIRMAN</h1>
           <Link
-            href="/home/board-of-directors/details#prof_drwong"
+            href="/board-of-directors/details#prof_drwong"
             className="avatar colc"
           >
             <img
@@ -52,7 +52,7 @@ function FounderAndChairman() {
           style={{ justifyContent: "flex-end", alignItems: "flex-end" }}
         >
           <Link
-            href="/home/board-of-directors/details#petrina_goh"
+            href="/board-of-directors/details#petrina_goh"
             className="avatar colc"
           >
             <img

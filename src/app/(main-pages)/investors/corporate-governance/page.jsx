@@ -19,7 +19,7 @@ function CorperateGovernance() {
           <h2>COMMITTE CHARTERS</h2>
           <div className="links">
             {committee_charters.map((link, index) => (
-              <Link key={index} href={"corperate-governance/" + link.slug}>
+              <Link key={index} href={"corporate-governance/" + link.slug}>
                 {link.label}
               </Link>
             ))}
@@ -29,7 +29,7 @@ function CorperateGovernance() {
           <h2>CORPORATE GOVERNANCE DOCUMENTS</h2>
           <div className="links">
             {governance_docs.map((link, index) => (
-              <Link key={index} href={"corperate-governance/" + link.slug}>
+              <Link key={index} href={"corporate-governance/" + link.slug}>
                 {link.label}
               </Link>
             ))}

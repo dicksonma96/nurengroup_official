@@ -9,7 +9,9 @@ function Leadership() {
         <div className="banner_content col">
           <img src={AssetPath("Leadership/banner.jpg")} alt="" />
           <div className="text row">
-            <h1>LEADERSHIP</h1>
+            <h1>
+              LEADERSHIP <br /> TEAM
+            </h1>
             <p>
               At Nuren Group, our leadership team of managers play a crucial
               role in driving performance. Through their visionary leadership

@@ -17,7 +17,7 @@ export const menu = [
       },
       {
         label: "Leadership Team",
-        abs_path: "/leadership",
+        abs_path: "/leadership-team",
       },
     ],
   },
@@ -41,11 +41,11 @@ export const menu = [
   },
   {
     label: "Investors",
-    path: "/investors/corperate-governance",
+    path: "/investors/corporate-governance",
     subMenu: [
       {
-        label: "Corperate Governance",
-        path: "/corperate-governance",
+        label: "Corporate Governance",
+        path: "/corporate-governance",
       },
     ],
   },
@@ -65,7 +65,7 @@ export const menu = [
   // },
   {
     label: "Contact Us",
-    path: "/enquire",
+    path: "/enquiry",
     subMenu: [
       {
         label: "Enquiry",
