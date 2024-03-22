@@ -3,6 +3,7 @@ import "./style.scss";
 import { AppContextProvider } from "./context";
 import GlobalClient from "./globalClient";
 import { Jost, Urbanist } from "next/font/google";
+import Footer from "@/components/footer";
 
 export const jost = Jost({
   subsets: ["latin"],

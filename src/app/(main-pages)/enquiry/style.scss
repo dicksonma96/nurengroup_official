@@ -43,6 +43,7 @@
       img {
         height: 120%;
         z-index: 1;
+        filter: brightness(120%);
       }
 
       .pin {
@@ -74,6 +75,26 @@
         height: 40%;
         background-color: rgba(#f25075, 1);
         animation: none;
+      }
+    }
+  }
+
+  .addresses {
+    background-color: #281323;
+    width: 95%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 10px;
+    flex-wrap: wrap;
+
+    .address {
+      flex: 1;
+      min-width: 300px;
+      padding: 30px;
+      color: rgba(255, 255, 255, 0.5);
+      strong {
+        color: white;
+        margin-bottom: 10px;
       }
     }
   }
@@ -111,8 +132,6 @@
       border: solid 1px #db0d0d;
       color: #db0d0d;
       font-size: 15px;
-      width: 90%;
-      max-width: 500px;
       border-radius: 5px;
       padding: 10px;
       margin-bottom: 10px;

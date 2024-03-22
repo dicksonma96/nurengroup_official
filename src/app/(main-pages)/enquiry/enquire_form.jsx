@@ -3,13 +3,17 @@ import { useState } from "react";
 import SubmitBtn from "./submit_btn";
 import Image from "next/image";
 import Check from "../../../assets/img/icon/check.svg";
+import ReCAPTCHA from "react-google-recaptcha";
 
-function EnquireForm({ handleSubmit }) {
+function EnquireForm({ handleSubmit, captcha_sitekey }) {
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(null);
+  const [captcha, setCaptcha] = useState(null);
 
   const onSubmit = async (e) => {
     try {
+      if (captcha == null) throw "Recaptcha not verified!";
+
       setError(null);
       let formData = e;
       let file = formData.get("file");
@@ -38,7 +42,7 @@ function EnquireForm({ handleSubmit }) {
       setSubmitted(res);
       if (res == false) throw "error";
     } catch (e) {
-      setError("Submission failed, please try again later.");
+      setError(e);
     }
   };
 
@@ -65,7 +69,11 @@ function EnquireForm({ handleSubmit }) {
           <hr />
           <br />
           <form action={onSubmit} className="contact_form">
-            {error && <div className="errormessage">{error}</div>}
+            {error && (
+              <div className="errormessage" style={{ gridColumn: "1 / 3" }}>
+                {error}
+              </div>
+            )}
             <select name="userType" required>
               <option value="Prospective Client">
                 I am a Prospective Client
@@ -97,7 +105,11 @@ function EnquireForm({ handleSubmit }) {
               required
               style={{ gridColumn: "1/3" }}
             ></textarea>
-
+            <ReCAPTCHA
+              sitekey={captcha_sitekey}
+              style={{ gridColumn: "1 / 3" }}
+              onChange={setCaptcha}
+            />
             <SubmitBtn />
           </form>
         </>

@@ -111,7 +111,7 @@
     }
   }
   .person_detail {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     position: relative;
     overflow: hidden;
@@ -136,8 +136,7 @@
       flex: 1;
 
       img {
-        height: 80%;
-        width: auto;
+        width: 50%;
         margin-top: auto;
         z-index: 2;
       }
@@ -164,9 +163,9 @@
       z-index: 2;
       flex: 1;
       padding: 5vmin;
-      overflow: auto;
-      font-size: clamp(15px, 4vmin, 30px);
+      font-size: clamp(15px, 4vmin, 20px);
       color: white;
+      align-self: flex-end;
     }
   }
 }

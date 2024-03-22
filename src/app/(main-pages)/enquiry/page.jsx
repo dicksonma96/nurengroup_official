@@ -4,6 +4,8 @@ import EnquireForm from "./enquire_form";
 import nodemailer from "nodemailer";
 
 function Enquire() {
+  const sitekey = process.env.CAPTCHA_SITEKEY;
+
   const handleSubmit = async (event) => {
     "use server";
     let formData = event;
@@ -75,7 +77,7 @@ function Enquire() {
   return (
     <main className="enquire section col">
       <div className="enquire_content col">
-        <EnquireForm handleSubmit={handleSubmit} />
+        <EnquireForm handleSubmit={handleSubmit} captcha_sitekey={sitekey} />
         <div className="map rowc">
           <Pin style={{ left: "33%", top: "20%" }} delay={0.2} />
           <Pin style={{ left: "32%", top: "31%" }} delay={0} />
@@ -83,6 +85,26 @@ function Enquire() {
           <Pin style={{ right: "16%", bottom: "4%" }} delay={0.2} />
 
           <img src={AssetPath("Other/map.png")} alt="" />
+        </div>
+      </div>
+      <div className="addresses row">
+        <div className="address col">
+          <strong>Australia Office:</strong>
+          Level 16, 414 La Trobe Street, <br /> Melbourne VIC 3000, Australia.
+        </div>
+        <div className="address col">
+          <strong>Malaysia Office:</strong>
+          H-89-1, Jaya One, 72A Jln Profesor Diraja Ungku Aziz, <br /> 46200
+          Petaling Jaya, Selangor, Malaysia.
+        </div>
+        <div className="address col">
+          <strong>Thailand Office:</strong>
+          Unit 09, 23rd Floor, GMM Grammy Place, 50 Sukhumvit Rd (Asoke 21),
+          Khlong Toei Nuea, Watthana, <br /> Bangkok 10110, Thailand.
+        </div>
+        <div className="address col">
+          <strong>Singapore Office:</strong>
+          151 Chin Swee Road, #07-12 Manhattan House, <br /> Singapore 169876.
         </div>
       </div>
     </main>

@@ -1,8 +1,8 @@
 import ShareBtn from "./sharebtn";
 import mediaNews from "../../../../data/mediahub.json";
 import Link from "next/link";
-import Back from "../../../../assets/img/icon/back.svg";
-import Image from "next/image";
+
+import { BackBtn, BackOverlay } from "./backbtn";
 
 export async function generateMetadata({ params }) {
   const detail = mediaNews.news.find((info) => info.id == params.news[0]);
@@ -23,10 +23,7 @@ async function NewsDetail({ params }) {
     return (
       <div className="news_overlay">
         <div className="news_detail col">
-          <Link className="backbtn rowc" href={"/mediahub"}>
-            <Image src={Back} alt="" />
-            <span>Back</span>
-          </Link>
+          <BackBtn />
           <img src={detail.img} alt={detail.title} />
           <div className="news_content col">
             <div
@@ -56,7 +53,7 @@ async function NewsDetail({ params }) {
             </div>
           </div>
         </div>
-        <Link className="backoverlay" href={"/mediahub"}></Link>
+        <BackOverlay />
       </div>
     );
   } catch (e) {

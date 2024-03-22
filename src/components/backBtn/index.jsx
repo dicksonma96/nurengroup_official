@@ -10,7 +10,6 @@ function BackBtn(props) {
       style={{ cursor: "pointer" }}
       {...props}
       onClick={() => {
-        console.log(router);
         if (window.history?.length > 1) {
           router.back();
         } else {

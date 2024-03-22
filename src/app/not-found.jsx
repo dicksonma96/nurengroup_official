@@ -1,12 +1,15 @@
+import PageNotFound from "./pageNotFound";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 
-export default function MainLayout({ children }) {
+function NotFound() {
   return (
-    <>
+    <body>
       <Header />
-      {children}
+      <PageNotFound />
       <Footer />
-    </>
+    </body>
   );
 }
+
+export default NotFound;

@@ -1,4 +1,4 @@
-import "./style.scss";
+"use client";
 import Link from "next/link";
 import Logo from "../../assets/img/logo.svg";
 import Image from "next/image";
@@ -7,6 +7,7 @@ import AssetPath from "@/app/utils/assetpath";
 import social_medias from "@/app/utils/social_medias";
 import quicklinks from "@/app/utils/quicklinks";
 import footer_copywriting from "@/app/utils/footer_copywriting";
+import "./style.scss";
 
 function Footer() {
   return (
