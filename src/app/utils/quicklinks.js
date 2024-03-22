@@ -17,13 +17,13 @@ export default [
     newTab: true,
   },
   {
-    label: "Facebook",
+    label: "Motherhood Facebook",
     href: "https://www.facebook.com/motherhood.com.my",
     newTab: true,
   },
   {
-    label: "Tiktok",
-    href: "https://www.tiktok.com/@motherhood.com.my?_t=8kO7VXPD5JH&_r=1 ",
+    label: "Motherhood Tiktok",
+    href: "https://www.tiktok.com/@motherhood.com.my",
     newTab: true,
   },
   {
@@ -36,8 +36,56 @@ export default [
     href: "https://story.motherhood.com.my/ ",
     newTab: true,
   },
-  { label: "KelabMama", href: "https://www.kelabmama.com/ ", newTab: true },
-  { label: "Ibuencer", href: " https://www.ibuencer.com/ ", newTab: true },
+  {
+    label: "Care+ Malaysia",
+    href: "https://www.motherhood.com.my/care/",
+    newTab: true,
+  },
+  {
+    label: "Care+ 小红书",
+    href: "https://www.xiaohongshu.com/user/profile/6502662c0000000002010e22",
+    newTab: true,
+  },
+  {
+    label: "Care+ Instagram",
+    href: "https://www.instagram.com/motherhoodcare_/",
+    newTab: true,
+  },
+  {
+    label: "Care+ Tiktok",
+    href: "https://www.tiktok.com/@motherhoodcare",
+    newTab: true,
+  },
+  {
+    label: "KelabMama Malaysia",
+    href: "https://www.kelabmama.com/ ",
+    newTab: true,
+  },
+  {
+    label: "KelabMama Facebook",
+    href: "https://www.facebook.com/kelabmamamy/",
+    newTab: true,
+  },
+  {
+    label: "KelabMama Instagram",
+    href: "https://www.instagram.com/kelab_mama/?hl=en",
+    newTab: true,
+  },
+  {
+    label: "KelabMama Tiktok",
+    href: "https://www.tiktok.com/@kelab_mama",
+    newTab: true,
+  },
+  {
+    label: "Ibuencer Malaysia",
+    href: " https://www.ibuencer.com/ ",
+    newTab: true,
+  },
+  {
+    label: "Ibuencer Instagram",
+    href: "https://www.instagram.com/explore/tags/ibuencer/",
+    newTab: true,
+  },
   // { label: "Wedding Malaysia", href: "/" },
   {
     label: "New Mum Program",

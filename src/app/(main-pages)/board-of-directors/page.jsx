@@ -10,16 +10,23 @@ export const metadata = {
 
 function BOD() {
   return (
-    <section className="section bod col">
+    <section className="bod col">
       <div className="gridrow row">
         <div className="grid col">
           <h4 style={{ alignSelf: "flex-end", textAlign: "right" }}>
-            Chairman, <br /> Non Executive, <br /> Independent Director
+            Chairman, <br /> Non Executive Director
           </h4>
-          <h2>PROF DR WONG KONG YEW</h2>
+          <h2>Prof Dr K.Y. Wong</h2>
         </div>
-        <div className="grid col"></div>
-        <div className="grid col">
+        <div className="grid col" style={{ padding: 0 }}>
+          <Link
+            className="mobile_avatar rowc"
+            href="board-of-directors/details#prof_drwong"
+          >
+            <img src={AssetPath("BOD/prof-dr-wong.png")} />
+          </Link>
+        </div>
+        <div className="grid col hide_mobile">
           {/* <h2>
             KELVIN <br /> LEOW WEE KEAT
           </h2>
@@ -33,7 +40,7 @@ function BOD() {
             CTO, <br /> Executive Director
           </h4> */}
         </div>
-        <div className="grid col"></div>
+        <div className="grid col hide_mobile"></div>
       </div>
       <div className="middlerow rowc">
         <h1>BOARD OF DIRECTORS</h1>
@@ -51,26 +58,35 @@ function BOD() {
         </Link>
       </div>
       <div className="gridrow bottomrow row">
-        <div className="grid col"></div>
+        <div className="grid col" style={{ padding: 0 }}>
+          <Link
+            className="mobile_avatar rowc"
+            href="board-of-directors/details#leigh_zhang"
+          >
+            <img src={AssetPath("BOD/leigh-zhang.png")} />
+          </Link>
+        </div>
         <div className="grid col">
-          <h2>
-            LEIGH
-            <br />
-            ZHANG LI HUA
-          </h2>
+          <h2>Li Hua Zhang</h2>
           <h4 style={{ alignSelf: "flex-end", textAlign: "right" }}>
-            Non-Executive, <br />
-            Independent Director
+            Independent, <br />
+            Non-Executive Director
           </h4>
         </div>
 
-        <div className="grid col"></div>
+        <div className="grid col" style={{ padding: 0 }}>
+          <Link
+            className="mobile_avatar rowc"
+            href="board-of-directors/details#petrina_goh"
+          >
+            <img src={AssetPath("BOD/petrina-goh.png")} />
+          </Link>
+        </div>
         <div className="grid col">
           <h4 style={{ alignSelf: "flex-end", textAlign: "right" }}>
-            CEO, <br />
-            Executive Director
+            Group CEO, Founder, <br /> Executive Director
           </h4>
-          <h2>PETRINA GOH SHZEE YINN</h2>
+          <h2>Shze Yinn Goh</h2>
         </div>
       </div>
     </section>

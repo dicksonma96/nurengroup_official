@@ -90,15 +90,22 @@ function Menu({ setIsOpen }) {
                 {item.label}
               </Link>
               <div className="sublinks col">
-                {item.subMenu?.map((sub, index) => (
-                  <Link
-                    key={index}
-                    href={item.path.match(/\/\w+/)[0] + sub.path}
-                    onClick={() => setIsOpen(false)}
-                  >
-                    {sub.label}
-                  </Link>
-                ))}
+                {item.subMenu?.map((sub, index) => {
+                  let link = item.path.match(/\/\w+/)[0] + sub.path;
+                  if (sub.abs_path) {
+                    link = sub.abs_path;
+                  }
+
+                  return (
+                    <Link
+                      key={index}
+                      href={link}
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {sub.label}
+                    </Link>
+                  );
+                })}
               </div>
             </div>
           );

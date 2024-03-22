@@ -42,12 +42,9 @@ function FounderAndChairman() {
               src={AssetPath("FounderChairman/chairman.png")}
               alt="Chairman Dr Wong"
             />
-            <strong>
-              PROF DR WONG <br />
-              KONG YEW
-            </strong>
-            <span>Chairman, Non-executive</span>
-            <span>Independent Director</span>
+            <strong>Prof Dr K.Y. Wong</strong>
+            <span>Chairman,</span>
+            <span>Non-Executive Director</span>
           </Link>
         </div>
         <div
@@ -62,11 +59,9 @@ function FounderAndChairman() {
               src={AssetPath("FounderChairman/founder.png")}
               alt="Founder Petrina"
             />
-            <strong>
-              PETRINA GOH <br /> SHZE YINN
-            </strong>
-            <span>Founder, Chief Executive Officer,</span>
-            <span>Executive, Independent Director</span>
+            <strong>Shze Yinn Goh</strong>
+            <span>Founder, Group CEO,</span>
+            <span>Executive Director</span>
           </Link>
           <h1>FOUNDER</h1>
         </div>

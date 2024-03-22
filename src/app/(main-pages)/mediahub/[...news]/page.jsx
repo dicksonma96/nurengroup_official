@@ -21,7 +21,7 @@ async function NewsDetail({ params }) {
     const detail = mediaNews.news.find((info) => info.id == params.news[0]);
     const moreInfo = [...(detail.interview || []), ...(detail.article || [])];
     return (
-      <>
+      <div className="news_overlay">
         <div className="news_detail col">
           <Link className="backbtn rowc" href={"/mediahub"}>
             <Image src={Back} alt="" />
@@ -56,7 +56,8 @@ async function NewsDetail({ params }) {
             </div>
           </div>
         </div>
-      </>
+        <Link className="backoverlay" href={"/mediahub"}></Link>
+      </div>
     );
   } catch (e) {
     return <main className="mediahub col section">{JSON.stringify(e)}</main>;

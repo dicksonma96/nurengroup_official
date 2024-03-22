@@ -1,10 +1,26 @@
+"use client";
 import "./style.scss";
 import LandingLogo from "@/components/landing_logo";
 import AssetPath from "@/app/utils/assetpath";
+import { useEffect, useRef } from "react";
 
 export default function Landing() {
+  const landingRef = useRef(null);
+  useEffect(() => {
+    const activeLanding = () => {
+      landingRef.current.classList.add("landing_active");
+    };
+    if (landingRef && landingRef.current)
+      landingRef.current.addEventListener("mouseenter", activeLanding);
+
+    return () => {
+      if (landingRef && landingRef.current)
+        landingRef.current.removeEventListener("mouseenter", activeLanding);
+    };
+  }, [landingRef]);
+
   return (
-    <section className="landing row">
+    <section className="landing row" ref={landingRef}>
       <div className="grid_content">
         <div className="grid_row row">
           <GridImage src={AssetPath("Landing/1.jpg")} />

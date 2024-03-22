@@ -60,17 +60,16 @@
     .green {
       background-color: #00999e;
     }
-
-    &:hover {
-      .grid_row {
-        perspective: 50vw;
-        .grid_box:not(.landing_logo),
-        .grid_image {
-          -webkit-animation: swing-in-bottom-fwd 0.5s
-            cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
-          animation: swing-in-bottom-fwd 0.5s
-            cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
-        }
+  }
+  .landing_active {
+    .grid_row {
+      perspective: 50vw;
+      .grid_box:not(.landing_logo),
+      .grid_image {
+        -webkit-animation: swing-in-bottom-fwd 0.5s
+          cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+        animation: swing-in-bottom-fwd 0.5s
+          cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
       }
     }
   }
@@ -225,8 +224,9 @@
   }
 
   .stay_mission {
-    padding: 5%;
     padding-bottom: 0;
+    padding: 5% 0 0;
+
     h1 {
       font-size: 8vmin;
       margin: 1vmin 0;
@@ -240,6 +240,7 @@
       width: 90%;
       max-width: 1500px;
       gap: 0.5vmin;
+
       p {
         margin-right: 5%;
         font-size: clamp(15px, 3vmin, 35px);
@@ -279,11 +280,15 @@
       margin-top: 10vmin;
       justify-content: center;
       background-image: url("https://media.nurengroup.com/About/skyscraper.png");
+      background-size: auto 200px;
       background-repeat: repeat-x;
+      height: 200px;
+      width: 100%;
+      align-items: flex-end;
 
       .womens {
-        width: 80%;
-        max-width: 1000px;
+        width: 90%;
+        max-width: 900px;
         margin-bottom: -2px;
       }
     }

@@ -22,11 +22,11 @@ function About() {
             <p className="urban_text">
               <strong className="pink_text">Nuren Group </strong> is a leading
               Malaysian-based technology company, which is female-led and
-              VC-funded. We are the leading Digital Content provider, focusing
-              on parenting education, maternity wellness and women livelihood.
-              Our digital products include Motherhood.com.my, Kelabmama.com,
-              Ibuencer.com & the recently launched Motherhood Parenting
-              Superapp. To date, our community consist of 5,000+
+              VC-funded. We are the leading ecommerce & digital content
+              provider, focusing on parenting education, maternity wellness and
+              women livelihood. Our digital products include Motherhood.com.my,
+              Kelabmama.com, Ibuencer.com & the recently launched Motherhood
+              Parenting Superapp. To date, our community consist of 5,000+
               merchants/brands and 5 million+ active users across 3 countries
               (Malaysia, Singapore, Thailand).
             </p>
@@ -44,38 +44,35 @@ function About() {
             digital economy through technology adoption, as well as increasing
             digital export sales, by becoming the tech-enablers and superapp
             bridging the engagement between brands and our community across
-            Southeast Asia. We are committed to invest over USD30 million and
-            hire a minimum of 80 Malaysian knowledge workers who specialize in
-            AI, big data, digital media and ecommerce space.
+            Southeast Asia. We currently hire 50+ knowledge workers who
+            specialize in AI, big data, digital media and ecommerce space.
           </p>
         </div>
         <div className="des_item rowc" style={{ background: "#C84A67" }}>
           <p className="urban_text">
             Under the leadership of Petrina (CEO & Founder),{" "}
             <strong>Nuren Group</strong> is fortunate to have received backing &
-            support from corporates such as Gobi Partners, Malaysia Debt Venture
-            (MDV), 500 Startups and Innoven Capital. Throughout the years,
-            Petrina and the company has also received awards & recognitions such
-            as Southeast Asia Top 50 Rising Women in Tech 2021, Top 12 Best
-            Startup in Asia 2019, MVCA Outstanding Women Entrepreneur 2018,
-            APICTA Malaysia Award 2017, Inti Alumni Young Entrepreneur of the
-            Year Award 2016. We are also gearing for a NSX IPO in 2023 and
-            NASDAQ IPO in 2025.
+            support from corporates and venture capital firms. Throughout the
+            years, Petrina and the company has also received awards &
+            recognitions such as Southeast Asia Top 50 Rising Women in Tech
+            2021, Top 12 Best Startup in Asia 2019, MVCA Outstanding Women
+            Entrepreneur 2018, APICTA Malaysia Award 2017, Inti Alumni Young
+            Entrepreneur of the Year Award 2016.
           </p>
         </div>
       </section>
       <section className="groups col ">
         <div className="text col">
           <h1>
-            <span className="yellow">Education</span> &{" "}
-            <span className="green">Wellness</span>
+            <span className="yellow">Delivering</span> &{" "}
+            <span className="green">Maternity</span>
           </h1>
           <h1>
-            <span className="pink_bg">DELIVERING</span>
-            <span className="pink_text"> METERNITY</span>
+            <span className="pink_bg">Wellness</span>
+            <span className="pink_text"> Education</span>
           </h1>
           <h1 className="stroke_text">
-            CHILDREN <span className="purple">HEALTH</span>CARE
+            Children <span className="purple">Health</span>care
           </h1>
         </div>
         <img
@@ -106,13 +103,13 @@ function About() {
           LARGEST FEMALE COMMUNITY MARKETPLACE THAT EMPOWERS WOMEN AND CHILDREN
           TO THRIVE
         </p>
-        <h1>
-          VISION x <br /> MISSION
-        </h1>
+
+        <h1>VISION x MISSION</h1>
         <p className="urban_text" style={{ textAlign: "right" }}>
           BUILD AN INNOVATIVE, DATA AND AI DRIVEN PLATFORM THAT DELIVERS
           SUSTAINABLE, QUALITY HEALTHCARE AND EDUCATION TO OUR COMMUNITY.
         </p>
+
         <div className="tag  rowc">NUREN GROUP</div>
       </section>
       <section className="stay_mission col ">
@@ -120,7 +117,7 @@ function About() {
 
         <div className="cards row">
           <p className="urban_text">
-            Nuren Group is well positioned to support partners to:
+            Nuren Group is well positioned to support partners to
           </p>
 
           <div className="card col">

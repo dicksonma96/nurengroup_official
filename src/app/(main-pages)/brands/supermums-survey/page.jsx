@@ -1,5 +1,5 @@
 import React from "react";
-import PdfReader from "../PdfReader";
+import PdfReader from "../../../pdfReader/PdfReader";
 
 function SupermumSurvey() {
   return (

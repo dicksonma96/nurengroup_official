@@ -1,10 +1,12 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { useFormStatus } from "react-dom";
+import ReCAPTCHA from "react-google-recaptcha";
 
-function InfoForm({ handleSubmit }) {
+function InfoForm({ handleSubmit, captcha_sitekey }) {
   const [error, setError] = useState(null);
   const [lock, setLock] = useState(true);
+  const [captcha, setCaptcha] = useState(null);
 
   useEffect(() => {
     let status = localStorage.getItem("nurengroup_unlock");
@@ -15,6 +17,7 @@ function InfoForm({ handleSubmit }) {
 
   const onSubmit = async (e) => {
     try {
+      if (captcha == null) throw "Recaptcha not verified!";
       setError(null);
       let res = await handleSubmit(e);
       if (res.ok) {
@@ -37,6 +40,11 @@ function InfoForm({ handleSubmit }) {
         <input type="text" name="name" placeholder="Name" required />
         <input type="text" name="phone" placeholder="Phone" required />
         <input type="text" name="email" placeholder="Email" required />
+        <ReCAPTCHA
+          sitekey={captcha_sitekey}
+          onChange={setCaptcha}
+          style={{ alignSelf: "flex-end", marginBottom: "10px" }}
+        />
         <SubmitBtn />
       </form>
     </div>

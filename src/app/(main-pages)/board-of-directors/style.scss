@@ -1,5 +1,6 @@
 .bod {
-  height: 100vh;
+  padding-top: 90px;
+  min-height: 100vh;
   .gridrow {
     flex: 2;
     .grid {
@@ -10,14 +11,26 @@
       font-size: 2vh;
       color: white;
 
+      .mobile_avatar {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: auto;
+        display: none;
+        img {
+          width: 100%;
+          margin-top: 3vh;
+        }
+      }
+
       h2 {
-        font-size: 5vh;
+        font-size: clamp(30px, 5vmin, 50px);
         line-height: 110%;
         color: white;
       }
       h4 {
         font-weight: normal;
         color: white;
+        font-size: clamp(15px, 3vmin, 35px);
       }
 
       &:nth-child(2) {
@@ -40,9 +53,9 @@
       display: flex;
     }
     img {
-      height: 450px;
+      height: 40vmin;
       width: auto;
-      margin: 0 -2vw;
+      margin: 0 -5vmin;
       transform-origin: bottom;
       cursor: pointer;
       transition: 0.2s;
@@ -83,7 +96,8 @@
 }
 
 .bod_detail {
-  z-index: 999;
+  z-index: 1000;
+  position: relative;
   .backBtn {
     position: fixed;
     top: 4vmin;
@@ -100,6 +114,7 @@
     height: 100vh;
     width: 100vw;
     position: relative;
+    overflow: hidden;
 
     &::before {
       content: attr(data-name);
@@ -121,7 +136,8 @@
       flex: 1;
 
       img {
-        width: 70%;
+        height: 80%;
+        width: auto;
         margin-top: auto;
         z-index: 2;
       }
@@ -151,6 +167,69 @@
       overflow: auto;
       font-size: clamp(15px, 4vmin, 30px);
       color: white;
+    }
+  }
+}
+
+@media (orientation: portrait) {
+  .bod {
+    .gridrow {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      .grid {
+        .mobile_avatar {
+          display: flex;
+        }
+
+        &:nth-of-type(3) {
+          order: 3;
+        }
+      }
+      .hide_mobile {
+        display: none;
+      }
+    }
+
+    .middlerow {
+      height: auto;
+      img {
+        display: none;
+      }
+      h1 {
+        position: static;
+        font-size: 12vw;
+        padding: 5vw 0;
+        line-height: 100%;
+        color: #654f5a;
+        text-shadow: none;
+      }
+    }
+  }
+
+  .bod_detail {
+    .person_detail {
+      flex-direction: column;
+      height: auto;
+      padding-top: 100px;
+      &::before {
+        top: 5vh;
+      }
+
+      .left {
+        flex-direction: row;
+        justify-content: center;
+        align-items: end;
+        .title {
+          position: static;
+          width: auto;
+          padding: 0;
+        }
+        img {
+          width: 25vw;
+          margin-right: 5vw;
+          height: auto;
+        }
+      }
     }
   }
 }

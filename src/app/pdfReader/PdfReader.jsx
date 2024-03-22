@@ -3,6 +3,8 @@ import "./style.scss";
 import InfoForm from "./InfoForm";
 
 function PdfReader({ pdflink }) {
+  const sitekey = process.env.CAPTCHA_SITEKEY;
+
   const handleSubmit = async (e) => {
     "use server";
     try {
@@ -33,7 +35,7 @@ function PdfReader({ pdflink }) {
 
   return (
     <main className="pdf_viewer section">
-      <InfoForm handleSubmit={handleSubmit} />
+      <InfoForm handleSubmit={handleSubmit} captcha_sitekey={sitekey} />
       <iframe
         src={pdflink}
         width="100%"

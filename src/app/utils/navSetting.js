@@ -9,15 +9,15 @@ export const menu = [
       },
       {
         label: "Founder and Chairman",
-        path: "/founder-and-chairman",
+        abs_path: "/founder-and-chairman",
       },
       {
         label: "Board of Directors",
-        path: "/board-of-directors",
+        abs_path: "/board-of-directors",
       },
       {
-        label: "Leadership",
-        path: "/leadership",
+        label: "Leadership Team",
+        abs_path: "/leadership",
       },
     ],
   },
