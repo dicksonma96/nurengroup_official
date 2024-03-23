@@ -100,11 +100,12 @@
           }
 
           a {
-            border-radius: 3px;
             background-color: #f25075;
             color: white;
-            padding: 5px 10px;
+            padding: 5px 15px;
             margin-top: auto;
+            border-radius: 5px 20px 20px 5px;
+
             &:hover {
               background-color: #c42857;
             }
@@ -146,27 +147,36 @@
         color: white;
         margin-bottom: 10px;
         position: absolute;
-        left: -10px;
+        left: 5px;
         top: 30px;
         border-radius: 5px 20px 20px 0px;
+        cursor: pointer;
+        transition: 0.2s;
         img {
           width: 20px;
           margin: 0;
           margin-right: 5px;
+        }
+        span {
+          transition: 0.2s;
         }
         &::after {
           content: "";
           position: absolute;
           top: 100%;
           left: 0px;
-          width: 30px;
-          height: 5px;
+          width: 15px;
+          height: 8px;
           border-radius: 0 0 0 5px;
           background-color: #c42857;
+          transition: 0.2s;
         }
 
         &:hover {
           background-color: #c42857;
+          span {
+            padding-left: 5px;
+          }
         }
       }
       .news_content {

@@ -3,15 +3,16 @@ import "./style.scss";
 import { committee_charters, governance_docs } from "./docsInfo";
 import Link from "next/link";
 
+export const metadata = {
+  title:
+    "Corporate Governance | Nuren Group - Motherhood SuperApp, Kelabmama, Ibuencer",
+  description:
+    "Investor Relations & Corporate Governance. Nuren Group provides parenting education and maternity wellness services",
+};
+
 function CorperateGovernance() {
   return (
     <main className="section governance col">
-      {/* <div className="governance_banner">
-        <div className="content col">
-          <h1>INVESTMENT & GOVERNANCE</h1>
-        </div>
-        <div className="abstract"></div>
-      </div> */}
       <div className="governance_content colc">
         <h1>INVESTMENT & GOVERNANCE</h1>
 

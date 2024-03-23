@@ -2,6 +2,13 @@ import "./style.scss";
 import AssetPath from "@/app/utils/assetpath";
 import Landing from "./landing";
 
+export const metadata = {
+  title:
+    "Nuren Group | Empower Women in Parenting, Education & Maternity Wellness",
+  description:
+    "Nuren Group is a digital media company & service provider in parenting education, maternity wellness and women livelihood.",
+};
+
 function About() {
   return (
     <main className="about">
@@ -15,7 +22,7 @@ function About() {
         />
         <div className="text col">
           <h1>SNAPSHOT OF</h1>
-          <h1 className="pink_text">NUREN Group</h1>
+          <h1 className="pink_text">NUREN GROUP</h1>
           <div className="bottom col">
             <div className="tag  rowc">NUREN GROUP</div>
 

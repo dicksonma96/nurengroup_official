@@ -4,8 +4,8 @@ import BackBtn from "@/components/backBtn";
 
 export async function generateMetadata() {
   return {
-    title: "PROF DR WONG KONG YEW",
-    description: "NurenGroup | Chairman, Non-Executive | Independent Director",
+    title: "PROF DR KONG YEW WONG",
+    description: "NurenGroup | Chairman, Non-Executive Director",
     openGraph: {
       images: [AssetPath("BOD/prof-dr-wong.png")],
     },
@@ -27,7 +27,7 @@ function DrWong() {
           <img src={AssetPath("BOD/prof-dr-wong.png")} alt="Prof Dr Wong" />
           <div className="title col">
             <strong>Prof Dr K.Y. Wong</strong>
-            <span className="urban_text">Chairman, Non-Executive</span>
+            <span className="urban_text">Chairman, Non-Executive Director</span>
           </div>
         </div>
 
@@ -56,7 +56,7 @@ function DrWong() {
         id="leigh_zhang"
         className="person_detail row "
         style={{ background: "#442F55" }}
-        data-name="LEIGH ZHANG LI HUA"
+        data-name="LI HUA ZHANG"
       >
         <div className="left colc">
           <img src={AssetPath("BOD/leigh-zhang.png")} alt="Leigh Zhang" />
@@ -140,13 +140,11 @@ function DrWong() {
         data-name="PETRINA GOH SHZE YINN"
       >
         <div className="left colc">
-          <img src={AssetPath("BOD/petrina-goh.png")} alt="Petrina Goh" />
+          <img src={AssetPath("BOD/petrina-goh.png")} alt="Shze Yinn Goh" />
           <div className="title col">
             <strong>Shze Yinn Goh</strong>
-            <span className="urban_text">
-              Founder, Chief Executive Officer,
-            </span>
-            <span className="urban_text">Executive, Independent Director</span>
+            <span className="urban_text">Group CEO, Founder,</span>
+            <span className="urban_text">Executive Director</span>
           </div>
         </div>
 

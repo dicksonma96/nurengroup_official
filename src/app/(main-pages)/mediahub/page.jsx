@@ -1,5 +1,8 @@
-import { promises as fs } from "fs";
-import NewsItem from "./newsItem";
+export const metadata = {
+  title: "Newsroom | Nuren Group - Motherhood SuperApp, Kelabmama, Ibuencer",
+  description:
+    "Newsroom - Media & Press Release. Nuren Group provides parenting education and maternity wellness services",
+};
 
 function Mediahub() {
   // try {

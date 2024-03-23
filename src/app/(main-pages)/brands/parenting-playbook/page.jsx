@@ -1,6 +1,13 @@
 import React from "react";
 import PdfReader from "../../../pdfReader/PdfReader";
 
+export const metadata = {
+  title:
+    "Parenting Playbook | Nuren Group - Motherhood SuperApp, Kelabmama, Ibuencer",
+  description:
+    "Parenting Playbook - Motherhood SuperApp, Kelabmama.com, Ibuencer.com, Parentcraft, Superkids, Baby Fair, Motherhood Choice Award, MamaCubTry",
+};
+
 function ParentingPlaybook() {
   return (
     <PdfReader

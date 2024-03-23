@@ -2,7 +2,7 @@ import React from "react";
 import "./style.scss";
 import InfoForm from "./InfoForm";
 
-function PdfReader({ pdflink }) {
+function PdfReader({ pdflink, infoblocker = true }) {
   const sitekey = process.env.CAPTCHA_SITEKEY;
 
   const handleSubmit = async (e) => {
@@ -35,7 +35,9 @@ function PdfReader({ pdflink }) {
 
   return (
     <main className="pdf_viewer section">
-      <InfoForm handleSubmit={handleSubmit} captcha_sitekey={sitekey} />
+      {infoblocker && (
+        <InfoForm handleSubmit={handleSubmit} captcha_sitekey={sitekey} />
+      )}
       <iframe
         src={pdflink}
         width="100%"

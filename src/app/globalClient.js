@@ -40,7 +40,11 @@ function GlobalClient({ children }) {
           </div>
         </motion.div>
 
+        {/* Lock on staging */}
         {logged ? children : <DevProtection setLogged={setLogged} />}
+
+        {/* On Production */}
+        {/* {children} */}
       </body>
     </AnimatePresence>
   );

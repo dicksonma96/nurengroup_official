@@ -1,7 +1,12 @@
 import React from "react";
 import AssetPath from "@/app/utils/assetpath";
 import "./style.scss";
-import Link from "next/link";
+
+export const metadata = {
+  title: "Brands | Nuren Group - Motherhood SuperApp, Kelabmama, Ibuencer",
+  description:
+    "Nuren Group Media - Motherhood Parenting SuperApp, Kelabmama.com, Ibuencer.com, Parentcraft, Superkids, Baby Fair, Motherhood Choice Award, MamaCubTry",
+};
 
 function OurBrands() {
   const brands = [
@@ -110,15 +115,33 @@ function OurBrands() {
                 className="qr"
               />
               <div className="col download">
-                <img src={AssetPath("brand/appstore.png")} alt="app store" />
-                <img
-                  src={AssetPath("brand/googleplay.png")}
-                  alt="google playstore"
-                />
-                <img
-                  src={AssetPath("brand/huaweigallery.png")}
-                  alt="huawei gallery"
-                />
+                <a
+                  href="https://apps.apple.com/my/app/motherhood-parenting-superapp/id1601397956"
+                  target="_blank"
+                  className="rowc"
+                >
+                  <img src={AssetPath("brand/appstore.png")} alt="app store" />
+                </a>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.nurengroup.mmyv2&hl=en&gl=US"
+                  target="_blank"
+                  className="rowc"
+                >
+                  <img
+                    src={AssetPath("brand/googleplay.png")}
+                    alt="google playstore"
+                  />
+                </a>
+                <a
+                  href="https://appgallery.huawei.com/app/C107306155"
+                  target="_blank"
+                  className="rowc"
+                >
+                  <img
+                    src={AssetPath("brand/huaweigallery.png")}
+                    alt="huawei gallery"
+                  />
+                </a>
               </div>
             </div>
           </div>

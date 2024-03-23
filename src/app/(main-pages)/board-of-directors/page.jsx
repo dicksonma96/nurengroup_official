@@ -4,8 +4,10 @@ import "./style.scss";
 import AssetPath from "@/app/utils/assetpath";
 
 export const metadata = {
-  title: "Nuren Group | Board of Directors",
-  description: "Our Board of Directors",
+  title:
+    "Board of Directors | Nuren Group - Motherhood SuperApp, Kelabmama, Ibuencer",
+  description:
+    "Board of Directors. Nuren Group provides parenting education and maternity wellness services",
 };
 
 function BOD() {

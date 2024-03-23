@@ -3,6 +3,12 @@ import "./style.scss";
 import EnquireForm from "./enquire_form";
 import nodemailer from "nodemailer";
 
+export const metadata = {
+  title: "Contact Us | Nuren Group - Motherhood SuperApp, Kelabmama, Ibuencer",
+  description:
+    "Contact Us. Nuren Group provides parenting education and maternity wellness services",
+};
+
 function Enquire() {
   const sitekey = process.env.CAPTCHA_SITEKEY;
 
@@ -90,21 +96,21 @@ function Enquire() {
       <div className="addresses row">
         <div className="address col">
           <strong>Australia Office:</strong>
-          Level 16, 414 La Trobe Street, <br /> Melbourne VIC 3000, Australia.
+          Level 16, 414 La Trobe Street, Melbourne VIC 3000, Australia.
         </div>
         <div className="address col">
           <strong>Malaysia Office:</strong>
-          H-89-1, Jaya One, 72A Jln Profesor Diraja Ungku Aziz, <br /> 46200
-          Petaling Jaya, Selangor, Malaysia.
+          H-89-1, Jaya One, 72A Jalan Prof Diraja Ungku Aziz, 46200 Petaling
+          Jaya, Selangor, Malaysia.
         </div>
         <div className="address col">
           <strong>Thailand Office:</strong>
-          Unit 09, 23rd Floor, GMM Grammy Place, 50 Sukhumvit Rd (Asoke 21),
-          Khlong Toei Nuea, Watthana, <br /> Bangkok 10110, Thailand.
+          Unit B14, 23rd Floor, Serm-Mit Tower, 159/37 Sukhumvit Road (Asoke
+          21), Khlong Toei Nuea, Watthana, Bangkok 10110, Thailand.
         </div>
         <div className="address col">
           <strong>Singapore Office:</strong>
-          151 Chin Swee Road, #07-12 Manhattan House, <br /> Singapore 169876.
+          151 Chin Swee Road, #07-12 Manhattan House, Singapore 169876.
         </div>
       </div>
     </main>

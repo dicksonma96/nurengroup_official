@@ -2,6 +2,13 @@ import AssetPath from "@/app/utils/assetpath";
 import React from "react";
 import "./style.scss";
 
+export const metadata = {
+  title:
+    "Leadership Team | Nuren Group - Motherhood SuperApp, Kelabmama, Ibuencer",
+  description:
+    "Leadership Team. Nuren Group provides parenting education and maternity wellness services",
+};
+
 function Leadership() {
   return (
     <main className="leadership">

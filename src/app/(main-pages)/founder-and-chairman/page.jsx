@@ -3,6 +3,13 @@ import AssetPath from "@/app/utils/assetpath";
 import "./style.scss";
 import Link from "next/link";
 
+export const metadata = {
+  title:
+    "Founder & Chairman | Nuren Group - Motherhood SuperApp, Kelabmama, Ibuencer",
+  description:
+    "Founder & Chairman. Nuren Group provides parenting education and maternity wellness services",
+};
+
 function FounderAndChairman() {
   const imgs1 = [
     AssetPath("FounderChairman/LeftCarousel/L1.jpg"),
