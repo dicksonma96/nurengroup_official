@@ -21,7 +21,7 @@ function DrWong() {
         id="prof_drwong"
         className="person_detail row"
         style={{ backgroundColor: "#f25075" }}
-        data-name="PROF DR WONG"
+        data-name="Prof Dr K.Y. Wong"
       >
         <div className="left colc">
           <img src={AssetPath("BOD/prof-dr-wong.png")} alt="Prof Dr Wong" />
@@ -137,7 +137,7 @@ function DrWong() {
         id="petrina_goh"
         className="person_detail row "
         style={{ background: "#E9A762" }}
-        data-name="PETRINA GOH SHZE YINN"
+        data-name="Shze Yinn Goh"
       >
         <div className="left colc">
           <img src={AssetPath("BOD/petrina-goh.png")} alt="Shze Yinn Goh" />
