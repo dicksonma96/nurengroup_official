@@ -26,8 +26,8 @@ export const metadata = {
     images: [AssetPath("logo.svg")],
   },
   twitter: {
-    card: "Nuren Group | " + detail.title,
-    images: [detail.img],
+    card: "Newsroom | Nuren Group | Empower Women Life Cycle - Parenting, Education, Health & Wellness",
+    images: [AssetPath("logo.svg")],
   },
 };
 
