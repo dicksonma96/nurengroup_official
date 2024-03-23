@@ -96,12 +96,13 @@ function Enquire() {
       <div className="addresses row">
         <div className="address col">
           <strong>Australia Office:</strong>
-          Level 16, 414 La Trobe Street, Melbourne VIC 3000, Australia.
+          Nuren Group Limited (ACN: 673015597) Level 16, 414 La Trobe Street,
+          Melbourne VIC 3000, Australia.
         </div>
         <div className="address col">
           <strong>Malaysia Office:</strong>
-          H-89-1, Jaya One, 72A Jalan Prof Diraja Ungku Aziz, 46200 Petaling
-          Jaya, Selangor, Malaysia.
+          Enlinea Sdn Bhd (Reg: 201201007097 (980617-A)) H-89-1, Jaya One, 72A
+          Jalan Prof Diraja Ungku Aziz, 46200 Petaling Jaya, Selangor, Malaysia.
         </div>
         <div className="address col">
           <strong>Thailand Office:</strong>

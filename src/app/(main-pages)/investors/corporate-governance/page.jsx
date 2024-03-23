@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.scss";
-import { committee_charters, governance_docs } from "./docsInfo";
+import { committee_charters, governance_docs } from "../../../../data/docsInfo";
 import Link from "next/link";
 
 export const metadata = {

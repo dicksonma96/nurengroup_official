@@ -5,7 +5,7 @@ export const metadata = {
   title:
     "Supermums Survey | Nuren Group - Motherhood SuperApp, Kelabmama, Ibuencer",
   description:
-    "Supermums Survey - Motherhood SuperApp, Kelabmama.com, Ibuencer.com, Parentcraft, Superkids, Baby Fair, Motherhood Choice Award, MamaCubTry",
+    "Supermums Survey - Motherhood SuperApp, Kelabmama.com, Ibuencer.com, Parentcraft, Superkids, Baby Fair, Motherhood Choice Award, MamaCubaTry",
 };
 
 function SupermumSurvey() {

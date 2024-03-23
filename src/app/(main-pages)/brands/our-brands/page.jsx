@@ -5,7 +5,7 @@ import "./style.scss";
 export const metadata = {
   title: "Brands | Nuren Group - Motherhood SuperApp, Kelabmama, Ibuencer",
   description:
-    "Nuren Group Media - Motherhood Parenting SuperApp, Kelabmama.com, Ibuencer.com, Parentcraft, Superkids, Baby Fair, Motherhood Choice Award, MamaCubTry",
+    "Nuren Group Media - Motherhood Parenting SuperApp, Kelabmama.com, Ibuencer.com, Parentcraft, Superkids, Baby Fair, Motherhood Choice Award, MamaCubaTry",
 };
 
 function OurBrands() {
