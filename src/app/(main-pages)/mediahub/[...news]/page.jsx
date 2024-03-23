@@ -12,6 +12,10 @@ export async function generateMetadata({ params }) {
     openGraph: {
       images: [detail.img],
     },
+    twitter: {
+      card: "Nuren Group | " + detail.title,
+      images: [detail.img],
+    },
   };
 }
 

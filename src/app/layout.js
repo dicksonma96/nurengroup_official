@@ -25,6 +25,10 @@ export const metadata = {
   openGraph: {
     images: [AssetPath("logo.svg")],
   },
+  twitter: {
+    card: "Nuren Group | " + detail.title,
+    images: [detail.img],
+  },
 };
 
 export default function RootLayout({ children }) {
