@@ -1,6 +1,5 @@
 import ShareBtn from "./sharebtn";
 import mediaNews from "../../../../data/mediahub.json";
-import Link from "next/link";
 
 import { BackBtn, BackOverlay } from "./backbtn";
 
@@ -8,8 +7,8 @@ export async function generateMetadata({ params }) {
   const detail = mediaNews.news.find((info) => info.id == params.news[0]);
 
   return {
-    title: detail.title,
-    description: detail.description,
+    title: "Nuren Group | " + detail.title,
+    description: detail.date + ": " + detail.description,
     openGraph: {
       images: [detail.img],
     },
@@ -31,10 +30,11 @@ async function NewsDetail({ params }) {
               style={{ width: "100%", justifyContent: "space-between" }}
             >
               <span className="date urban_text">{detail.date}</span>
-              {/* <ShareBtn /> */}
             </div>
             <strong>{detail.title}</strong>
             <p className="urban_text">{detail.description}</p>
+            <ShareBtn title={detail.title} />
+
             <div className="reference rowc">
               <div className="label urban_text">Find out more:</div>
               {moreInfo.map((info, index) => (

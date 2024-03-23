@@ -3,8 +3,7 @@ import "./style.scss";
 import { AppContextProvider } from "./context";
 import GlobalClient from "./globalClient";
 import { Jost, Urbanist } from "next/font/google";
-import Footer from "@/components/footer";
-
+import AssetPath from "./utils/assetpath";
 export const jost = Jost({
   subsets: ["latin"],
   display: "swap",
@@ -22,6 +21,9 @@ export const metadata = {
     "Nuren Group newsroom, press release & media coverage. Malaysia leading platform for maternity and children - focusing on parenting education, women health, family wellness & kids enrichment.",
   icons: {
     icon: "https://media.nurengroup.com/lib/images/favicon/nuren_favicon2.ico",
+  },
+  openGraph: {
+    images: [AssetPath("logo.svg")],
   },
 };
 

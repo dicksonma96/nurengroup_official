@@ -2,13 +2,12 @@ import AssetPath from "@/app/utils/assetpath";
 import "../style.scss";
 import BackBtn from "@/components/backBtn";
 
-export async function generateMetadata() {
+export async function generateMetadata({ params }) {
   return {
-    title: "PROF DR KONG YEW WONG",
-    description: "NurenGroup | Chairman, Non-Executive Director",
-    openGraph: {
-      images: [AssetPath("BOD/prof-dr-wong.png")],
-    },
+    title:
+      "Nuren Group | Prof Dr K.Y. Wong, Petrina S.Y. Goh, Leigh L.H. Zhang",
+    description:
+      "Nuren Group - Prof Dr K.Y. Wong (Chairman, Non Executive Director), Shze Yinn Goh (Group CEO, Founder, Executive Director), Li Hua Zhang (Independent, Non Executive Director)",
   };
 }
 

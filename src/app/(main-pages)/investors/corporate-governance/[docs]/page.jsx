@@ -9,7 +9,7 @@ export async function generateMetadata({ params }) {
 
   return {
     title: "Corporate Governance | Nuren Group - " + detail.label,
-    description: detail.label,
+    description: "Corporate Governance | Nuren Group - " + detail.label,
   };
 }
 
