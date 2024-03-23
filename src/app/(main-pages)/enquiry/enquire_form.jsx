@@ -68,7 +68,13 @@ function EnquireForm({ handleSubmit, captcha_sitekey }) {
 
           <hr />
           <br />
-          <form action={onSubmit} className="contact_form">
+          <form
+            action={onSubmit}
+            className="contact_form"
+            onChange={(e) => {
+              setError(null);
+            }}
+          >
             {error && (
               <div className="errormessage" style={{ gridColumn: "1 / 3" }}>
                 {error}

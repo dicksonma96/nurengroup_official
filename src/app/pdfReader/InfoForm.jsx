@@ -31,7 +31,13 @@ function InfoForm({ handleSubmit, captcha_sitekey }) {
 
   return lock ? (
     <div className="pdf_blocker colc">
-      <form className="colc" action={onSubmit}>
+      <form
+        className="colc"
+        action={onSubmit}
+        onChange={(e) => {
+          setError(null);
+        }}
+      >
         <span style={{ textAlign: "center" }}>
           Fill in our quick form to view full insights!
         </span>

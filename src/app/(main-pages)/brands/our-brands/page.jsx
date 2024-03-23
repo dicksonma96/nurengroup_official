@@ -110,7 +110,7 @@ function OurBrands() {
             <h3>The Parenting SuperApp</h3>
             <div className="row">
               <img
-                src={AssetPath("brand/Motherhood-App-QR.png")}
+                src={AssetPath("brand/superapp_qrcode.png")}
                 alt="qr code"
                 className="qr"
               />

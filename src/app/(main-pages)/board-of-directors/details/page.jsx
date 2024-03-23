@@ -159,7 +159,7 @@ function DrWong() {
             Additionally, her tenure as an investment banker in CIMB Investment
             Bank (Malaysia) and Tael Partners (Malaysia) allowed her to manage a
             substantial investment portfolio, specializing in the evaluation of
-            technology sector deals. Ms Goh's is a recipient of MVCA Outstanding
+            technology sector deals. Ms Goh is a recipient of MVCA Outstanding
             Women Entrepreneur of the year 2018 and the Inti Alumni Young
             Entrepreneur of the Year Award 2016. Besides being active keynote
             speakers, she is also a strong supporter of women in tech. Her
