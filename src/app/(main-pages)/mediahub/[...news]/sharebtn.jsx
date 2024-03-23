@@ -10,7 +10,8 @@ import {
   WhatsappIcon,
 } from "react-share";
 
-function ShareBtn({ url = window.location.href, title }) {
+function ShareBtn({ path, title }) {
+  let url = "https://" + location.hostname + path;
   return (
     <div className="share_btn rowc">
       <FacebookShareButton url={url} title={title}>

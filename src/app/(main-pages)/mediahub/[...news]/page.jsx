@@ -33,7 +33,10 @@ async function NewsDetail({ params }) {
             </div>
             <strong>{detail.title}</strong>
             <p className="urban_text">{detail.description}</p>
-            <ShareBtn title={detail.title} />
+            <ShareBtn
+              title={detail.title}
+              path={`/mediahub/${detail.id}/${detail.slug}`}
+            />
 
             <div className="reference rowc">
               <div className="label urban_text">Find out more:</div>
