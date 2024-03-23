@@ -1,63 +1,176 @@
 .our_brand {
-  .brand_banner {
-    .text {
-      flex: 1;
-      padding: 80px 30px;
+  background-color: white;
+  h1 {
+    font-size: clamp(20px, 12vw, 150px);
+    color: #fcb640;
+    line-height: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  p {
+    color: #683c3c;
+    font-size: clamp(13px, 3vw, 25px);
+    text-align: center;
+    max-width: 1000px;
+    width: 90%;
+  }
 
-      h1 {
-        font-size: clamp(20px, 12vw, 150px);
-        line-height: 100%;
-        color: #fcb640;
+  .brand_list {
+    width: 100%;
+    margin-top: 100px;
+    .brand_item {
+      width: 100%;
+      border-bottom: solid 1px #cdcdcd;
+      cursor: pointer;
+      .content {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1200px;
+        padding: 20px;
+
+        img {
+          width: 350px;
+        }
+        .left {
+          .colors {
+            margin-bottom: 10px;
+            gap: 2px;
+            svg {
+              width: 30px;
+            }
+          }
+          p {
+            font-size: 15px;
+            text-align: left;
+            color: grey;
+          }
+        }
       }
-      p {
-        font-size: clamp(13px, 3vw, 25px);
-        color: #c8a6a6;
-        margin: 0.5em 0 1em;
+
+      &:hover {
+        background: #f8f5f5;
       }
-      .download_btn {
-        background-color: #f25075;
-        color: white;
-        padding: 10px 20px;
-        border-radius: 5px;
-        align-self: flex-start;
-        margin-top: 20px;
-        font-size: 30px;
-      }
-    }
-    .abstract {
-      flex: 1;
-      background: url("https://media.nurengroup.com/brand/our_brand_abstract.svg");
     }
   }
 
-  .brand_logos {
-    background-color: #357f8b;
-    .content {
-      width: 100%;
-      max-width: 1500px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      padding: 30px 0;
-      .brand {
-        position: relative;
-        img {
-          width: 80%;
-          transition: 0.2s;
+  .superapp {
+    width: 100%;
+    padding-top: 80px;
+    .explore {
+      justify-content: center;
+      gap: 50px;
+      overflow: hidden;
+
+      .explore_banner {
+        width: 90%;
+        max-width: 360px;
+        margin-bottom: -100px;
+      }
+      .explore_right {
+        align-items: stretch;
+
+        h2 {
+          text-align: left;
+          margin: 0;
+          line-height: 100%;
+          color: black;
         }
-        .colorize {
-          position: absolute;
-          opacity: 0;
-          transition: 0.2s;
+        h3 {
+          color: #fcb913;
+        }
+
+        .row {
+          align-items: center;
+          margin-top: 10px;
+          .qr {
+            width: 170px;
+            margin-right: 10px;
+          }
+          .download {
+            align-items: flex-start;
+            color: black;
+
+            img {
+              width: 170px;
+              margin-top: 5px;
+              transition: 0.2s;
+              cursor: pointer;
+              &:hover {
+                transform: scale(1.05);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .our_brand {
+    .brand_list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      .brand_item {
+        .content {
+          flex-direction: column;
+          align-items: center;
+          img {
+            width: 90%;
+          }
+          .left {
+            .colors {
+              margin-bottom: 10px;
+              gap: 2px;
+              svg {
+                width: 30px;
+              }
+            }
+            p {
+              font-size: 15px;
+              text-align: left;
+              color: grey;
+            }
+          }
         }
 
         &:hover {
+          background: #f8f5f5;
+        }
+      }
+    }
+
+    .superapp {
+      .explore {
+        flex-direction: column;
+        .explore_banner {
+          order: 2;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .our_brand {
+    .brand_list {
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+      .brand_item {
+        .content {
+          flex-direction: column;
+          align-items: center;
           img {
-            opacity: 0;
-            filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
+            width: 90%;
           }
-          img.colorize {
-            opacity: 1;
+          .left {
+            .colors {
+              justify-content: center;
+              svg {
+                width: 30px;
+              }
+            }
           }
         }
       }

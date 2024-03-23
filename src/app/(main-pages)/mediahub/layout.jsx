@@ -12,7 +12,9 @@ function MediaHubLayout({ children }) {
             <h1>
               MEDIA<span style={{ color: "#F77F9A" }}>HUB</span>
             </h1>
-            <h3>News, Insights and Collaborative Culture from Nuren Group</h3>
+            <h3 className="urban_text">
+              News, Insights and Collaborative Culture from Nuren Group
+            </h3>
           </div>
           <div className="cylinder"></div>
           <div className="cylinder2"></div>
