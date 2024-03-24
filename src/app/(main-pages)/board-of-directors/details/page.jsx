@@ -27,6 +27,9 @@ function DrWong() {
           <div className="title col">
             <strong>Prof Dr K.Y. Wong</strong>
             <span className="urban_text">Chairman, Non-Executive Director</span>
+            <span className="urban_text">
+              CEO of D'Mace Group Ltd (Singapore)
+            </span>
           </div>
         </div>
 
@@ -73,16 +76,16 @@ function DrWong() {
             banking and financial services in Australia, specializing in cross
             border investment transactions and private equity investments. She
             is the co-founder and Chief Investment Officer of WealthSpring
-            International Group, a financial service provider headquartered in
-            Sydney with offices in Shanghai and Hangzhou. Prior to establishing
-            WealthSpring International Group, Ms Zhang served a number of senior
-            management roles for Australian financial organizations, such as
-            Director of Babcock & Brown China, CEO of CommFinance (subsidiary of
-            CommonWealth Bank Australia) and General Manager of Macquarie
-            Securitisation China. Ms Zhang also serves as Board Member at
-            Maxoniq Pty Ltd (Australia) and Tell Me Media Pty Ltd (Australia).
-            Prior migrating to Australia, Ms Zhang was an economic lecturer in
-            Ningbo University China.
+            International Group, a boutique financial service provider
+            headquartered in Sydney with offices in Shanghai and Hangzhou. Prior
+            to establishing WealthSpring International Group, Ms Zhang served a
+            number of senior management roles for Australian financial
+            organizations, such as Director of Babcock & Brown China, CEO of
+            CommFinance (subsidiary of Commonwealth Bank of Australia) and
+            General Manager of Macquarie Securitisation China. Ms Zhang also
+            serves as Board Member at Maxoniq Pty Ltd (Australia) and Tell Me
+            Media Pty Ltd (Australia). Prior migrating to Australia, Ms Zhang
+            was an economic lecturer in Ningbo University China.
           </p>
         </div>
       </section>

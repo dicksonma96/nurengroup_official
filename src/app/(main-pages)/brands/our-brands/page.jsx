@@ -16,7 +16,12 @@ function OurBrands() {
       desc: "Motherhood.com.my is Malaysia's one-stop baby store, offering a wide range of products and services for parents and expecting mothers. From maternity essentials to items for newborns, toddlers, and kids, it provides valuable resources like parenting tips, breastfeeding guides, brand reviews, free samples, and testimonials, making it a complete destination for all parenting needs.",
       colors: ["#00999e", "#006072", "#fcb913"],
     },
-
+    {
+      logo: "superapp",
+      link: "https://www.motherhood.com.my/superapp/",
+      desc: "Introducing the Motherhood SuperApp: Your all-in-one solution for every stage of parenting. Access resources, tools, and community support tailored to your needs. Shop top-quality products, get expert advice, and engage with fellow parents. Track your baby's development, manage appointments, and receive personalized recommendations. Join us and simplify your parenting journey with just a tap.",
+      colors: ["#00999e", "#006072", "#fcb913"],
+    },
     {
       logo: "kelabmama",
       link: "https://www.kelabmama.com/ ",
@@ -65,6 +70,12 @@ function OurBrands() {
       desc: "The Mamacubatry Program invites mothers to join as testers, receiving free products to try and share experiences within our community of mothers. Through the program, mothers explore new products, offer feedback, and engage with fellow caregivers, fostering a supportive environment of shared insights.  ",
       colors: ["#fcb913", "#FFCE3B", "#9F1D20", "#8F5A24"],
     },
+    {
+      logo: "babyfest",
+      link: "https://www.motherhood.com.my/events/babyfair ",
+      desc: "Motherhood Baby Fest is the ultimate destination for families, offering exclusive deals on baby essentials, toys, and household items from renowned brands. With prices starting at RM2, enjoy interactive experiences, free activities, and daily draws. Celebrate parenthood with over 5,000 door gifts and cashback guarantee. Make memories and find great deals at Motherhood Baby Fest.",
+      colors: ["#006072", "#4CB748", "#F17A21", "#EF5475", "#E45425"],
+    },
   ];
   return (
     <main className="our_brand section colc">
@@ -109,11 +120,16 @@ function OurBrands() {
             </h2>
             <h3>The Parenting SuperApp</h3>
             <div className="row">
-              <img
-                src={AssetPath("brand/superapp_qrcode.png")}
-                alt="qr code"
+              <a
                 className="qr"
-              />
+                href="https://www.motherhood.com.my/superapp/"
+                target="_blank"
+              >
+                <img
+                  src={AssetPath("brand/superapp_qrcode.png")}
+                  alt="qr code"
+                />
+              </a>
               <div className="col download">
                 <a
                   href="https://apps.apple.com/my/app/motherhood-parenting-superapp/id1601397956"

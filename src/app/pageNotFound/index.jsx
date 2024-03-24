@@ -16,7 +16,7 @@ function PageNotFound() {
 
       <div className="links rowc">
         <Link href="/mediahub">NEWSROOM</Link>
-        <Link href="/brands/our-brandsa">OUR BRANDS</Link>
+        <Link href="/brands/our-brands">OUR BRANDS</Link>
         <Link href="/home#snapshot">ABOUT US</Link>
       </div>
     </main>
