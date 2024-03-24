@@ -27,19 +27,16 @@ function DrWong() {
           <div className="title col">
             <strong>Prof Dr K.Y. Wong</strong>
             <span className="urban_text">Chairman, Non-Executive Director</span>
-            <span className="urban_text">
-              CEO of D'Mace Group Ltd (Singapore)
-            </span>
           </div>
         </div>
 
         <div className="description">
           <p>
             Economist Prof Dr Wong, is Director of EUDA Health Holdings Limited
-            (NASDAQ:EUDA), Director of E-Plus Ltd (NSX:8EP) and Group CEO of
-            D’Mace Ltd (Australia). He holds PhD from Strathclyde Business
-            School (UK), postdoctoral at Peking University (China), BBA from
-            Western Michigan University (USA) and M.Econ from University Putra
+            (NASDAQ:EUDA), Director of E-Plus Ltd (NSX:8EP) and CEO of D'Mace
+            Group Ltd (Singapore). He holds PhD from Strathclyde Business School
+            (UK), postdoctoral at Peking University (China), BBA from Western
+            Michigan University (USA) and M.Econ from University Putra
             (Malaysia). With a distinguished career as both scholar and
             corporate leader, Prof Dr Wong has held various executive positions
             in public listed companies, VP/deanship with universities, and lead
