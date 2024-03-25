@@ -1,6 +1,20 @@
 {
   "news": [
     {
+      "id": "NG88",
+      "slug": "mother_are_women_too",
+      "img": "https://media.nurengroup.com/lib/images/nurengroup_marketingmagazine_20240322.jpg",
+      "title": "Mothers are Women, Too!",
+      "date": "24/03/2024",
+      "description": "Women’s spending power is on the rise. Women manage multiple roles and being a mother is just the tip of the iceberg. Financial provider, spouse, teacher, chef, counsellor are all the other roles she manages in parallel. Based on Nuren Group’s 2023 research on Malaysians’ Digital Habits & Trends, women were found to be the bigger spenders compared to men, with 90% going on online sprees at least once a week. Another survey by Nuren Group, Finance Trends in Malaysia Survey Report 2024, revealed that 67% of women are taking charge when it comes to making financial decisions for themselves as well as their family. Embrace this power of women’s consumerism, contact https://rebrand.ly/media-enquiry to explore how your brand can thrive in this environment.",
+      "interview": [
+        {
+          "label": "Marketing Magazine",
+          "link": "https://marketingmagazine.com.my/mothers-are-women-too"
+        }
+      ]
+    },
+    {
       "id": "NG87",
       "slug": "nuren-group-parenting-10-year-journey-ipo",
       "img": "https://media.nurengroup.com/lib/images/nurengroup_BMFM.jpeg",

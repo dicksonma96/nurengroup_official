@@ -96,8 +96,7 @@ function Enquire() {
       <div className="addresses row">
         <div className="address col">
           <strong>Australia Office:</strong>
-          Nuren Group Limited (ACN: 673015597) Level 16, 414 La Trobe Street,
-          Melbourne VIC 3000, Australia.
+          Nuren Group Limited (ACN: 673015597) Level 9, 505 Little Collins Street Melbourne VIC 3000, Australia.
         </div>
         <div className="address col">
           <strong>Malaysia Office:</strong>
