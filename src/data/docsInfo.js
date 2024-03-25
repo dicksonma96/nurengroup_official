@@ -3,19 +3,19 @@ export const committee_charters = [
     label: "Audit and Risk Committee Charter",
     slug: "audit-and-risk-committee-charter",
     pdflink:
-      "https://drive.google.com/file/d/1fESx0lZgZ8NM3siDoKS2Z3mg1KH3Z-jE/preview",
+      "https://drive.google.com/file/d/1BCa7rnsmgqirauETLNWgiDRtXTGrmtqh/view?usp=drive_link",
   },
   {
     label: "Board Charter",
     slug: "board-charter",
     pdflink:
-      "https://drive.google.com/file/d/1rkguATyUr7aNPTj6EKAUqS7zJZquA0Qa/preview",
+      "https://drive.google.com/file/d/1tTVtdfgM-QdTcIuxGmceiY-FDBvaKV5x/view?usp=drive_link",
   },
   {
-    label: "Nomination  and Remuneration Committee Charter",
+    label: "Nomination and Remuneration Committee Charter",
     slug: "nomination-and-remuneration-committee-charter",
     pdflink:
-      "https://drive.google.com/file/d/1EuYKufZ1mpCgtlWRP6TRT4uDS4tSZOzK/preview",
+      "https://drive.google.com/file/d/1N_MtOPVGXzUI1olkvS466JvhZT5-E2xK/view?usp=drive_link",
   },
 ];
 
@@ -24,60 +24,60 @@ export const governance_docs = [
     label: "Anti Bribery and Corruption Policy",
     slug: "anti-bribery-and-corruption-policy",
     pdflink:
-      "https://drive.google.com/file/d/13MGHRLTlQN7KZ4j7UIn02xhrwGgZOxF4/preview",
+      "https://drive.google.com/file/d/1P-EgCx017QFK7ar5TpLIlTs3NSDrLC05/view?usp=drive_link",
   },
   {
     label: "Diversity Policy",
     slug: "diversity-policy",
     pdflink:
-      "https://drive.google.com/file/d/1eAyt9bZO6pT7heLeeiJjGDWbWU7HPuvF/preview",
+      "https://drive.google.com/file/d/1voLhM77t0HrOPbvFHFmgki1uIcUK2Gw7/view?usp=drive_link",
   },
   {
     label: "Code of Conduct",
     slug: "code-of-conduct",
     pdflink:
-      "https://drive.google.com/file/d/11-_De2dWgd6dAGXPF2yMeIutBjc3ImrQ/preview",
+      "https://drive.google.com/file/d/1iUIR5qd25Q4UuTfwy365mCxZWFupZTPx/view?usp=drive_link",
   },
   {
     label: "OH & S Policy",
     slug: "oh-and-s-policy",
     pdflink:
-      "https://drive.google.com/file/d/1evumBwxn_eAY0vL56m4wwM4gRU377nmJ/preview",
+      "https://drive.google.com/file/d/1LR3x2k77MUZUEinSn1-pBvPkLXftFwVa/view?usp=drive_link",
   },
   {
     label: "Communication and Disclosure Policy",
     slug: "communication-and-disclosure-policy",
     pdflink:
-      "https://drive.google.com/file/d/1Rd6Bz_zpjgD6Q5-HwoF4ztABp3zQ2OcI/preview",
+      "https://drive.google.com/file/d/1w9VqHKGEqD91OZZ3jXKmNmOsoQ5dNP2G/view?usp=drive_link",
   },
   {
     label: "Risk Management Policy",
     slug: "risk-management-policy",
     pdflink:
-      "https://drive.google.com/file/d/1AKinq-Zcjg6qnAjS9wEaqlCIyEZsA-la/preview",
+      "https://drive.google.com/file/d/1joeZTdItZUAb2xCjeBQmvocf0EgGpnWH/view?usp=drive_link",
   },
   {
     label: "Corporate Governance Statement",
     slug: "corporate-governance-statement",
     pdflink:
-      "https://drive.google.com/file/d/19KA38K8PDmZQUIn07kZAfzgP4t3FBTBO/preview",
+      "https://drive.google.com/file/d/1yx8kY_wUCXPRQOILuMIhGQHNXmSnP4oz/view?usp=drive_link",
   },
   {
     label: "Securities Trading Policy",
     slug: "securities-trading-policy",
     pdflink:
-      "https://drive.google.com/file/d/1em1EyPGzmGrR9qAAsQpJ5Ndy6IfzvHyY/preview",
+      "https://drive.google.com/file/d/1YmVHh4TpI5KSbg21RWMvy2Cl2Dpjrj02/view?usp=drive_link",
   },
   {
     label: "Delegation of Authority Policy",
     slug: "delegation-of-authority-policy",
     pdflink:
-      "https://drive.google.com/file/d/1HugKN7_YlgBw8BkVE7zAwxxCCNTHd7oo/preview",
+      "https://drive.google.com/file/d/1-1NGAFfCQjwrVE1vMJl9R3L1QdTOUilR/view?usp=drive_link",
   },
   {
     label: "Statement of Values",
     slug: "statement-of-values",
     pdflink:
-      "https://drive.google.com/file/d/1ZJYXwkLkeVXQeoVCgDcYLvC8wQde9pSv/preview",
+      "https://drive.google.com/file/d/1NOo18pkwlPTu3O7zyXKu7K4pd1MRAQVR/view?usp=drive_link",
   },
 ];
