@@ -23,6 +23,12 @@ function OurBrands() {
       colors: ["#00999e", "#006072", "#fcb913"],
     },
     {
+      logo: "nurenmedia",
+      link: " https://story.motherhood.com.my/",
+      desc: "Nuren Media is Malaysia's premier digital destination for women, supported by numerous experts providing verified information. Within this ecosystem, Motherhood collaborates with brands to engage our large female audience through content and commerce. Story Motherhood, our bilingual parenting guide in English and Bahasa Melayu, offers diverse content empowering parents with expert advice and personal anecdotes to navigate child-rearing confidently.",
+      colors: ["#EF5174", "#A6A8AB"],
+    },
+    {
       logo: "kelabmama",
       link: "https://www.kelabmama.com/ ",
       desc: "Kelabmama is Malaysia's largest urban Malay site for parents, offering a comprehensive PABBY directory and content platform. With over 5,000 listings of babysitters and confinement nannies/centers, it serves as a vital resource for urban parents. Boasting a community of 500,000 mothers as of 2018, Kelabmama provides valuable information and support for parents across Malaysia.",
