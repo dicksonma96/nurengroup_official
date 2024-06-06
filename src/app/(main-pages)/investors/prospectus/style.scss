@@ -1,0 +1,112 @@
+.prospectus {
+  background-color: white;
+  .banner {
+    position: relative;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+    .text {
+      position: absolute;
+      color: black;
+      right: 30%;
+      top: 0;
+      height: 100%;
+      justify-content: center;
+      h1 {
+        font-size: 7vw;
+        margin: 0;
+        line-height: 100%;
+        z-index: 2;
+        color: #282127;
+      }
+      h2 {
+        margin: 0;
+        font-size: 3vw;
+        z-index: 2;
+        color: #282127;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 20%;
+        height: 40vw;
+        width: 40vw;
+        border-radius: 5vw;
+        transform: translate(-50%, -50%) rotate(45deg);
+        background: linear-gradient(transparent, white);
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 15%;
+      top: 60%;
+      height: 25vw;
+      width: 25vw;
+      border-radius: 3vw;
+      transform: rotate(45deg);
+      opacity: 0.8;
+      background: linear-gradient(white, transparent);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      left: 8%;
+      top: 60%;
+      height: 15vw;
+      width: 15vw;
+      border-radius: 2vw;
+      transform: rotate(45deg);
+      background: linear-gradient(white, transparent);
+      opacity: 0.5;
+    }
+  }
+  .content {
+    margin: auto;
+    max-width: 1200px;
+    padding: 50px 20px;
+    color: black;
+
+    h3 {
+      margin-bottom: 5px;
+      font-family: "Urbanist", sans-serif;
+      font-size: 20px;
+      color: #282127;
+      font-weight: normal;
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 30px;
+      font-size: 15px;
+      opacity: 0.7;
+      font-family: "Urbanist", sans-serif;
+    }
+    ol {
+      padding-left: 20px;
+      opacity: 0.7;
+      li {
+        font-family: "Urbanist", sans-serif;
+      }
+    }
+    hr {
+      margin: 30px 0 20px;
+      border: 1px dashed black;
+      opacity: 0.1;
+    }
+    .download_btn {
+      align-self: center;
+      background-color: #f25075;
+      border: none;
+      text-align: center;
+      padding: 10px 20px;
+      border-radius: 3px;
+      font-size: 15px;
+      color: white;
+    }
+  }
+}

@@ -47,6 +47,10 @@ export const menu = [
         label: "Corporate Governance",
         path: "/corporate-governance",
       },
+      {
+        label: "Download Prospectus",
+        abs_path: "/investors/prospectus",
+      },
     ],
   },
   {
