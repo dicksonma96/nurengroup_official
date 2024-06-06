@@ -48,7 +48,7 @@ function Footer() {
               </Link>
             ))}
           </div>
-          <a href="tel:+60379320050">+603 7932 0050</a>
+          <a href="tel:+60376255605">+603 7625 5605</a>
         </div>
       </div>
     </section>
