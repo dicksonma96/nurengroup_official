@@ -13,6 +13,7 @@ export default function sitemap() {
     "https://nurengroup.com/brands/parenting-playbook",
     "https://nurengroup.com/brands/supermums-survey",
     "https://nurengroup.com/investors/corporate-governance",
+    "https://nurengroup.com/investors/prospectus",
     "https://nurengroup.com/mediahub",
     "https://nurengroup.com/enquiry",
   ];

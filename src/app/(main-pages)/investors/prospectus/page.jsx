@@ -2,6 +2,8 @@ import React from "react";
 import AssetPath from "@/app/utils/assetpath";
 import Link from "next/link";
 import "./style.scss";
+import test from "@/assets/img/test.jpg";
+import Image from "next/image";
 
 export const metadata = {
   title: "Prospectus | Nuren Group Limited (NSX:NUR) - NSX Australia IPO 2024",
@@ -13,7 +15,8 @@ function Prospectus() {
   return (
     <div className="prospectus col">
       <div className="banner rowc">
-        <img src={AssetPath("prospectus/banner.jpg")} alt="" />
+        {/* <img src={AssetPath("prospectus/banner.jpg")} alt="" /> */}
+        <Image src={test} />
         <div className="text colc">
           <h1>
             <span>20</span>

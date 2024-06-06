@@ -60,7 +60,7 @@ export const governance_docs = [
     label: "Corporate Governance Statement",
     slug: "corporate-governance-statement",
     pdflink:
-      "https://drive.google.com/file/d/1yx8kY_wUCXPRQOILuMIhGQHNXmSnP4oz/preview",
+      "https://drive.google.com/file/d/1mm8o2iwx4-9FZ3wO1gYCk0osAiVjhDJ-/preview",
   },
   {
     label: "Securities Trading Policy",
