@@ -15,15 +15,7 @@ function Prospectus() {
   return (
     <div className="prospectus col">
       <div className="banner rowc">
-        {/* <img src={AssetPath("prospectus/banner.jpg")} alt="" /> */}
-        <Image src={test} />
-        <div className="text colc">
-          <h1>
-            <span>20</span>
-            <span className="pink_text">24</span>
-          </h1>
-          <h2>PROSPECTUS</h2>
-        </div>
+        <img src={AssetPath("prospectus/page_banner.jpg")} alt="" />
       </div>
 
       <div className="content col">

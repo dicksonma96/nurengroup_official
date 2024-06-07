@@ -1,8 +1,5 @@
 import PdfReader from "@/app/pdfReader/PdfReader";
-import {
-  committee_charters,
-  governance_docs,
-} from "../../../../../data/docsInfo";
+import { committee_charters, governance_docs } from "@/data/docsInfo";
 import PageNotFound from "@/app/pageNotFound";
 
 export async function generateMetadata({ params }) {
