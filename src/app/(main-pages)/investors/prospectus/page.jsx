@@ -95,7 +95,7 @@ function Prospectus() {
           <br />
           <ul>
             <li>
-              Option A: Apply online and pay electronically via
+              Option A: Apply online and pay electronically via &nbsp;
               <a
                 href="https://apply.automic.com.au/NurenGroupLimited"
                 target="_blank"
