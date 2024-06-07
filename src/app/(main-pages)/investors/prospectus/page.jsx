@@ -112,7 +112,7 @@ function Prospectus() {
           <p> There are 2 application modes available:</p>
           <ul>
             <li>
-              Option A: Apply online and pay electronically via &nbsp;
+              Option A: Apply online and pay electronically via&nbsp;
               <a
                 href="https://apply.automic.com.au/NurenGroupLimited"
                 target="_blank"
