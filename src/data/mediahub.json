@@ -1,6 +1,37 @@
 {
   "news": [
     {
+      "id": "NG89",
+      "slug": "mother_are_women_too",
+      "img": "https://media.nurengroup.com/lib/images/nuren_ipo.jpeg",
+
+      "title": "Malaysia's Nuren Group to List Shares in Australia's Stock Exchange",
+      "date": "16/06/2024",
+      "description": "Malaysia's Nuren Group, which operates a digital platform for women in parenting, education and maternity wellness, is seeking to launch its initial public offering (IPO) on the National Stock Exchange of Australia. Set to debut at A$0.20 per share, the company is looking at a mid-July 2024 listing. The market for parenting tech is experiencing unprecedented growth, driven by increasing awareness and demand for convenient, effective and personalised care solutions. The global parenting spending market, encompassing baby care products, childcare services, education technology, and parenting apps, is valued at several hundred billion dollars annually and is expected to continue growing significantly. Nuren aims to upgrade its technological offerings by integrating an AI-powered parenting chat into the Motherhood SuperApp. This presents a tremendous opportunity to capitalise on the expanding market and meet the evolving needs of modern families.",
+      "interview": [
+        {
+          "label": "Yahoo Finance",
+          "link": "https://finance.yahoo.com/news/nuren-group-announces-upcoming-ipo-060900344.html"
+        },
+        {
+          "label":"The Malaysian Reserve",
+          "link":"https://themalaysianreserve.com/2024/06/12/nuren-group-announces-upcoming-ipo-on-national-stock-exchange-of-australia-nsx-empowering-women-through-innovation/"
+        },
+        {
+          "label":"Taiwan News",
+          "link":"https://www.taiwannews.com.tw/news/5888497"
+        },
+        {
+          "label":"Line Today",
+          "link":"https://today.line.me/hk/v2/article/zNx6xj7"
+        },
+        {
+          "label":"Asia One",
+          "link":"https://www.asiaone.com/business/nuren-group-announces-upcoming-ipo-national-stock-exchange-australia-nsx-empowering-women"
+        }
+      ]
+    },
+    {
       "id": "NG88",
       "slug": "mother_are_women_too",
       "img": "https://media.nurengroup.com/lib/images/nurengroup_marketingmagazine_20240322.jpg",

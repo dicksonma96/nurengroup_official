@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import localFont from "next/font/local";
 import Logo from "../assets/img/logo_white.svg";
 import Image from "next/image";
+import AssetPath from "./utils/assetpath";
 
 const gothamFont = localFont({
   src: "../assets/fonts/Gotham-Rounded-Bold.otf",
@@ -13,6 +14,7 @@ const gothamFont = localFont({
 function GlobalClient({ children }) {
   const pathname = usePathname();
   const [logged, setLogged] = useState(false);
+  const [hide, setHide] = useState(false);
 
   useEffect(() => {
     setLogged(localStorage.getItem("nurengroup_dev"));
@@ -44,6 +46,10 @@ function GlobalClient({ children }) {
         {/* {logged ? children : <DevProtection setLogged={setLogged} />} */}
 
         {/* On Production */}
+        {/* <AnimatePresence>
+          {!hide && <LandingVideo setHide={setHide} />}
+        </AnimatePresence> */}
+
         {children}
       </body>
     </AnimatePresence>
@@ -78,6 +84,26 @@ function DevProtection({ setLogged }) {
       />
       <button onClick={handleSubmit}>SIGN IN</button>
     </div>
+  );
+}
+
+function LandingVideo({ setHide }) {
+  return (
+    <motion.div
+      className="landing_video rowc"
+      initial={{ opacity: 100, scale: 1 }}
+      exit={{ opacity: 0, scale: 1.1 }}
+      onClick={() => setHide(true)}
+    >
+      <video src={AssetPath("Landing/landing.mp4")} muted autoPlay loop></video>
+      <div className="landing_content colc">
+        <button>Enter</button>
+        <h1>NUREN GROUP</h1>
+        <div className="bottom_line rowc">
+          <p>Empower Women in Parenting, Education & Maternity Wellness</p>
+        </div>
+      </div>
+    </motion.div>
   );
 }
 
