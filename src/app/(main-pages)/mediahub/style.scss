@@ -181,6 +181,9 @@
       }
       .news_content {
         padding: 20px;
+        a {
+          text-decoration: underline;
+        }
       }
       .date {
         color: #f25075;

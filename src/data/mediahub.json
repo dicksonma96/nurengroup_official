@@ -1,7 +1,7 @@
 {
-  "news": [
+  "news": [  
     {
-      "id": "NG89",
+      "id": "NG90",
       "slug": "malaysias_nuren_group_to_list_shares_in_australias_stock_exchange",
       "img": "https://media.nurengroup.com/lib/images/nuren_ipo.jpeg",
 
@@ -10,24 +10,55 @@
       "description": "Malaysia's Nuren Group, which operates a digital platform for women in parenting, education and maternity wellness, is seeking to launch its initial public offering (IPO) on the National Stock Exchange of Australia. Set to debut at A$0.20 per share, the company is looking at a mid-July 2024 listing. The market for parenting tech is experiencing unprecedented growth, driven by increasing awareness and demand for convenient, effective and personalised care solutions. The global parenting spending market, encompassing baby care products, childcare services, education technology, and parenting apps, is valued at several hundred billion dollars annually and is expected to continue growing significantly. Nuren aims to upgrade its technological offerings by integrating an AI-powered parenting chat into the Motherhood SuperApp. This presents a tremendous opportunity to capitalise on the expanding market and meet the evolving needs of modern families.",
       "interview": [
         {
-          "label": "Yahoo Finance",
-          "link": "https://finance.yahoo.com/news/nuren-group-announces-upcoming-ipo-060900344.html"
+          "label": "New Straits Time",
+          "link": "https://www.nst.com.my/business/corporate/2024/06/1064166/malaysias-nuren-group-list-shares-australias-stock-exchange"
         },
         {
-          "label":"The Malaysian Reserve",
-          "link":"https://themalaysianreserve.com/2024/06/12/nuren-group-announces-upcoming-ipo-on-national-stock-exchange-of-australia-nsx-empowering-women-through-innovation/"
+          "label": "BusinessToday",
+          "link": "https://www.businesstoday.com.my/2024/06/15/nuren-group-seeks-ipo-on-australian-stock-exchange/"
         },
         {
-          "label":"Taiwan News",
-          "link":"https://www.taiwannews.com.tw/news/5888497"
+          "label": "Rileklah",
+          "link": "https://rileklah.com/terkini/nuren-group-mengumumkan-tawaran-awam-permulaan-ipo-di-national-stock-exchange-australia-nsx"
         },
         {
-          "label":"Line Today",
-          "link":"https://today.line.me/hk/v2/article/zNx6xj7"
+          "label": "88razzi",
+          "link": "https://88razzi.com/%E6%97%B6%E4%BA%8B/%E9%80%9A%E8%BF%87%E5%88%9B%E6%96%B0%E8%B5%8B%E8%83%BD%E5%A6%87%E5%A5%B3nuren%E9%9B%86%E5%9B%A2%E5%AE%A3%E5%B8%83%E5%8D%B3%E5%B0%86%E5%9C%A8%E6%BE%B3%E6%B4%B2%E8%AF%81%E5%88%B8%E4%BA%A4%E6%98%93%E6%89%80%EF%BC%88nsx%EF%BC%89%E4%B8%8A%E5%B8%82"
+        }
+      ]
+    },
+    {
+      "id": "NG89",
+      "slug": "malaysias_nuren_group_to_list_shares_in_australias_stock_exchange",
+      "img": "https://media.nurengroup.com/lib/images/ipo_group_photo.jpeg",
+
+      "title": "Nuren Group Announces Upcoming IPO on National Stock Exchange of Australia (NSX): Empowering Women Through Innovation",
+      "date": "12/06/2024",
+      "description": "Nuren Group, a leading digital platform empowering women in parenting, education, and maternity wellness, is excited to announce the launch of its initial public offering (IPO) on the National Stock Exchange of Australia (NSX). This IPO marks a significant milestone in the company's growth journey, offering investors the opportunity to be part of Nuren Group's success story. The capital raised through the IPO will fuel Nuren Group's commitment to expanding its market presence in the parenting, education, and maternity wellness sectors. It will also enhance the company's technological infrastructure to deliver a seamless user experience. Additionally, the funding will accelerate growth in key strategic areas through innovation. The Public Offer booklet available at <a target='_blank' href='https://apply.automic.com.au/NurenGroupLimited'>https://apply.automic.com.au/NurenGroupLimited</a>.",
+      "interview": [
+        {
+          "label": "AsiaOne",
+          "link": "https://www.asiaone.com/business/nuren-group-announces-upcoming-ipo-national-stock-exchange-australia-nsx-empowering-women"
         },
         {
-          "label":"Asia One",
-          "link":"https://www.asiaone.com/business/nuren-group-announces-upcoming-ipo-national-stock-exchange-australia-nsx-empowering-women"
+          "label": "China Money Network",
+          "link": "https://www.chinamoneynetwork.com/2024/06/12/nuren-group-announces-upcoming-ipo-on-national-stock-exchange-of-australia-nsx-empowering-women-through-innovation"
+        },
+        {
+          "label": "The Malaysian Reserve",
+          "link": "https://themalaysianreserve.com/2024/06/12/nuren-group-announces-upcoming-ipo-on-national-stock-exchange-of-australia-nsx-empowering-women-through-innovation/"
+        },
+        {
+          "label": "巴士的報",
+          "link": "https://www.bastillepost.com/global/article/3906195-nuren-group-announces-upcoming-ipo-on-national-stock-exchange-of-australia-nsx-empowering-women-through-innovation"
+        },
+        {
+          "label": "PR Newswire (EN)",
+          "link": "https://www.prnewswire.com/apac/news-releases/nuren-group-announces-upcoming-ipo-on-national-stock-exchange-of-australia-nsx-empowering-women-through-innovation-302170438.html"
+        },
+        {
+          "label": "PR Newswire (BM)",
+          "link": "https://en.prnasia.com/releases/apac/113544-0.shtml"
         }
       ]
     },

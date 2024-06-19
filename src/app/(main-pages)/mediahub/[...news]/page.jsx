@@ -36,7 +36,10 @@ async function NewsDetail({ params }) {
               <span className="date urban_text">{detail.date}</span>
             </div>
             <strong>{detail.title}</strong>
-            <p className="urban_text">{detail.description}</p>
+            <p
+              className="urban_text"
+              dangerouslySetInnerHTML={{ __html: detail.description }}
+            ></p>
             <ShareBtn
               title={detail.title}
               path={`/mediahub/${detail.id}/${detail.slug}`}
