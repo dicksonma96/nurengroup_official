@@ -2,6 +2,25 @@
   "news": [  
     {
       "id": "NG90",
+      "slug": "nuren-group-triumphs-at-markies-awards-2024-malaysia",
+      "img": "https://media.licdn.com/dms/image/D5622AQH11ZM24WVxzw/feedshare-shrink_2048_1536/0/1719054807312?e=1721865600&v=beta&t=kXq_-LhWQVmOEKenKfjA_ezkQ7zGWX1o5F9MHe7M4hc",
+
+      "title": "Nuren Group (Enlinea) Triumphs at MARKies Awards 2024 Malaysia",
+      "date": "21/06/2024",
+      "description": "The eagerly awaited ceremony for the Agency of the Year Awards and MARKies Awards were unfolded on 21-June at Hilton Kuala Lumpur. We are thrilled to announce that Nuren Group (Enlinea Sdn Bhd) has won MARKies Award in two categories. 🏆 Most Creative – Audio | Client: Clearblue | Campaign: Try-To-Chill & Get Your Feel! 🏆 Most Creative – Event (Physical / Virtual) |Client: Motherhood | Campaign: Go to Destinations for New Mums. Thank you to our amazing clients and extraordinary team for making this possible. This is just the beginning of our journey to create more inspiring work. A huge shoutout also goes to MARKies Awards Panel and organizer Advertising + Marketing Malaysia, for recognizing our passion and creativity. We also like to extend heartfelt congratulations to all finalists and deserving winners across their respective categories.",
+      "interview": [
+        {
+          "label": "Marketing-Interactive",
+          "link": "https://awards.marketing-interactive.com/agency-of-the-year-my/2024-markies-winners/"
+        },
+        {
+          "label": "Facebook",
+          "link": "https://www.facebook.com/marketingmagazine.group/posts/pfbid0RiDUtm6SX2qGCZs63qW59UCojAZH4wxVeMq9qbamzGcgAPnyk8EYYCt2vCYe1sLAl"
+        }      
+      ]
+    },
+    {
+      "id": "NG90",
       "slug": "malaysias_nuren_group_to_list_shares_in_australias_stock_exchange",
       "img": "https://media.nurengroup.com/lib/images/nuren_ipo.jpeg",
 
