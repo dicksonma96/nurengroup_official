@@ -2,7 +2,7 @@ export default [
   { label: "Mediahub", href: "/mediahub", newTab: false },
   { label: "Enquiry", href: "/enquire", newTab: false },
   {
-    label: "Supermums Survey",
+    label: "Motherhood Surveys",
     href: "https://www.motherhood.com.my/events/motherhood-survey",
     newTab: true,
   },
@@ -22,7 +22,7 @@ export default [
     newTab: true,
   },
   {
-    label: "Motherhood Tiktok",
+    label: "Motherhood TikTok",
     href: "https://www.tiktok.com/@motherhood.com.my",
     newTab: true,
   },
@@ -52,7 +52,7 @@ export default [
     newTab: true,
   },
   {
-    label: "Care+ Tiktok",
+    label: "Care+ TikTok",
     href: "https://www.tiktok.com/@motherhoodcare",
     newTab: true,
   },
@@ -72,7 +72,7 @@ export default [
     newTab: true,
   },
   {
-    label: "KelabMama Tiktok",
+    label: "KelabMama TikTok",
     href: "https://www.tiktok.com/@kelab_mama",
     newTab: true,
   },
@@ -88,7 +88,7 @@ export default [
   },
   // { label: "Wedding Malaysia", href: "/" },
   {
-    label: "New Mum Program",
+    label: "New Mom Program",
     href: "https://www.motherhood.com.my/events/newmom",
     newTab: true,
   },
@@ -123,32 +123,32 @@ export default [
     newTab: true,
   },
   {
-    label: "AskMeDoctor Season 6",
+    label: "AskMeDoctor! Season 6",
     href: "https://youtube.com/playlist?list=PL1Wnpc9qYxULLAoGt0JDJMrJ8y5jh2zRJ&si=1pEX4_tFoxUqDLUy ",
     newTab: true,
   },
   {
-    label: "AskMeDoctor Season 5",
+    label: "AskMeDoctor! Season 5",
     href: "https://youtube.com/playlist?list=PL1Wnpc9qYxUJyvWElOP3t9novpvqAvVeD&si=XO3iVPPqwWcg8sCo ",
     newTab: true,
   },
   {
-    label: "AskMeDoctor Season 4",
+    label: "AskMeDoctor! Season 4",
     href: "https://youtube.com/playlist?list=PL1Wnpc9qYxULtC7hUY5WbUKAFjY8BmoeO&si=ZkRgBQ6ymGgXLHw8 ",
     newTab: true,
   },
   {
-    label: "AskMeDoctor Season 3",
+    label: "AskMeDoctor! Season 3",
     href: "https://youtube.com/playlist?list=PL1Wnpc9qYxUI9QhkC_WqSxd8ppISOeP0t&si=bKTr1sq12esJanPU ",
     newTab: true,
   },
   {
-    label: "AskMeDoctor Season 2",
+    label: "AskMeDoctor! Season 2",
     href: "https://youtube.com/playlist?list=PL1Wnpc9qYxUJd91nqwlhuXOfDI8GDxYnk&si=sTdgAbftDkiOs9PG ",
     newTab: true,
   },
   {
-    label: "AskMeDoctor Season 1",
+    label: "AskMeDoctor! Season 1",
     href: "https://youtube.com/playlist?list=PL1Wnpc9qYxUL4cf1ovNd7inK4YwYMRQgk&si=kcfD9mR4DCWvPq1h ",
     newTab: true,
   },
