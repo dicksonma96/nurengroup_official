@@ -57,7 +57,8 @@ function Leadership() {
         <div className="grid_row row">
           <img src={AssetPath("Leadership+Team/Jinny.jpg ")} alt="" />
           <div className="square" style={{ background: "#D3DBF9" }}></div>
-          <img src={AssetPath("Leadership+Team/Kie.jpg")} alt="" />
+          <div className="square" style={{ background: "#24315e" }}></div>
+          <div className="square" style={{ background: "#D3DBF9" }}></div>
         </div>
       </div>
     </main>
