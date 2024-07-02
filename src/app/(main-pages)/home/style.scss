@@ -343,8 +343,11 @@
 
     .snapshot {
       .snapshot_abstract {
-        height: 60vh;
+        height: 70vh;
         opacity: 0.5;
+      }
+      .text {
+        padding-top: 5vh;
       }
     }
     .description {
