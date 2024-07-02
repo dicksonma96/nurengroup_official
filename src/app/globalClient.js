@@ -113,7 +113,13 @@ function LandingVideo({ setHide }) {
       exit={{ opacity: 0, scale: 1.1 }}
       onClick={() => setHide(true)}
     >
-      <video src={AssetPath("Landing/landing.mp4")} muted autoPlay loop></video>
+      <video
+        src={AssetPath("Landing/landing.mp4")}
+        muted
+        autoPlay
+        playsInline
+        loop
+      ></video>
       <div className="landing_content colc">
         <button>Enter</button>
         <h1>NUREN GROUP</h1>
