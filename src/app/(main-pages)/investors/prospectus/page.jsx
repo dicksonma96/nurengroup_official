@@ -229,9 +229,20 @@ function Prospectus() {
 
         <hr />
 
+        <div className="ipo_ended">
+          <em>
+            Nuren Group Limited Public Offer is now closed. As of 26 June 2024,
+            we have achieved maximum oversubscription. We like to express a
+            heartfelt appreciation to all new and existing shareholders for the
+            trust and support. We will keep you updated on the next step on the
+            IPO journey. Thank You!
+          </em>
+        </div>
+
+        {/* 
         <Link className="download_btn" href="prospectus/preview">
           Accept and Download
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

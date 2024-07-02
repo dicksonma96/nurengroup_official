@@ -35,15 +35,18 @@ function Leadership() {
           <div className="square" style={{ background: "#F4AF67" }}></div>
           <img src={AssetPath("Leadership+Team/Alison+Tham.jpg")} alt="" />
         </div>
+
+        <div className="grid_row row">
+          <div className="square" style={{ background: "#ECE9DE" }}></div>
+
+          <img src={AssetPath("Leadership+Team/Jolene.jpg ")} alt="" />
+          <div className="square" style={{ background: "#ECE9DE" }}></div>
+          <div className="square" style={{ background: "#357f8c" }}></div>
+        </div>
         <div className="grid_row row">
           <img src={AssetPath("Leadership+Team/Pankhi.jpg ")} alt="" />
           <div className="square" style={{ background: "#F25075" }}></div>
           <img src={AssetPath("Leadership+Team/Racheal.jpg ")} alt="" />
-        </div>
-        <div className="grid_row row">
-          <img src={AssetPath("Leadership+Team/Jolene+Chan.jpg ")} alt="" />
-          <div className="square" style={{ background: "#ECE9DE" }}></div>
-          <img src={AssetPath("Leadership+Team/Ting+Siang.jpg ")} alt="" />
         </div>
         <div className="grid_row row">
           <img
