@@ -16,10 +16,13 @@ const gothamFont = localFont({
 function GlobalClient({ children }) {
   const pathname = usePathname();
   const [logged, setLogged] = useState(false);
-  const [hide, setHide] = useState(getCookie("landing_video"));
+  const [hide, setHide] = useState(true);
+  const [onMount, setOnMount] = useState(false);
 
   useEffect(() => {
+    setOnMount(true);
     setLogged(localStorage.getItem("nurengroup_dev"));
+    setHide(getCookie("landing_video"));
   }, []);
 
   const closeVideo = () => {
@@ -54,11 +57,18 @@ function GlobalClient({ children }) {
         {/* {logged ? children : <DevProtection setLogged={setLogged} />} */}
 
         {/* On Production */}
-        <AnimatePresence>
-          {!hide && <LandingVideo setHide={closeVideo} />}
-        </AnimatePresence>
-
-        {children}
+        {onMount ? (
+          <>
+            <AnimatePresence>
+              {!hide && <LandingVideo setHide={closeVideo} />}
+            </AnimatePresence>
+            {children}
+          </>
+        ) : (
+          <div className="loading_page">
+            <div className="loader"></div>
+          </div>
+        )}
       </body>
     </AnimatePresence>
   );
