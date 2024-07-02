@@ -6,6 +6,8 @@ import localFont from "next/font/local";
 import Logo from "../assets/img/logo_white.svg";
 import Image from "next/image";
 import AssetPath from "./utils/assetpath";
+import getCookie from "./utils/getCookie";
+import setCookie from "./utils/setCookie";
 
 const gothamFont = localFont({
   src: "../assets/fonts/Gotham-Rounded-Bold.otf",
@@ -14,11 +16,17 @@ const gothamFont = localFont({
 function GlobalClient({ children }) {
   const pathname = usePathname();
   const [logged, setLogged] = useState(false);
-  const [hide, setHide] = useState(false);
+  const [hide, setHide] = useState(getCookie("landing_video"));
 
   useEffect(() => {
     setLogged(localStorage.getItem("nurengroup_dev"));
   }, []);
+
+  const closeVideo = () => {
+    setHide(true);
+    setCookie("landing_video", "hide", 1);
+  };
+
   return (
     <AnimatePresence mode="wait">
       <body>
@@ -30,7 +38,7 @@ function GlobalClient({ children }) {
           transition={{ duration: 0.2, ease: "easeOut" }}
         ></motion.div> */}
         {/* entrance */}
-        <motion.div
+        {/* <motion.div
           className="transition_overlay"
           initial={{ height: "140vh" }}
           animate={{ height: 0 }}
@@ -40,15 +48,15 @@ function GlobalClient({ children }) {
           <div className="animated_logo col">
             <Image src={Logo} alt="Nuren group logo" />
           </div>
-        </motion.div>
+        </motion.div> */}
 
         {/* Lock on staging */}
         {/* {logged ? children : <DevProtection setLogged={setLogged} />} */}
 
         {/* On Production */}
-        {/* <AnimatePresence>
-          {!hide && <LandingVideo setHide={setHide} />}
-        </AnimatePresence> */}
+        <AnimatePresence>
+          {!hide && <LandingVideo setHide={closeVideo} />}
+        </AnimatePresence>
 
         {children}
       </body>

@@ -11,7 +11,7 @@ import social_medias from "@/app/utils/social_medias";
 import AssetPath from "@/app/utils/assetpath";
 
 function Header() {
-  const [OnTop, setOnTop] = useState(false);
+  const [OnTop, setOnTop] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
   const [ScrollDirection, setScrollDirection] = useState("scrollingUp");
 

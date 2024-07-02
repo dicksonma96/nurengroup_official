@@ -12,7 +12,7 @@ export const metadata = {
 function About() {
   return (
     <main className="about">
-      <Landing />
+      {/* <Landing /> */}
 
       <section className="snapshot rowc " id="snapshot">
         <img
