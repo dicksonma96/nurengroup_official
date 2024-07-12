@@ -1,6 +1,7 @@
 import "./style.scss";
 import AssetPath from "@/app/utils/assetpath";
 import Landing from "./landing";
+import LandingVideo from "./landingVideo";
 
 export const metadata = {
   title:
@@ -13,7 +14,7 @@ function About() {
   return (
     <main className="about">
       {/* <Landing /> */}
-
+      <LandingVideo />
       <section className="snapshot rowc " id="snapshot">
         <img
           className="snapshot_abstract"

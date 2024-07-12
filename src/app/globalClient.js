@@ -16,19 +16,10 @@ const gothamFont = localFont({
 function GlobalClient({ children }) {
   const pathname = usePathname();
   const [logged, setLogged] = useState(false);
-  const [hide, setHide] = useState(true);
-  const [onMount, setOnMount] = useState(false);
 
   useEffect(() => {
-    setOnMount(true);
     setLogged(localStorage.getItem("nurengroup_dev"));
-    setHide(getCookie("landing_video"));
   }, []);
-
-  const closeVideo = () => {
-    setHide(true);
-    setCookie("landing_video", "hide", 1);
-  };
 
   return (
     <AnimatePresence mode="wait">
@@ -55,20 +46,7 @@ function GlobalClient({ children }) {
 
         {/* Lock on staging */}
         {/* {logged ? children : <DevProtection setLogged={setLogged} />} */}
-
-        {/* On Production */}
-        {onMount ? (
-          <>
-            <AnimatePresence>
-              {!hide && <LandingVideo setHide={closeVideo} />}
-            </AnimatePresence>
-            {children}
-          </>
-        ) : (
-          <div className="loading_page">
-            <div className="loader"></div>
-          </div>
-        )}
+        {children}
       </body>
     </AnimatePresence>
   );
@@ -102,32 +80,6 @@ function DevProtection({ setLogged }) {
       />
       <button onClick={handleSubmit}>SIGN IN</button>
     </div>
-  );
-}
-
-function LandingVideo({ setHide }) {
-  return (
-    <motion.div
-      className="landing_video rowc"
-      initial={{ opacity: 100, scale: 1 }}
-      exit={{ opacity: 0, scale: 1.1 }}
-      onClick={() => setHide(true)}
-    >
-      <video
-        src={AssetPath("Landing/landing.mp4")}
-        muted
-        autoPlay
-        playsInline
-        loop
-      ></video>
-      <div className="landing_content colc">
-        <button>Enter</button>
-        <h1>NUREN GROUP</h1>
-        <div className="bottom_line rowc">
-          <p>Empower Women in Parenting, Education & Maternity Wellness</p>
-        </div>
-      </div>
-    </motion.div>
   );
 }
 

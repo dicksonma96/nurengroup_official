@@ -37,16 +37,14 @@ function Leadership() {
         </div>
 
         <div className="grid_row row">
-          <div className="square" style={{ background: "#ECE9DE" }}></div>
-
-          <img src={AssetPath("Leadership+Team/Jolene.jpg ")} alt="" />
-          <div className="square" style={{ background: "#ECE9DE" }}></div>
-          <div className="square" style={{ background: "#357f8c" }}></div>
+          <img src={AssetPath("Leadership+Team/JoleneChan.jpg")} alt="" />
+          <div className="square" style={{ background: "#F25075" }}></div>
+          <img src={AssetPath("Leadership+Team/Gloey.jpg")} alt="" />
         </div>
         <div className="grid_row row">
-          <img src={AssetPath("Leadership+Team/Pankhi.jpg ")} alt="" />
-          <div className="square" style={{ background: "#F25075" }}></div>
-          <img src={AssetPath("Leadership+Team/Racheal.jpg ")} alt="" />
+          <img src={AssetPath("Leadership+Team/Pankhismita.jpg")} alt="" />
+          <div className="square" style={{ background: "#ECE9DE" }}></div>
+          <img src={AssetPath("Leadership+Team/RachealD.jpg ")} alt="" />
         </div>
         <div className="grid_row row">
           <img
@@ -60,8 +58,7 @@ function Leadership() {
         <div className="grid_row row">
           <img src={AssetPath("Leadership+Team/Jinny.jpg ")} alt="" />
           <div className="square" style={{ background: "#D3DBF9" }}></div>
-          <div className="square" style={{ background: "#24315e" }}></div>
-          <div className="square" style={{ background: "#D3DBF9" }}></div>
+          <img src={AssetPath("Leadership+Team/Ivy.jpg ")} alt="" />
         </div>
       </div>
     </main>
