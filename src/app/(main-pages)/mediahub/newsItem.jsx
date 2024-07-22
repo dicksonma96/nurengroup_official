@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import formatDate from "@/app/utils/formatDate";
 
 function NewsItem({ data }) {
   const pathname = usePathname();
@@ -8,7 +9,7 @@ function NewsItem({ data }) {
   return (
     <div className="news_item rowc">
       <div className="overlay col">
-        <span className="date">{data.date}</span>
+        <span className="date">{formatDate(data.date)}</span>
         <strong>{data.title}</strong>
         <Link scroll={false} href={`${pathname}/${data.slug}`}>
           Read More

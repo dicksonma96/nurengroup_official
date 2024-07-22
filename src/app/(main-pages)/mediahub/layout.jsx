@@ -2,6 +2,7 @@ import React from "react";
 import { promises as fs } from "fs";
 import NewsItem from "./newsItem";
 import "./style.scss";
+import getDatabase from "@/app/utils/mongoConnection";
 
 function MediaHubLayout({ children }) {
   return (
@@ -30,15 +31,17 @@ function MediaHubLayout({ children }) {
 
 async function NewsListing() {
   try {
-    const file = await fs.readFile(
-      process.cwd() + "/src/data/mediahub.json",
-      "utf8"
-    );
-    const data = JSON.parse(file);
-
+    // const file = await fs.readFile(
+    //   process.cwd() + "/src/data/mediahub.json",
+    //   "utf8"
+    // );
+    // const data = JSON.parse(file);
+    const db = await getDatabase();
+    const collection = db.collection("mediahub");
+    const data = await collection.find().toArray();
     return (
       <div className="news_listing">
-        {data.news.map((info, index) => (
+        {data.map((info, index) => (
           <NewsItem key={index} data={info} />
         ))}
       </div>

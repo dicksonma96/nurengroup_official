@@ -53,6 +53,8 @@ function Enquire() {
               formData.get("fileUri") ? "<li>With file attached below</li>" : ""
             }
           </ul>
+          <strong>${formData.get("subject")}</strong>
+          <br>
           <p><strong>Message:</strong></p>
           <p>${formData.get("message")}</p>
           <br>
@@ -96,7 +98,8 @@ function Enquire() {
       <div className="addresses row">
         <div className="address col">
           <strong>Australia Office:</strong>
-          Nuren Group Limited (ACN: 673015597) Level 9, 505 Little Collins Street Melbourne VIC 3000, Australia.
+          Nuren Group Limited (ACN: 673015597) Level 9, 505 Little Collins
+          Street Melbourne VIC 3000, Australia.
         </div>
         <div className="address col">
           <strong>Malaysia Office:</strong>

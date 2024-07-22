@@ -3,6 +3,7 @@ import "./style.scss";
 import AssetPath from "@/app/utils/assetpath";
 import ExpandParagraph from "./expandParagraph";
 import getDatabase from "@/app/utils/mongoConnection";
+import Link from "next/link";
 
 // const jobs = [
 //   {
@@ -25,11 +26,9 @@ import getDatabase from "@/app/utils/mongoConnection";
 // ];
 
 async function Careers() {
-  let jobs = [];
   const db = await getDatabase();
   const collection = db.collection("job-position");
-  jobs = await collection.find().toArray();
-
+  const jobs = await collection.find().toArray();
   return (
     <main className="careers">
       <div className="banner row">
@@ -67,34 +66,51 @@ async function Careers() {
         <img src={AssetPath("Careers/career5.jpg")} alt="" />
         <img src={AssetPath("Careers/career4.jpg")} alt="" />
       </div>
-      <div className="position colc">
-        <h1>OPEN POSITIONS</h1>
+      {jobs.filter((job) => job.open).length ? (
+        <div className="position colc">
+          <h1>OPEN POSITIONS</h1>
 
-        <div className="position_list col">
-          {jobs.map((job, index) => (
-            <div className="pos col" key={index}>
-              <strong>{job.position}</strong>
-              <div className="tags row">
-                {job?.tags.map((tag) => (
-                  <span className="tag">{tag}</span>
-                ))}
-              </div>
-              <ExpandParagraph text={job.description} className="description" />
-              <div className="bottom_info row">
-                <div className="info rowc">
-                  <span class="material-symbols-outlined">attach_money</span>
-                  {job.salary}
-                </div>
-                <div className="info rowc">
-                  <span class="material-symbols-outlined">distance</span>
-                  {job.location}
-                </div>
-              </div>
-              <button>APPLY</button>
-            </div>
-          ))}
+          <div className="position_list col">
+            {jobs.map((job, index) => {
+              if (job.open == true)
+                return (
+                  <div className="pos col" key={index}>
+                    <strong>{job.position}</strong>
+                    <div className="tags row">
+                      {job?.tags.map((tag) => (
+                        <span className="tag">{tag}</span>
+                      ))}
+                    </div>
+                    <ExpandParagraph
+                      text={job.description}
+                      className="description"
+                    />
+                    <div className="bottom_info row">
+                      <div className="info rowc">
+                        <span class="material-symbols-outlined">
+                          attach_money
+                        </span>
+                        {job.salary}
+                      </div>
+                      <div className="info rowc">
+                        <span class="material-symbols-outlined">distance</span>
+                        {job.location}
+                      </div>
+                    </div>
+                    <Link
+                      className="apply_btn"
+                      href={`/enquiry?job=${job.position}`}
+                    >
+                      APPLY
+                    </Link>
+                  </div>
+                );
+            })}
+          </div>
         </div>
-      </div>
+      ) : (
+        <></>
+      )}
     </main>
   );
 }

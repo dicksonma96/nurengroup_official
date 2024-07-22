@@ -24,7 +24,7 @@ async function getClient() {
 
 async function getDatabase() {
   const client = await getClient();
-  return client.db("nurenDb");
+  return client.db(process.env.MONGODB_DBNAME);
 }
 
 export default getDatabase;

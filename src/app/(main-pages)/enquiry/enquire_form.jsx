@@ -4,12 +4,14 @@ import SubmitBtn from "./submit_btn";
 import Image from "next/image";
 import Check from "../../../assets/img/icon/check.svg";
 import ReCAPTCHA from "react-google-recaptcha";
+import { useSearchParams } from "next/navigation";
 
 function EnquireForm({ handleSubmit, captcha_sitekey }) {
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(null);
   const [captcha, setCaptcha] = useState(null);
-
+  const searchParams = useSearchParams();
+  const applyJob = searchParams.get("job");
   const onSubmit = async (e) => {
     try {
       if (captcha == null) throw "Recaptcha not verified!";
@@ -80,7 +82,11 @@ function EnquireForm({ handleSubmit, captcha_sitekey }) {
                 {error}
               </div>
             )}
-            <select name="userType" required>
+            <select
+              name="userType"
+              required
+              defaultValue={applyJob ? "Career Explorer" : "Prospective Client"}
+            >
               <option value="Prospective Client">
                 I am a Prospective Client
               </option>
@@ -89,7 +95,11 @@ function EnquireForm({ handleSubmit, captcha_sitekey }) {
               <option value="Investor">I am an Investor</option>
             </select>
 
-            <select name="enquiryType" required>
+            <select
+              name="enquiryType"
+              required
+              defaultValue={applyJob ? "Job Application" : "General Enquiries"}
+            >
               <option value="General Enquiries">General Enquiries</option>
               <option value="Media Enquiries">Media Enquiries</option>
               <option value="Job Application">Job Application</option>
@@ -105,6 +115,14 @@ function EnquireForm({ handleSubmit, captcha_sitekey }) {
               required
             />
             <input name="file" type="file" placeholder="Attach Resume" />
+            <input
+              name="subject"
+              type="text"
+              placeholder="Subject"
+              style={{ gridColumn: "1/3" }}
+              value={applyJob ? `${applyJob} Application` : ""}
+              required
+            />
             <textarea
               name="message"
               placeholder="Message"

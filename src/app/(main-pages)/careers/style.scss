@@ -127,7 +127,8 @@
           }
         }
 
-        button {
+        .apply_btn {
+          text-align: center;
           background-color: #f25075;
           color: white;
           padding: 8px 10px;
@@ -153,7 +154,7 @@
           padding-right: 20px;
           padding-bottom: 70px;
 
-          button {
+          .apply_btn {
             transform: none;
             top: auto;
             bottom: 20px;
