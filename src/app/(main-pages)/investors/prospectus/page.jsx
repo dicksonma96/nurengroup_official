@@ -1,9 +1,6 @@
 import React from "react";
 import AssetPath from "@/app/utils/assetpath";
-import Link from "next/link";
 import "./style.scss";
-import test from "@/assets/img/test.jpg";
-import Image from "next/image";
 
 export const metadata = {
   title: "Prospectus | Nuren Group Limited (NSX:NUR) - NSX Australia IPO 2024",
