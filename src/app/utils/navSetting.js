@@ -75,6 +75,10 @@ export const menu = [
         label: "Enquiry",
         path: "",
       },
+      {
+        label: "Careers",
+        abs_path: "/careers",
+      },
     ],
   },
 ];

@@ -10,7 +10,7 @@ function NewsItem({ data }) {
       <div className="overlay col">
         <span className="date">{data.date}</span>
         <strong>{data.title}</strong>
-        <Link scroll={false} href={`${pathname}/${data.id}/${data.slug}`}>
+        <Link scroll={false} href={`${pathname}/${data.slug}`}>
           Read More
         </Link>
       </div>

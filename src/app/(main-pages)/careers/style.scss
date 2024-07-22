@@ -1,0 +1,165 @@
+.careers {
+  .banner {
+    background: url("https://media.nurengroup.com/About/vision_mission_bg.jpg");
+    justify-content: center;
+    padding: 12vh 5vh;
+    overflow: hidden;
+    .text {
+      font-size: clamp(15px, 2.5vmin, 30px);
+      width: 90%;
+      max-width: 1200px;
+      position: relative;
+
+      * {
+        z-index: 2;
+      }
+      h1 {
+        white-space: nowrap;
+        font-size: 7vmin;
+        line-height: 110%;
+      }
+      p {
+        max-width: 800px;
+      }
+      img {
+        z-index: 1;
+        position: absolute;
+        right: 0%;
+        width: 70%;
+        bottom: 0%;
+        transform: translate(50%, 50%);
+      }
+    }
+  }
+  .our_team {
+    justify-content: center;
+    padding: 10vh 3vh;
+    gap: 5vh;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+
+    img {
+      border-radius: 0 5em 0 5em;
+      max-width: 600px;
+      width: 100%;
+    }
+
+    .text {
+      max-width: 600px;
+      font-size: clamp(15px, 3vmin, 25px);
+      color: black;
+
+      h1 {
+        color: #44394d;
+        font-size: 5vmin;
+        line-height: 110%;
+        margin-bottom: 2vmin;
+      }
+    }
+  }
+  .carousel {
+    width: 100%;
+    overflow: hidden;
+    img {
+      width: 20%;
+      min-width: 200px;
+    }
+  }
+
+  .position {
+    padding: 8vh 3vh;
+    background-color: #f3f3f3;
+    h1 {
+      color: #44394d;
+      font-size: 6vmin;
+      line-height: 110%;
+      margin-bottom: 2vmin;
+    }
+
+    .position_list {
+      width: 95%;
+      max-width: 800px;
+      gap: 10px;
+      .pos {
+        background-color: white;
+        padding: 20px 25px;
+        border-radius: 5px;
+        padding-right: 150px;
+        position: relative;
+        strong {
+          color: #44394d;
+          font-size: 20px;
+        }
+
+        .tags {
+          flex-wrap: wrap;
+          width: 100%;
+          gap: 5px;
+          .tag {
+            color: #b17951;
+            background-color: #f6dec5;
+            padding: 5px 10px;
+          }
+        }
+
+        .description {
+          color: #818a9c;
+          margin: 10px 0 20px;
+
+          .see_more {
+            color: #f25075;
+            padding: 0 5px;
+            cursor: pointer;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+
+        .bottom_info {
+          flex-wrap: wrap;
+          margin-left: -5px;
+          .info {
+            color: #818a9c;
+            margin-right: 20px;
+            font-size: 15px;
+          }
+        }
+
+        button {
+          background-color: #f25075;
+          color: white;
+          padding: 8px 10px;
+          border-radius: 99px;
+          border: none;
+          position: absolute;
+          right: 30px;
+          top: 50%;
+          transform: translateY(-50%);
+          min-width: 100px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .careers {
+    .position {
+      .position_list {
+        .pos {
+          padding-right: 20px;
+          padding-bottom: 70px;
+
+          button {
+            transform: none;
+            top: auto;
+            bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,7 @@
 $color1: #ee5174;
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 
 * {
   box-sizing: border-box;
@@ -96,6 +97,8 @@ body {
 .protection {
   justify-content: center;
   height: 100vh;
+  margin: 0 auto;
+  width: 250px;
   strong {
     color: black;
     margin-bottom: 20px;

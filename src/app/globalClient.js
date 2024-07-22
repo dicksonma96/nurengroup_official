@@ -3,11 +3,8 @@ import React, { useState, useRef, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import localFont from "next/font/local";
-import Logo from "../assets/img/logo_white.svg";
-import Image from "next/image";
-import AssetPath from "./utils/assetpath";
+import AdminLogin from "@/components/adminLogin";
 import getCookie from "./utils/getCookie";
-import setCookie from "./utils/setCookie";
 
 const gothamFont = localFont({
   src: "../assets/fonts/Gotham-Rounded-Bold.otf",
@@ -18,7 +15,7 @@ function GlobalClient({ children }) {
   const [logged, setLogged] = useState(false);
 
   useEffect(() => {
-    setLogged(localStorage.getItem("nurengroup_dev"));
+    setLogged(getCookie("nurengroup_dev"));
   }, []);
 
   return (
@@ -45,41 +42,10 @@ function GlobalClient({ children }) {
         </motion.div> */}
 
         {/* Lock on staging */}
-        {/* {logged ? children : <DevProtection setLogged={setLogged} />} */}
+        {/* {logged ? children : <AdminLogin setLogged={setLogged} />} */}
         {children}
       </body>
     </AnimatePresence>
-  );
-}
-
-function DevProtection({ setLogged }) {
-  const password = "Nuren1234%";
-  const inputRef = useRef(null);
-  const [error, setError] = useState(false);
-  const handleSubmit = () => {
-    if (inputRef.current.value == password) {
-      localStorage.setItem("nurengroup_dev", "true");
-      setLogged(true);
-    } else setError(true);
-  };
-
-  return (
-    <div className="protection colc">
-      <strong>Nurengroup Admin</strong>
-      {error && <span>Incorrect Password!</span>}
-      <input
-        onChange={() => setError(false)}
-        onKeyDown={(e) => {
-          if (e.key === "Enter") {
-            handleSubmit();
-          }
-        }}
-        ref={inputRef}
-        type="password"
-        placeholder="Password"
-      />
-      <button onClick={handleSubmit}>SIGN IN</button>
-    </div>
   );
 }
 

@@ -4,24 +4,28 @@ import mediaNews from "../../../../data/mediahub.json";
 import { BackBtn, BackOverlay } from "./backbtn";
 
 export async function generateMetadata({ params }) {
-  const detail = mediaNews.news.find((info) => info.id == params.news[0]);
+  const detail = mediaNews.news.find(
+    (info) => info.slug == decodeURIComponent(params.news[0])
+  );
 
   return {
-    title: "Nuren Group | " + detail.title,
-    description: detail.date + ": " + detail.description,
+    title: "Nuren Group | " + detail?.title,
+    description: detail?.date + ": " + detail?.description,
     openGraph: {
-      images: [detail.img],
+      images: [detail?.img],
     },
     twitter: {
-      card: "Nuren Group | " + detail.title,
-      images: [detail.img],
+      card: "Nuren Group | " + detail?.title,
+      images: [detail?.img],
     },
   };
 }
 
 async function NewsDetail({ params }) {
   try {
-    const detail = mediaNews.news.find((info) => info.id == params.news[0]);
+    const detail = mediaNews.news.find(
+      (info) => info.slug == decodeURIComponent(params.news[0])
+    );
     const moreInfo = [...(detail.interview || []), ...(detail.article || [])];
     return (
       <div className="news_overlay">
@@ -67,7 +71,11 @@ async function NewsDetail({ params }) {
       </div>
     );
   } catch (e) {
-    return <main className="mediahub col section">{JSON.stringify(e)}</main>;
+    return (
+      <div className="news_overlay">
+        <BackOverlay />
+      </div>
+    );
   }
 }
 
