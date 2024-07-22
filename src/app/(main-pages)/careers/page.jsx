@@ -77,8 +77,10 @@ async function Careers() {
                   <div className="pos col" key={index}>
                     <strong>{job.position}</strong>
                     <div className="tags row">
-                      {job?.tags.map((tag) => (
-                        <span className="tag">{tag}</span>
+                      {job?.tags.map((tag, i) => (
+                        <span key={i} className="tag">
+                          {tag}
+                        </span>
                       ))}
                     </div>
                     <ExpandParagraph

@@ -1,8 +1,9 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { promises as fs } from "fs";
 import NewsItem from "./newsItem";
 import "./style.scss";
 import getDatabase from "@/app/utils/mongoConnection";
+import Loading from "./loading";
 
 function MediaHubLayout({ children }) {
   return (
@@ -22,7 +23,7 @@ function MediaHubLayout({ children }) {
         </div>
       </div>
       <div className="content">
-        {children}
+        <Suspense fallback={<Loading />}>{children}</Suspense>
         <NewsListing />
       </div>
     </main>
@@ -38,12 +39,15 @@ async function NewsListing() {
     // const data = JSON.parse(file);
     const db = await getDatabase();
     const collection = db.collection("mediahub");
-    const data = await collection.find().toArray();
+    const data = await collection
+      .find({}, { projection: { _id: 0 } })
+      .sort({ date: -1 })
+      .toArray();
     return (
       <div className="news_listing">
-        {data.map((info, index) => (
-          <NewsItem key={index} data={info} />
-        ))}
+        {data.map((info, index) => {
+          if (info.active) return <NewsItem key={index} data={info} />;
+        })}
       </div>
     );
   } catch (e) {

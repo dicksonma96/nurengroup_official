@@ -2,7 +2,7 @@ import ShareBtn from "./sharebtn";
 import mediaNews from "../../../../data/mediahub.json";
 import formatDate from "@/app/utils/formatDate";
 import getDatabase from "@/app/utils/mongoConnection";
-
+import Link from "next/link";
 import { BackBtn, BackOverlay } from "./backbtn";
 
 export async function generateMetadata({ params }) {
@@ -11,7 +11,12 @@ export async function generateMetadata({ params }) {
   // );
   const db = await getDatabase();
   const collection = db.collection("mediahub");
-  const detail = await collection.findOne({ slug: params.news[0] });
+  const detail = await collection.findOne(
+    {
+      slug: decodeURIComponent(params.news[0]),
+    },
+    { projection: { _id: 0 } }
+  );
   return {
     title: "Nuren Group | " + detail?.title,
     description: formatDate(detail?.date) + ": " + detail?.description,
@@ -29,7 +34,12 @@ async function NewsDetail({ params }) {
   try {
     const db = await getDatabase();
     const collection = db.collection("mediahub");
-    const detail = await collection.findOne({ slug: params.news[0] });
+    const detail = await collection.findOne(
+      {
+        slug: decodeURIComponent(params.news[0]),
+      },
+      { projection: { _id: 0 } }
+    );
     const moreInfo = [...(detail.interview || []), ...(detail.article || [])];
     return (
       <div className="news_overlay">
@@ -50,10 +60,7 @@ async function NewsDetail({ params }) {
               className="urban_text"
               dangerouslySetInnerHTML={{ __html: detail.description }}
             ></p>
-            <ShareBtn
-              title={detail.title}
-              path={`/mediahub/${detail.id}/${detail.slug}`}
-            />
+            <ShareBtn title={detail.title} path={`/mediahub/${detail.slug}`} />
 
             <div className="reference rowc">
               <div className="label urban_text">Find out more:</div>
@@ -78,7 +85,30 @@ async function NewsDetail({ params }) {
     );
   } catch (e) {
     return (
-      <div className="news_overlay">
+      <div className="news_overlay rowc">
+        <div
+          className="colc"
+          style={{
+            color: "black",
+            padding: "20px",
+            margin: "auto",
+            background: "white",
+            borderRadius: 10,
+          }}
+        >
+          <span>Opps, Something went wrong about this news :( </span>
+          <br />
+          <Link
+            href="/mediahub"
+            style={{
+              background: "#ee5174",
+              color: "white",
+              padding: "10px 15px",
+            }}
+          >
+            Close
+          </Link>
+        </div>
         <BackOverlay />
       </div>
     );
