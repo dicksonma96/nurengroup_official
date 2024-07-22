@@ -2,6 +2,7 @@ import AssetPath from "@/app/utils/assetpath";
 import "./style.scss";
 import EnquireForm from "./enquire_form";
 import nodemailer from "nodemailer";
+import { Suspense } from "react";
 
 export const metadata = {
   title: "Contact Us | Nuren Group - Motherhood SuperApp, Kelabmama, Ibuencer",
@@ -85,7 +86,18 @@ function Enquire() {
   return (
     <main className="enquire section col">
       <div className="enquire_content col">
-        <EnquireForm handleSubmit={handleSubmit} captcha_sitekey={sitekey} />
+        <Suspense
+          fallback={
+            <div
+              className="rowc"
+              style={{ margin: "auto", justifyContent: "center" }}
+            >
+              <div className="loader"></div>
+            </div>
+          }
+        >
+          <EnquireForm handleSubmit={handleSubmit} captcha_sitekey={sitekey} />
+        </Suspense>
         <div className="map rowc">
           <Pin style={{ left: "33%", top: "20%" }} delay={0.2} />
           <Pin style={{ left: "32%", top: "31%" }} delay={0} />
