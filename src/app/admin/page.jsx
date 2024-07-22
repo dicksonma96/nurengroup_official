@@ -7,6 +7,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import DatePicker from "react-datepicker";
 import ConfirmDialog from "./confirmDialog";
 import { UpdateMedia, DeleteMedia } from "./actions";
+import SubmitBtn from "./submitBtn";
 
 function Mediahub() {
   const [search, setSearch] = useState("");
@@ -549,9 +550,7 @@ function EditMedia({ loadData = null, setOpenPopup, refreshData }) {
           >
             Close
           </div>
-          <button type="submit" className="cta_btn">
-            {loading ? "Updaing" : "Update"}
-          </button>
+          <SubmitBtn />
         </div>
       </form>
     </div>

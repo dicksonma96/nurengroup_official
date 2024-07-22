@@ -62,6 +62,12 @@
       width: 220px;
     }
   }
+
+  .submit_btn {
+    &:disabled {
+      opacity: 0.5;
+    }
+  }
 }
 
 .admin_menu {

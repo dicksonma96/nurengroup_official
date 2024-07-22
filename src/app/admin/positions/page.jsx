@@ -5,6 +5,7 @@ import removeEmptyProperties from "@/app/utils/removeEmptyProperties";
 import { DeleteJob, UpdateJob } from "../actions";
 import ConfirmDialog from "../confirmDialog";
 import DatePicker from "react-datepicker";
+import SubmitBtn from "../submitBtn";
 
 function Positions() {
   const [loading, setLoading] = useState(false);
@@ -210,11 +211,8 @@ function EditPosition({ loadData = null, setOpenPopup, refreshData }) {
       open: true,
     }
   );
-  const [loading, setLoading] = useState(false);
-
   const HandleUpdate = async (e) => {
     try {
-      setLoading(true);
       let formdata = new FormData();
       formdata.append("_id", data._id);
       formdata.append("position", data.position);
@@ -235,8 +233,6 @@ function EditPosition({ loadData = null, setOpenPopup, refreshData }) {
       }
     } catch (e) {
       alert(e);
-    } finally {
-      setLoading(false);
     }
   };
 
@@ -413,9 +409,7 @@ function EditPosition({ loadData = null, setOpenPopup, refreshData }) {
           >
             Close
           </div>
-          <button type="submit" className="cta_btn">
-            {loading ? "Updaing" : "Update"}
-          </button>
+          <SubmitBtn />
         </div>
       </form>
     </div>
