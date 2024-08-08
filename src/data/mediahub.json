@@ -1,9 +1,28 @@
 {
   "news": [  
     {
+      "id": "NG92",
+      "slug": "nuren-group-limited-listed-on-nsx",
+      "img": "https://media.nurengroup.com/lib/images/nurengroup_nsx_20240806.jpg",
+
+      "title": "Nuren Group Limited Listed on NSX",
+      "date": "06/08/2024",
+      "description": "Nuren Group, a premier digital platform committed to empowering women in parenting, education, and maternity wellness, debut on National Stock Exchange of Australia today. The commencement of trading was heralded by the ceremonial ringing of the bells in NSX Sydney. The day proceeded with a Luncheon Reception at the Pullman Quay Grand Sydney Harbour, marking this significant occasion. Esteemed guests included the High Commissioner of Malaysia to Australia, Her Excellency Ms. Sharrina Binti Abdullah; Managing Director of the National Stock Exchange of Australia, Mr. Max Cunningham; Director of the Malaysian Investment Development Authority (MIDA) – Sydney Office, Ms. Noraisyah Nordin; Director of the Malaysia Tourism Promotion Board – Sydney Office, Ms. Baizuri Binti Baharum; and Senior Vice President of Venture Finance at Malaysia Debt Ventures Berhad (MDV), Mr. Mohd Farid Mohd Rosli.",
+      "interview": [
+        {
+          "label": "Digicon Asia",
+          "link": "https://digiconasia.net/pr-newswire/nuren-group-launches-ipo-on-nsx"
+        },
+        {
+          "label": "NSX",
+          "link": "https://www.nsx.com.au/marketdata/company-directory/details/NRN/"
+        }      
+      ]
+    },
+    {
       "id": "NG91",
       "slug": "nuren-group-triumphs-at-markies-awards-2024-malaysia",
-      "img": "https://media.licdn.com/dms/image/D5622AQH11ZM24WVxzw/feedshare-shrink_2048_1536/0/1719054807312?e=1721865600&v=beta&t=kXq_-LhWQVmOEKenKfjA_ezkQ7zGWX1o5F9MHe7M4hc",
+      "img": "https://media.nurengroup.com/lib/images/markies.jpeg",
 
       "title": "Nuren Group (Enlinea) Triumphs at MARKies Awards 2024 Malaysia",
       "date": "21/06/2024",
