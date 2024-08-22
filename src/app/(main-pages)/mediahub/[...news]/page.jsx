@@ -40,7 +40,6 @@ async function NewsDetail({ params }) {
       },
       { projection: { _id: 0 } }
     );
-    const moreInfo = [...(detail.interview || []), ...(detail.article || [])];
     return (
       <div className="news_overlay">
         <div className="news_detail col">
@@ -64,7 +63,7 @@ async function NewsDetail({ params }) {
 
             <div className="reference rowc">
               <div className="label urban_text">Find out more:</div>
-              {moreInfo.map((info, index) => (
+              {detail.source.map((info, index) => (
                 <>
                   <a
                     key={index}
@@ -74,7 +73,7 @@ async function NewsDetail({ params }) {
                   >
                     {info.label}
                   </a>
-                  {index != moreInfo.length - 1 && <span>|</span>}
+                  {index != detail.source.length - 1 && <span>|</span>}
                 </>
               ))}
             </div>

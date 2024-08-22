@@ -5,6 +5,8 @@ import getCookie from "../utils/getCookie";
 import "./style.scss";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
+import Logo from "@/assets/img/logo.svg";
 
 function Layout({ children }) {
   const [logged, setLogged] = useState(false);
@@ -20,6 +22,7 @@ function Layout({ children }) {
       {logged ? (
         <>
           <div className="admin_menu col">
+            <Image className="logo" src={Logo} alt="Nuren group" />
             <Link className="menu_item rowc" href="/admin">
               <span className="material-symbols-outlined icon">
                 full_coverage

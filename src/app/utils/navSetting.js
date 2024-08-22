@@ -44,13 +44,27 @@ export const menu = [
     path: "/investors/corporate-governance",
     subMenu: [
       {
+        label: "Company Information",
+        abs_path:
+          "https://www.nsx.com.au/marketdata/company-directory/details/NRN/",
+      },
+      {
         label: "Corporate Governance",
         path: "/corporate-governance",
       },
       {
-        label: "Download Prospectus",
-        abs_path: "/investors/prospectus",
+        label: "Announcements",
+        abs_path:
+          "https://www.nsx.com.au/marketdata/company-directory/announcements/NRN/",
       },
+      // {
+      //   label: "Finance Reports",
+      //   path: "/finance-reports",
+      // },
+      // {
+      //   label: "Download Prospectus",
+      //   abs_path: "/investors/prospectus",
+      // },
     ],
   },
   {
