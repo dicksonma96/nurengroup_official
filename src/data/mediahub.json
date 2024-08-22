@@ -1,6 +1,74 @@
 {
   "news": [  
     {
+      "id": "NG96",
+      "slug": "nuren-group-on-expansion-trail-in-australia-as-it-looks-beyond-southeast-asia-for-growth",
+      "img": "https://media.nurengroup.com/lib/images/nurengroup_thesundaily_20240819.jpg",
+      "title": "Nuren Group on Expansion Trail in Australia as It Looks Beyond Southeast Asia for Growth",
+      "date": "19/08/2024",
+      "description": " In a strategic move to drive further growth, Malaysia-based parenting technology company Nuren Group is expanding into the Australian market. “Australia will be one of our key target markets going forward. We are already in discussions with various agencies in Australia to facilitate this expansion and get our offerings in front of Australian parents,” she said in an exclusive interview with SunBiz. Beyond introducing Malaysian brands, Nuren Group is exploring new investment opportunities in Australia, particularly in the women’s healthcare and wellness sectors. Goh said expansion into Australia is a crucial part of Nuren Group’s broader growth strategy over the next three to five years, as the company aims to leverage its strong user base of five million customers across Southeast Asia to drive further geographical expansion and product diversification.",
+      "interview": [
+        {
+          "label": "The Sun Daily",
+          "link": "https://thesun.my/business-news/nuren-group-on-expansion-trail-in-australia-as-it-looks-beyond-southeast-asia-for-growth-PM12874694"
+        }     
+      ]
+    },
+    {
+      "id": "NG95",
+      "slug": "",
+      "img": "https://media.nurengroup.com/lib/images/nurengroup_ceoinsightasia_20240818.jpg",
+      "title": "Nuren Group Positions Itself as a Leader in Southeast Asia's Growing Parenting Tech Market",
+      "date": "18/08/2024",
+      "description": "A key element of Nuren Group's strategy is its emphasis on staying ahead of industry trends. The company has recognized the increasing role of artificial intelligence (AI) in delivering personalized content and recommendations, which enhances the user experience by providing tailored insights and suggestions. Goh emphasized that Nuren Group is investing in the latest technologies to maintain its platform at the forefront of AI and personalization, ensuring that users receive customized content that meets their specific needs. Goh explained. \"Additionally, we are pursuing strategic expansion into untapped areas within Southeast Asia, aiming to capture new market opportunities and broaden our reach.\"",
+      "interview": [
+        {
+          "label": "CEO Insight Asia",
+          "link": "https://www.ceoinsightsasia.com/news/nuren-group-positions-itself-as-a-leader-in-southeast-asia-s-growing-parenting-tech-market-nwid-12466.html"
+        }   
+      ]
+    },
+    {
+      "id": "NG94",
+      "slug": "nuren-group-takes-charge-of-parenting-tech-market",
+      "img": "https://media.nurengroup.com/lib/images/nurengroup_thestar1_20240817.jpeg",
+      "title": "Nuren Group Takes Charge of Parenting Tech Market",
+      "date": "17/08/2024",
+      "description": "The parenting technology market in Southeast Asia is expanding, driven by high birth rates and increasing digital adoption. The size of the parenting technology market in the region stood at around US$7bil, with a compounded annual growth rate (CAGR) of 8% to 10%. \"We focus on localisation, tailoring our offerings to align with local cultures and specific needs, ensuring relevance and appeal across different regions. There is also a growing emphasis on community building, with online communities and support networks offering valuable connections and advice for parents\" explained Petrina Goh",
+      "interview": [
+        {
+          "label": "TheStar",
+          "link": "https://media.nurengroup.com/lib/images/nurengroup_thestar1_20240817.jpeg"
+        }      
+      ]
+    },
+    {
+      "id": "NG93",
+      "slug": "celebrating-excellence-at-the-motherhood-choice-awards-2024",
+      "img": "https://media.nurengroup.com/lib/images/nurengroup_motherhoodchoiceaward_20240814.jpg",
+      "title": "Celebrating Excellence at the Motherhood Choice Awards 2024",
+      "date": "14/08/2024",
+      "description": "The Motherhood Choice Awards 2024, held at the Concorde Hotel in Kuala Lumpur, celebrated top products for their outstanding contributions to family and child care across maternity segment, family segment, kids segment and baby segment. Hosted by Hunny Madu, the event highlighted the achievements of top brands, panel of experts, Supermom and Super Parents, who have significantly impacted the lives of families in Malaysia. Among the brands featured include Bio-Oil Skincare Oil (Natural), COZZI Confinement Centre, Anmum Materna, Blackmores Pregnancy & Breast-Feeding Gold Supplement, Sunway Pyramid, Ddrops, Babyshop, Senss, Farm Fresh, Ayam Brand, Bubs, Kumon, Smart Reader Kids, FiFFY, Honest Infant, funbies and more.",
+      "interview": [
+        {
+          "label": "Official",
+          "link": "https://story.motherhood.com.my/blog/motherhood-choice-awards-2024-winners/"
+        },
+        {
+          "label": "English",
+          "link": "https://finance.yahoo.com/news/motherhood-choice-awards-2024-celebrates-083900791.html"
+        },
+        {
+          "label": "Malay",
+          "link": "https://en.prnasia.com/releases/apac/116353-0.shtml"
+        },
+        {
+          "label": "Citizens Journal",
+          "link": "https://cj.my/146951/celebrating-excellence-at-the-motherhood-choice-awards/"
+        }       
+      ]
+    },
+    {
       "id": "NG92",
       "slug": "nuren-group-limited-listed-on-nsx",
       "img": "https://media.nurengroup.com/lib/images/nurengroup_nsx_20240806.jpg",

@@ -6,9 +6,9 @@ import test from "@/assets/img/test.jpg";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Prospectus | Nuren Group Limited (NSX:NUR) - NSX Australia IPO 2024",
+  title: "Prospectus | Nuren Group Limited (NSX:NRN) - NSX Australia IPO 2024",
   description:
-    "Download Prospectus of Nuren Group Limited (NSX:NUR) IPO 2024 Australia. If you have any questions about the Offer or any other matter, please contact your professional advisor.",
+    "Download Prospectus of Nuren Group Limited (NSX:NRN) IPO 2024 Australia. If you have any questions about the Offer or any other matter, please contact your professional advisor.",
 };
 
 function Prospectus() {
