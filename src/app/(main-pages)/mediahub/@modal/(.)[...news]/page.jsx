@@ -59,7 +59,7 @@ async function NewsDetail({ params }) {
               className="urban_text"
               dangerouslySetInnerHTML={{ __html: detail.description }}
             ></p>
-            <ShareBtn title={detail.title} path={`/mediahub/${detail.slug}`} />
+            <ShareBtn title={detail.title} />
 
             <div className="reference rowc">
               <div className="label urban_text">Find out more:</div>
