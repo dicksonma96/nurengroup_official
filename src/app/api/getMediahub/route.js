@@ -8,9 +8,7 @@ export async function GET(request) {
   let searchQuery = request.nextUrl.searchParams.get("search") || "";
   let startDate = request.nextUrl.searchParams.get("dateFrom") || null;
   let endDate = request.nextUrl.searchParams.get("dateTo") || null;
-
-  let sortDate =
-    request.nextUrl.searchParams.get("sortDate") == "true" ? -1 : 1 || -1;
+  let lazyLoading = request.nextUrl.searchParams.get("lazyLoading") || null;
   noStore();
   try {
     const db = await getDatabase();
@@ -31,9 +29,9 @@ export async function GET(request) {
     const totalDocuments = await collection.countDocuments(filter);
     const data = await collection
       .find(filter)
-      .sort({ date: sortDate })
-      .limit(entries)
-      .skip(entries * (page - 1))
+      .sort({ date: -1 })
+      .limit(lazyLoading ? entries * page : entries)
+      .skip(lazyLoading ? 0 : entries * (page - 1))
       .toArray();
 
     //-------Update datestring to dateObject

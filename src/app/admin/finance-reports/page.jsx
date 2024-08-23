@@ -254,7 +254,7 @@ function EditPopup({ loadData = null, setOpenPopup, refreshData }) {
             <DatePicker
               showIcon
               selected={data.date}
-              onChange={(date) => setStartDate(date)}
+              onChange={(date) => setData((prev) => ({ ...prev, date: date }))}
               required
             />
           </div>

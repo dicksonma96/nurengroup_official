@@ -7,15 +7,26 @@
     img {
       width: 100%;
       object-fit: cover;
-      object-position: center bottom;
-      min-height: 160px;
+      object-position: center;
+      min-height: 400px;
+    }
+
+    .text {
+      position: absolute;
+      left: 15%;
+      h1 {
+        font-size: clamp(50px, 7vmin, 100px);
+        color: white;
+        line-height: 100%;
+        line-height: 100%;
+      }
     }
   }
   .content {
     margin: auto;
     width: 100%;
     max-width: 1200px;
-    padding: 75px 20px;
+    padding: 50px 20px;
     color: black;
     .report_list {
       width: 100%;

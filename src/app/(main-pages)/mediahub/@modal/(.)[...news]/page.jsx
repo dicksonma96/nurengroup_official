@@ -1,5 +1,5 @@
 import ShareBtn from "./sharebtn";
-import mediaNews from "@/data/docsInfo.js";
+import mediaNews from "../../../../../data/mediahub.json";
 import formatDate from "@/app/utils/formatDate";
 import getDatabase from "@/app/utils/mongoConnection";
 import Link from "next/link";
@@ -41,7 +41,7 @@ async function NewsDetail({ params }) {
       { projection: { _id: 0 } }
     );
     return (
-      <div className="news_static_page">
+      <div className="news_overlay">
         <div className="news_detail col">
           <BackBtn />
           <img src={detail.img} alt={detail.title} />
@@ -59,10 +59,7 @@ async function NewsDetail({ params }) {
               className="urban_text"
               dangerouslySetInnerHTML={{ __html: detail.description }}
             ></p>
-            <ShareBtn
-              title={detail.title}
-              path={`${process.env.BASE_URL}/mediahub/${detail.slug}`}
-            />
+            <ShareBtn title={detail.title} path={`/mediahub/${detail.slug}`} />
 
             <div className="reference rowc">
               <div className="label urban_text">Find out more:</div>
@@ -82,6 +79,7 @@ async function NewsDetail({ params }) {
             </div>
           </div>
         </div>
+        <BackOverlay />
       </div>
     );
   } catch (e) {

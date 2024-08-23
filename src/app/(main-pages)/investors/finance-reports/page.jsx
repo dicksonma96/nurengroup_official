@@ -34,7 +34,11 @@ async function FinanceReports() {
   return (
     <div className="finance_report col">
       <div className="banner rowc">
-        <img src={AssetPath("finance-report/banner.jpg")} alt="" />
+        <div className="text col">
+          <h1>FINANCIAL</h1>
+          <h1 className="pink_text">REPORTS</h1>
+        </div>
+        <img src={AssetPath("finance-report/banner_bg.jpg")} alt="" />
       </div>
       <div className="content">
         <div className="report_list col">

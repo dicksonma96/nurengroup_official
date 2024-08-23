@@ -10,11 +10,15 @@ export function BackBtn() {
     <div
       className="backbtn rowc"
       onClick={() => {
-        router.push("/mediahub");
+        if (window.history?.length > 1) {
+          router.back();
+        } else {
+          router.push("/mediahub");
+        }
       }}
     >
       <Image src={Back} alt="" />
-      <span>More News</span>
+      <span>Back</span>
     </div>
   );
 }
