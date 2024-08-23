@@ -1,24 +1,34 @@
 import React, { useState, useRef, useEffect } from "react";
 import setCookie from "@/app/utils/setCookie";
 import Link from "next/link";
+import { AdminSignIn } from "@/app/admin/actions";
 
 function AdminLogin({ setLogged, storageKey = "nurengroup_dev" }) {
-  const password = "Nuren1234%";
   const inputRef = useRef(null);
-  const [error, setError] = useState(false);
-  const handleSubmit = () => {
-    if (inputRef.current.value == password) {
-      setCookie(storageKey, "true", 1);
-      setLogged(true);
-    } else setError(true);
+  const [pending, setPending] = useState(false);
+  const [error, setError] = useState(null);
+  const handleSubmit = async () => {
+    try {
+      setPending(true);
+      let res = await AdminSignIn(inputRef.current.value);
+      if (res != true) setError(res);
+      else {
+        setCookie(storageKey, "true", 1);
+        setLogged(true);
+      }
+    } catch (e) {
+      setError(e);
+    } finally {
+      setPending(false);
+    }
   };
 
   return (
     <div className="protection colc">
       <strong>Nurengroup Admin</strong>
-      {error && <span>Incorrect Password!</span>}
+      {error && <span>{error}</span>}
       <input
-        onChange={() => setError(false)}
+        onChange={() => setError(null)}
         onKeyDown={(e) => {
           if (e.key === "Enter") {
             handleSubmit();
@@ -28,7 +38,9 @@ function AdminLogin({ setLogged, storageKey = "nurengroup_dev" }) {
         type="password"
         placeholder="Password"
       />
-      <button onClick={handleSubmit}>SIGN IN</button>
+      <button disabled={pending} onClick={handleSubmit}>
+        {pending ? "SIGNING IN..." : "SIGN IN"}
+      </button>
       <Link
         href="/"
         style={{

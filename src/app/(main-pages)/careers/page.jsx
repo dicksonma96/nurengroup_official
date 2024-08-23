@@ -5,25 +5,11 @@ import ExpandParagraph from "./expandParagraph";
 import getDatabase from "@/app/utils/mongoConnection";
 import Link from "next/link";
 
-// const jobs = [
-//   {
-//     title: "Backend Developer",
-//     tags: ["FULL TIME", "3 YEARS EXPERIENCE", "PHP"],
-//     salary: "MYR 5000 - 7000",
-//     description:
-//       "You will work in a software consulting team to build and support Claritas suites of business software on CRM, eCommerce & Analytics. You will get to involved in technology on cloud, big data and AI. This is an opportunity for you to work in a dynamic environment where you must take pride in module ownership and passionate in continuous improvement.",
-//     location: "Petaling Jaya, Jaya One",
-//     open: false,
-//   },
-//   {
-//     title: "Backend Developer",
-//     tags: ["FULL TIME", "3 YEARS EXPERIENCE", "PHP"],
-//     salary: "MYR 5000 - 7000",
-//     description: "lorem ipsum",
-//     location: "Petaling Jaya, Jaya One",
-//     open: true,
-//   },
-// ];
+export const metadata = {
+  title: "Careers | Nuren Group - Motherhood SuperApp, Kelabmama, Ibuencer",
+  description:
+    "Careers @ Nuren Group - Motherhood Parenting SuperApp, Kelabmama.com, Ibuencer.com, Parentcraft, Superkids, Baby Fair, Motherhood Choice Award, MamaCubaTry",
+};
 
 async function Careers() {
   const db = await getDatabase();

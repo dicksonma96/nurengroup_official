@@ -57,10 +57,10 @@ export const menu = [
         abs_path:
           "https://www.nsx.com.au/marketdata/company-directory/announcements/NRN/",
       },
-      // {
-      //   label: "Finance Reports",
-      //   path: "/finance-reports",
-      // },
+      {
+        label: "Finance Reports",
+        path: "/finance-reports",
+      },
       // {
       //   label: "Download Prospectus",
       //   abs_path: "/investors/prospectus",

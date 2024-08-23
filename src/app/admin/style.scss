@@ -60,7 +60,7 @@
       color: grey;
     }
     input {
-      width: 220px;
+      width: 260px;
     }
   }
 
@@ -133,6 +133,7 @@
       height: 100%;
       justify-content: center;
       backdrop-filter: blur(3px);
+      z-index: 99;
     }
   }
 }

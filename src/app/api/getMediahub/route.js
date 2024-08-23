@@ -14,7 +14,7 @@ export async function GET(request) {
   noStore();
   try {
     const db = await getDatabase();
-    const collection = db.collection("mediahub");
+    const collection = await db.collection("mediahub");
     const filter = {
       $or: [
         { title: new RegExp(searchQuery, "i") },

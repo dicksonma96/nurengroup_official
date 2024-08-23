@@ -8,11 +8,12 @@ export async function GET(request) {
   noStore();
   try {
     const db = await getDatabase();
-    const collection = await db.collection("job-position");
-    const filter = { position: new RegExp(searchQuery, "i") };
+    const collection = await db.collection("financial-report");
+    const filter = { title: new RegExp(searchQuery, "i") };
 
     const totalDocuments = await collection.countDocuments(filter);
-    const data = await collection.find(filter).toArray();
+
+    const data = await collection.find(filter).sort({ date: -1 }).toArray();
 
     return NextResponse.json(
       {
@@ -25,7 +26,6 @@ export async function GET(request) {
       { status: 200 }
     );
   } catch (error) {
-    console.log(error);
     return NextResponse.json(
       { error: error.message, success: false },
       { status: 500 }

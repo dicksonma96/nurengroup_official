@@ -14,8 +14,10 @@ export default function sitemap() {
     "https://nurengroup.com/brands/supermums-survey",
     "https://nurengroup.com/investors/corporate-governance",
     "https://nurengroup.com/investors/prospectus",
+    "https://nurengroup.com/investors/finance-reports",
     "https://nurengroup.com/mediahub",
     "https://nurengroup.com/enquiry",
+    "https://nurengroup.com/careers",
   ];
 
   mediaNews.news.forEach((news) => {

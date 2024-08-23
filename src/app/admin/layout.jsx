@@ -19,6 +19,8 @@ function Layout({ children }) {
 
   return mounted ? (
     <div className="admin row">
+      <title>Nurengroup Admin Panel</title>
+      <meta name="description" content={"Nurengroup Admin Panel"} />
       {logged ? (
         <>
           <div className="admin_menu col">
@@ -32,6 +34,10 @@ function Layout({ children }) {
             <Link className="menu_item rowc" href="/admin/positions">
               <span className="material-symbols-outlined icon">work</span>
               <span>Position Manager</span>
+            </Link>
+            <Link className="menu_item rowc" href="/admin/finance-reports">
+              <span className="material-symbols-outlined icon">finance</span>
+              <span>Finance Reports</span>
             </Link>
             <Link
               className="menu_item cta_btn rowc"

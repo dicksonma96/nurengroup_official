@@ -128,8 +128,9 @@ function Mediahub() {
 
           <div className="date_range rowc">
             <DatePicker
+              showIcon={true}
               selected={filter.dateFrom}
-              isClearable
+              isClearable={true}
               selectsRange={true}
               startDate={dateRange[0]}
               endDate={dateRange[1]}
