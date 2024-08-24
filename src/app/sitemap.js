@@ -1,7 +1,9 @@
 import { committee_charters, governance_docs } from "../data/docsInfo";
 import mediaNews from "../data/mediahub.json";
+import getDatabase from "./utils/mongoConnection";
+import { unstable_noStore as noStore } from "next/cache";
 
-export default function sitemap() {
+export default async function sitemap() {
   const pages = [
     "https://nurengroup.com",
     "https://nurengroup.com/home",
@@ -19,9 +21,15 @@ export default function sitemap() {
     "https://nurengroup.com/enquiry",
     "https://nurengroup.com/careers",
   ];
-
-  mediaNews.news.forEach((news) => {
-    pages.push(`https://nurengroup.com/mediahub/${news.id}/${news.slug}`);
+  noStore();
+  const db = await getDatabase();
+  const collection = db.collection("mediahub");
+  const data = await collection
+    .find({}, { projection: { _id: 0 } })
+    .sort({ date: -1 })
+    .toArray();
+  data.forEach((news) => {
+    pages.push(`https://nurengroup.com/mediahub/${news.slug}`);
   });
 
   committee_charters.forEach((doc) => {
