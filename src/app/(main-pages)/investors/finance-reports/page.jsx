@@ -1,20 +1,22 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import AssetPath from "@/app/utils/assetpath";
-import getDatabase from "@/app/utils/mongoConnection";
 import "./style.scss";
 import formatDate from "@/app/utils/formatDate";
 
-export const metadata = {
-  title:
-    "Financial Reports | Nuren Group Limited (NSX:NRN) - Investor Relations",
-  description:
-    "Financial Reports | Nuren Group Limited (NSX:NRN) - Investor Relations. Nuren Group provides parenting education and maternity wellness services.",
-};
+// export const metadata = {
+//   title:
+//     "Financial Reports | Nuren Group Limited (NSX:NRN) - Investor Relations",
+//   description:
+//     "Financial Reports | Nuren Group Limited (NSX:NRN) - Investor Relations. Nuren Group provides parenting education and maternity wellness services.",
+// };
 
-async function FinanceReports() {
-  const db = await getDatabase();
-  const collection = db.collection("financial-report");
-  const reports = await collection.find().toArray();
+function FinanceReports() {
+  // const db = await getDatabase();
+  // const collection = db.collection("financial-report");
+  // const reports = await collection.find().toArray();
+  const [data, setData] = useState(null);
+  const [pending, setPending] = useState(true);
   // const reports = [
   //   {
   //     date: new Date(),
@@ -31,41 +33,76 @@ async function FinanceReports() {
   //     url: "asdasd",
   //   },
   // ];
+
+  useEffect(() => {
+    GetData();
+  }, []);
+
+  const GetData = async () => {
+    try {
+      setPending(true);
+      let resjson = await fetch(`/api/getFinancialReport`).then((res) =>
+        res.json()
+      );
+      setData(resjson.data);
+    } catch {
+    } finally {
+      setPending(false);
+    }
+  };
+
   return (
-    <div className="finance_report col">
-      <div className="banner rowc">
-        <div className="text col">
-          <h1>FINANCIAL</h1>
-          <h1 className="pink_text">REPORTS</h1>
+    <>
+      <title>
+        Financial Reports | Nuren Group Limited (NSX:NRN) - Investor Relations
+      </title>
+      <meta
+        name="description"
+        content={
+          "Financial Reports | Nuren Group Limited (NSX:NRN) - Investor Relations. Nuren Group provides parenting education and maternity wellness services."
+        }
+      />
+      <div className="finance_report col">
+        <div className="banner rowc">
+          <div className="text col">
+            <h1>FINANCIAL</h1>
+            <h1 className="pink_text">REPORTS</h1>
+          </div>
+          <img src={AssetPath("finance-report/banner_bg.jpg")} alt="" />
         </div>
-        <img src={AssetPath("finance-report/banner_bg.jpg")} alt="" />
-      </div>
-      <div className="content">
-        <div className="report_list col">
-          {reports.map((report, index) => (
-            <div key={index} className="report_item row">
-              {report.type == "file" ? (
-                <img
-                  className="icon"
-                  src={AssetPath("finance-report/file.png")}
-                />
-              ) : (
-                <img
-                  className="icon"
-                  src={AssetPath("finance-report/link.png")}
-                />
-              )}
-              <div className="col">
-                <a target="_blank" href={report.url}>
-                  {report.title}
-                </a>
-                <span className="date">{formatDate(report.date)}</span>
-              </div>
+        <div className="content col">
+          {pending ? (
+            <div style={{ margin: "auto" }}>
+              <div className="loader"></div>
             </div>
-          ))}
+          ) : (
+            <div className="report_list col">
+              {data?.data.map((report, index) => (
+                <div key={index} className="report_item row">
+                  {report.type == "file" ? (
+                    <img
+                      className="icon"
+                      src={AssetPath("finance-report/file.png")}
+                    />
+                  ) : (
+                    <img
+                      className="icon"
+                      src={AssetPath("finance-report/link.png")}
+                    />
+                  )}
+                  <div className="col">
+                    <a target="_blank" href={report.url}>
+                      {report.title}
+                    </a>
+                    <span className="date">{formatDate(report.date)}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
