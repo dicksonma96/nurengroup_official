@@ -29,15 +29,15 @@ function Layout({ children }) {
               <span className="material-symbols-outlined icon">
                 full_coverage
               </span>
-              <span>Mediahub Manager</span>
+              <span>Mediahub Page</span>
             </Link>
-            <Link className="menu_item rowc" href="/admin/positions">
+            <Link className="menu_item rowc" href="/admin/careers">
               <span className="material-symbols-outlined icon">work</span>
-              <span>Position Manager</span>
+              <span>Careers Page</span>
             </Link>
             <Link className="menu_item rowc" href="/admin/finance-reports">
               <span className="material-symbols-outlined icon">finance</span>
-              <span>Finance Reports</span>
+              <span>Finance Reports Page</span>
             </Link>
             <Link
               className="menu_item cta_btn rowc"

@@ -7,7 +7,8 @@ import ConfirmDialog from "../confirmDialog";
 import DatePicker from "react-datepicker";
 import SubmitBtn from "../submitBtn";
 
-function Positions() {
+function Careers() {
+  const [tab, setTab] = useState("position");
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState(null);
   const [openPopup, setOpenPopup] = useState(false);
@@ -81,6 +82,11 @@ function Positions() {
           Add New Position
         </button>
       </div>
+      {/* <div className="admin_subtab rowc">
+        <div className="tab active_tab">Position List</div>
+        <div className="tab">Company Photos</div>
+      </div> */}
+
       <div className="admin_content col">
         {loading && (
           <div className="loading_overlay rowc">
@@ -416,4 +422,4 @@ function EditPosition({ loadData = null, setOpenPopup, refreshData }) {
   );
 }
 
-export default Positions;
+export default Careers;

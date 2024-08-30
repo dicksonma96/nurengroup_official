@@ -138,6 +138,24 @@
   }
 }
 
+.admin_subtab {
+  margin-bottom: 30px;
+  border-radius: 99px;
+  overflow: hidden;
+  align-self: start;
+  background-color: white;
+
+  .tab {
+    padding: 5px 15px;
+    color: black;
+  }
+  .active_tab {
+    background-color: #0f6fde;
+    color: white;
+    border-radius: 99px;
+  }
+}
+
 .admin_table {
   width: calc(100% + 40px);
   margin-left: -20px;
