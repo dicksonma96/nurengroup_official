@@ -4,6 +4,7 @@ import AssetPath from "@/app/utils/assetpath";
 import ExpandParagraph from "./expandParagraph";
 import getDatabase from "@/app/utils/mongoConnection";
 import Link from "next/link";
+import { unstable_noStore as noStore } from "next/cache";
 
 export const metadata = {
   title: "Careers | Nuren Group - Motherhood SuperApp, Kelabmama, Ibuencer",
@@ -12,6 +13,7 @@ export const metadata = {
 };
 
 async function Careers() {
+  noStore();
   const db = await getDatabase();
   const collection = db.collection("job-position");
   const jobs = await collection.find().toArray();
