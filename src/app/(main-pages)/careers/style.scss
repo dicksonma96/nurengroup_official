@@ -108,11 +108,24 @@
         .description {
           color: #818a9c;
           margin: 10px 0 20px;
+          position: relative;
+
+          .desc_content {
+            overflow: hidden;
+            height: 70px;
+          }
+
+          ol,
+          ul {
+            margin-left: 25px;
+          }
 
           .see_more {
             color: #f25075;
             padding: 0 5px;
             cursor: pointer;
+            align-self: flex-end;
+            background-color: white;
             &:hover {
               text-decoration: underline;
             }

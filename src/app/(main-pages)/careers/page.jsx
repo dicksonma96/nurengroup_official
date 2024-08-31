@@ -72,18 +72,19 @@ async function Careers() {
                       ))}
                     </div>
                     <ExpandParagraph
-                      text={job.description}
-                      className="description"
-                    />
+                      content={job?.description}
+                    ></ExpandParagraph>
                     <div className="bottom_info row">
                       <div className="info rowc">
-                        <span class="material-symbols-outlined">
+                        <span className="material-symbols-outlined">
                           attach_money
                         </span>
                         {job.salary}
                       </div>
                       <div className="info rowc">
-                        <span class="material-symbols-outlined">distance</span>
+                        <span className="material-symbols-outlined">
+                          distance
+                        </span>
                         {job.location}
                       </div>
                     </div>

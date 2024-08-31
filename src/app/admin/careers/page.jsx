@@ -6,6 +6,8 @@ import { DeleteJob, UpdateJob } from "../actions";
 import ConfirmDialog from "../confirmDialog";
 import DatePicker from "react-datepicker";
 import SubmitBtn from "../submitBtn";
+import TextEditor from "@/components/textEditor";
+import "ckeditor5/ckeditor5.css";
 
 function Careers() {
   const [tab, setTab] = useState("position");
@@ -123,7 +125,7 @@ function Careers() {
         <div className="admin_table">
           <div
             className="thead"
-            style={{ gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr 200px" }}
+            style={{ gridTemplateColumns: "1fr 1fr 1fr 1fr 100px 200px" }}
           >
             <div className="th rowc">Position</div>
             <div className="th rowc">Tags</div>
@@ -137,9 +139,14 @@ function Careers() {
               <div
                 className="tr"
                 key={index}
-                style={{ gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr 200px" }}
+                style={{ gridTemplateColumns: "1fr 1fr 1fr 1fr 100px 200px" }}
               >
-                <div className="td">{pos.position}</div>
+                <div
+                  className="td"
+                  style={{ textAlign: "left", padding: "0 15px" }}
+                >
+                  {pos.position}
+                </div>
                 <div className="td tags rowc" style={{ textAlign: "justify" }}>
                   {pos.tags.map((tag, index) => (
                     <span key={index} className="tag">
@@ -259,7 +266,7 @@ function EditPosition({ loadData = null, setOpenPopup, refreshData }) {
         />
 
         <span className="label">Description:</span>
-        <textarea
+        {/* <textarea
           style={{ height: 100 }}
           placeholder="Description"
           value={data.description}
@@ -270,6 +277,16 @@ function EditPosition({ loadData = null, setOpenPopup, refreshData }) {
             }));
           }}
           required
+        /> */}
+        <TextEditor
+          content={data.description}
+          onChange={(e, editor) => {
+            const data = editor.getData();
+            setData((prev) => ({
+              ...prev,
+              description: data,
+            }));
+          }}
         />
 
         <div className="rowc" style={{ width: "100%", gap: 20 }}>

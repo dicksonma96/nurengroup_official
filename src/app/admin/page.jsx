@@ -257,7 +257,7 @@ function Mediahub() {
             setCurrentPage(e.selected + 1);
           }}
           pageRangeDisplayed={10}
-          pageCount={data?.totalPage || 1}
+          pageCount={Math.ceil(data?.totalPage) || 1}
           marginPagesDisplayed={0}
           previousLabel="Prev"
           renderOnZeroPageCount={null}
