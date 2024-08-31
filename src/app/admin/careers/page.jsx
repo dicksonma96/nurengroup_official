@@ -11,7 +11,7 @@ import SubmitBtn from "../submitBtn";
 import "ckeditor5/ckeditor5.css";
 
 const TextEditor = dynamic(() => import("@/components/textEditor"), {
-  loading: () => <></>,
+  loading: () => <div className="loader" style={{ margin: "auto" }}></div>,
 });
 
 function Careers() {
