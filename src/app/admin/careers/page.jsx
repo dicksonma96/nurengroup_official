@@ -1,4 +1,6 @@
 "use client";
+
+import dynamic from "next/dynamic";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import removeEmptyProperties from "@/app/utils/removeEmptyProperties";
@@ -6,8 +8,11 @@ import { DeleteJob, UpdateJob } from "../actions";
 import ConfirmDialog from "../confirmDialog";
 import DatePicker from "react-datepicker";
 import SubmitBtn from "../submitBtn";
-import TextEditor from "@/components/textEditor";
 import "ckeditor5/ckeditor5.css";
+
+const TextEditor = dynamic(() => import("@/components/textEditor"), {
+  loading: () => <></>,
+});
 
 function Careers() {
   const [tab, setTab] = useState("position");
