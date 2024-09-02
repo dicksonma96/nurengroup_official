@@ -63,7 +63,7 @@ async function Careers() {
               if (job.open == true)
                 return (
                   <div className="pos col" key={index}>
-                    <strong>{job.position}</strong>
+                    <div className="job_title">{job.position}</div>
                     <div className="tags row">
                       {job?.tags.map((tag, i) => (
                         <span key={i} className="tag">

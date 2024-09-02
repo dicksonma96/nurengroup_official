@@ -89,9 +89,10 @@
         border-radius: 5px;
         padding-right: 150px;
         position: relative;
-        strong {
+        .job_title {
           color: #44394d;
           font-size: 20px;
+          font-weight: bold;
         }
 
         .tags {
@@ -117,7 +118,7 @@
 
           ol,
           ul {
-            margin-left: 25px;
+            margin-left: 0px;
           }
 
           .see_more {
@@ -151,8 +152,7 @@
           border: none;
           position: absolute;
           right: 30px;
-          top: 50%;
-          transform: translateY(-50%);
+          top: 50px;
           min-width: 100px;
           cursor: pointer;
         }
