@@ -1,17 +1,23 @@
 import AssetPath from "@/app/utils/assetpath";
 import "../style.scss";
 import BackBtn from "@/components/backBtn";
+import Image from "next/image";
+import DrWong from "@/assets/img/bod/prof-dr-wong.png";
+import Leigh from "@/assets/img/bod/leigh-zhang.png";
+import Kelvin from "@/assets/img/bod/kelvin-leow.png";
+import Petrina from "@/assets/img/bod/petrina-goh.png";
+import DatoEng from "@/assets/img/bod/datoeng.png";
 
 export async function generateMetadata({ params }) {
   return {
     title:
-      "Nuren Group | Prof Dr K.Y. Wong, Petrina S.Y. Goh, Leigh L.H. Zhang",
+      "Nuren Group | Prof Dr K.Y. Wong, Petrina S.Y. Goh, Leigh L.H. Zhang, Kelvin W.K Leow, Dato Y.K Eng",
     description:
-      "Nuren Group - Prof Dr K.Y. Wong (Chairman, Non Executive Director), Shze Yinn Goh (Group CEO, Founder, Executive Director), Li Hua Zhang (Independent, Non Executive Director)",
+      "Nuren Group - Prof Dr K.Y. Wong (Chairman, Non Executive Director), Petrina Goh Goh (Group CEO, Founder, Executive Director), Leigh Zhang (Independent, Non Executive Director), Kelvin Leow (Group CTO, Executive Director), Dato Y.K Eng (Independent, Non-Executive Director)",
   };
 }
 
-function DrWong() {
+function BOD_Detail() {
   return (
     <main className="bod_detail col">
       <BackBtn />
@@ -23,7 +29,7 @@ function DrWong() {
         data-name="Prof Dr K.Y. Wong"
       >
         <div className="left colc">
-          <img src={AssetPath("BOD/prof-dr-wong.png")} alt="Prof Dr Wong" />
+          <Image src={DrWong} alt="Prof Dr Wong" />
           <div className="title col">
             <strong>Prof Dr K.Y. Wong</strong>
             <span className="urban_text">Chairman, Non-Executive Director</span>
@@ -55,12 +61,12 @@ function DrWong() {
         id="leigh_zhang"
         className="person_detail row "
         style={{ background: "#442F55" }}
-        data-name="LI HUA ZHANG"
+        data-name="Leigh Zhang"
       >
         <div className="left colc">
-          <img src={AssetPath("BOD/leigh-zhang.png")} alt="Leigh Zhang" />
+          <Image src={Leigh} alt="Leigh Zhang" />
           <div className="title col">
-            <strong>Li Hua Zhang</strong>
+            <strong>Leigh Zhang</strong>
             <span className="urban_text">
               Independent, Non-Executive Director
             </span>
@@ -87,61 +93,16 @@ function DrWong() {
         </div>
       </section>
 
-      {/* <section
-      className="person_detail row "
-      style={{ background: "#E9A762" }}
-      data-name="KELVIN LEOW WEE KEAT"
-    >
-      <div className="left colc">
-        <img src={AssetPath("BOD/kelvin-leow.png")} alt="Kelvin Leow" />
-        <div className="title col">
-          <strong>
-            KELVIN LEOW <br /> WEE KEAT
-          </strong>
-          <span className="urban_text">Chief Technology Officer,</span>
-          <span className="urban_text">Executive Director</span>
-        </div>
-      </div>
-
-      <div className="description">
-        <p>
-          Kelvin Leow has over 20 years of experience in the tech industry. He
-          is a certified Project Management Professional (PMP), and honor degree
-          holder in Bachelor of Software Engineering from University of New
-          South Wales (Australia). He started career in Sydney (Australia), and
-          gained work experiences in Malaysia, Singapore, Cambodia & United
-          States. Throughout his career, he has held various roles in software
-          development, project management & technology consulting. Prior to his
-          current endeavors, Leow held pivotal roles at Intel Malaysia and
-          Motorola Australia, focusing on manufacturing automation software and
-          mobile messaging software development. Leow is a successful
-          entrepreneur who also co-founded Claritas – a cloud-based enterprise
-          customer relationship management solution company, which was later
-          acquired by Incite Innovations in 2022.
-        </p>
-        <br />
-        <p>
-          As a testament to his industry influence, Leow has been invited as
-          keynote speaker at numerous innovation and technology conferences,
-          reinforcing his stature as a thought leader. Leow’s core competencies
-          encompass solution architecture, customer relationship management,
-          artificial intelligence, digital media, retail management and
-          fin-tech. In current role, Leow spearheads the technology innovation
-          and product direction of Nuren Group.
-        </p>
-      </div>
-    </section> */}
-
       <section
         id="petrina_goh"
         className="person_detail row "
         style={{ background: "#E9A762" }}
-        data-name="Shze Yinn Goh"
+        data-name="Petrina Goh"
       >
         <div className="left colc">
-          <img src={AssetPath("BOD/petrina-goh.png")} alt="Shze Yinn Goh" />
+          <Image src={Petrina} alt="Petrina Goh" />
           <div className="title col">
-            <strong>Shze Yinn Goh</strong>
+            <strong>Petrina Goh</strong>
             <span className="urban_text">Group CEO, Founder,</span>
             <span className="urban_text">Executive Director</span>
           </div>
@@ -167,8 +128,87 @@ function DrWong() {
           </p>
         </div>
       </section>
+
+      <section
+        id="kelvin_leow"
+        className="person_detail row "
+        style={{ background: "#357f8b" }}
+        data-name="KELVIN LEOW WEE KEAT"
+      >
+        <div className="left colc">
+          <Image src={Kelvin} alt="Kelvin Leow" />
+          <div className="title col">
+            <strong>
+              Kelvin Leow <br /> Wee Keat
+            </strong>
+            <span className="urban_text">Group Chief Technology Officer,</span>
+            <span className="urban_text">Executive Director</span>
+          </div>
+        </div>
+
+        <div className="description">
+          <p>
+            Mr Leow is a seasoned professional with over 20 years of experience
+            in the tech industry. He holds a PMP certification and an honor
+            degree in Software Engineering from the University of New South
+            Wales, Australia. Mr Leow began his career in Sydney and has gained
+            experience working in Malaysia, Singapore, Cambodia, and the United
+            States. Throughout his career, Mr Leow has worked in software
+            development, project management and technology consulting. He has
+            held key positions at Intel Malaysia and Motorola Australia,
+            focusing on manufacturing automation and mobile messaging software.
+            As an entrepreneur, he co-founded Claritas, a cloud-based CRM
+            solution company, which was acquired by Incite Innovations in 2022.
+            Mr Leow is recognized as an industry thought leader, having been a
+            keynote speaker at numerous innovation and technology conferences.
+            His expertise includes solution architecture, CRM, AI, digital
+            media, retail management, and fintech. Currently, Mr Leow leads
+            technology innovation and product direction at Nuren Group.
+          </p>
+        </div>
+      </section>
+
+      <section
+        id="dato_eng"
+        className="person_detail row "
+        style={{ background: "#463157" }}
+        data-name="DATO Y.K. Eng"
+      >
+        <div className="left colc">
+          <Image src={DatoEng} alt="DATO Y.K. Eng" />
+          <div className="title col">
+            <strong>
+              Dato <br /> Y.K. Eng
+            </strong>
+            <span className="urban_text">Independent,</span>
+            <span className="urban_text">Non-Executive Director</span>
+          </div>
+        </div>
+
+        <div className="description">
+          <p>
+            Dato Eng is a prominent entrepreneur in Malaysia, particularly noted
+            for his contributions to the confinement care industry and women's
+            wellness. He began his entrepreneurial journey at 18, after
+            graduating from high school in 2002. Dato Eng and his wife
+            established Cozzi Confinement Centre (“Cozzi”) in 2017, providing
+            affordable postnatal care including baby care, mother care,
+            nutritious meals, and professional guidance. The success of the
+            initial centre prompted further expansions of 5 centers to date.
+            Cozzi has also focused on maternal education, organizing over 25
+            talks since 2021 on topics related to women and baby wellness. In
+            2021, Dato Eng acquired stakes in Itsherbs (“IH”), which addresses
+            women's fertility concerns through Traditional Chinese Medicine and
+            serves over 30,000 customers. In 2022, Dato Eng acquired a 20% stake
+            in Tradisi Bidan House (“TBH Wellness”), offering traditional Malay
+            massages. Under Dato Eng's leadership, Cozzi and his associated
+            ventures continue to provide comprehensive wellness services for
+            women in Malaysia.
+          </p>
+        </div>
+      </section>
     </main>
   );
 }
 
-export default DrWong;
+export default BOD_Detail;
