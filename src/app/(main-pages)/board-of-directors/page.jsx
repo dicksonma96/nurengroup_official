@@ -66,7 +66,7 @@ function BOD() {
         </div>
 
         <div className="grid col hide_mobile">
-          <h2>Dato Y.K Eng</h2>
+          <h2>Dato Y.K. Eng</h2>
           <h4>
             Independent, <br /> Non Executive Director
           </h4>
@@ -124,9 +124,7 @@ function BOD() {
           <h4>
             Group CTO, <br /> Executive Director
           </h4>
-          <h2>
-            KELVIN <br /> LEOW WEE KEAT
-          </h2>
+          <h2>KELVIN LEOW</h2>
         </div>
         <div className="grid green col" style={{ padding: 0 }}>
           <Link
@@ -149,7 +147,7 @@ function BOD() {
           <h4>
             Independent, <br /> Non-Executive Director
           </h4>
-          <h2>Dato Y.K Eng</h2>
+          <h2>Dato Y.K. Eng</h2>
         </div>
       </div>
     </section>

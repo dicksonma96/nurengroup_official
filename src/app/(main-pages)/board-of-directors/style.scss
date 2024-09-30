@@ -97,6 +97,7 @@ body {
 .bod_detail {
   z-index: 1000;
   position: relative;
+  opacity: 1;
   .backBtn {
     position: fixed;
     top: 4vmin;
@@ -117,7 +118,7 @@ body {
 
     &::before {
       content: attr(data-name);
-      font-size: 15vw;
+      font-size: 16vw;
       line-height: 110%;
       padding: 0 5%;
       color: rgba(0, 0, 0, 0.1);
@@ -147,6 +148,8 @@ body {
         width: 100%;
         padding: 5% 20%;
         backdrop-filter: blur(1px);
+        filter: drop-shadow(0.2em 0.2em 0.4em rgba(0, 0, 0, 0.5));
+
         z-index: 2;
 
         strong {

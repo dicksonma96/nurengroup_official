@@ -133,15 +133,13 @@ function BOD_Detail() {
         id="kelvin_leow"
         className="person_detail row "
         style={{ background: "#357f8b" }}
-        data-name="KELVIN LEOW WEE KEAT"
+        data-name="KELVIN LEOW"
       >
         <div className="left colc">
           <Image src={Kelvin} alt="Kelvin Leow" />
           <div className="title col">
-            <strong>
-              Kelvin Leow <br /> Wee Keat
-            </strong>
-            <span className="urban_text">Group Chief Technology Officer,</span>
+            <strong>Kelvin Leow</strong>
+            <span className="urban_text">Group CTO,</span>
             <span className="urban_text">Executive Director</span>
           </div>
         </div>
@@ -149,12 +147,12 @@ function BOD_Detail() {
         <div className="description">
           <p>
             Mr Leow is a seasoned professional with over 20 years of experience
-            in the tech industry. He holds a PMP certification and an honor
+            in the tech industry. He holds a PMP certification and an honours
             degree in Software Engineering from the University of New South
             Wales, Australia. Mr Leow began his career in Sydney and has gained
             experience working in Malaysia, Singapore, Cambodia, and the United
             States. Throughout his career, Mr Leow has worked in software
-            development, project management and technology consulting. He has
+            development, project management, and technology consulting. He has
             held key positions at Intel Malaysia and Motorola Australia,
             focusing on manufacturing automation and mobile messaging software.
             As an entrepreneur, he co-founded Claritas, a cloud-based CRM
@@ -177,9 +175,7 @@ function BOD_Detail() {
         <div className="left colc">
           <Image src={DatoEng} alt="DATO Y.K. Eng" />
           <div className="title col">
-            <strong>
-              Dato <br /> Y.K. Eng
-            </strong>
+            <strong>Dato Y.K. Eng</strong>
             <span className="urban_text">Independent,</span>
             <span className="urban_text">Non-Executive Director</span>
           </div>
@@ -190,20 +186,20 @@ function BOD_Detail() {
             Dato Eng is a prominent entrepreneur in Malaysia, particularly noted
             for his contributions to the confinement care industry and women's
             wellness. He began his entrepreneurial journey at 18, after
-            graduating from high school in 2002. Dato Eng and his wife
+            graduating from high school in 2002. Mr Yee Koon Eng and his wife
             established Cozzi Confinement Centre (“Cozzi”) in 2017, providing
             affordable postnatal care including baby care, mother care,
             nutritious meals, and professional guidance. The success of the
-            initial centre prompted further expansions of 5 centers to date.
+            initial centre prompted further expansions of 5 centres to date.
             Cozzi has also focused on maternal education, organizing over 25
             talks since 2021 on topics related to women and baby wellness. In
             2021, Dato Eng acquired stakes in Itsherbs (“IH”), which addresses
             women's fertility concerns through Traditional Chinese Medicine and
-            serves over 30,000 customers. In 2022, Dato Eng acquired a 20% stake
-            in Tradisi Bidan House (“TBH Wellness”), offering traditional Malay
-            massages. Under Dato Eng's leadership, Cozzi and his associated
-            ventures continue to provide comprehensive wellness services for
-            women in Malaysia.
+            serves over 30,000 customers. In 2022, Dato Eng was also appointed
+            as an advisor to Tradisi Bidan House (“TBH Wellness”), a company
+            offering traditional postnatal massages. Under Dato Eng's
+            leadership, Cozzi and his associated ventures continue to provide
+            comprehensive wellness services for women in Malaysia.
           </p>
         </div>
       </section>
