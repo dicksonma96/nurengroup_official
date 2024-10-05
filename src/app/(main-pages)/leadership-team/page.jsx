@@ -1,6 +1,19 @@
 import AssetPath from "@/app/utils/assetpath";
 import React from "react";
 import "./style.scss";
+import Image from "next/image";
+import petrina from "@/assets/img/leadership/petrina.jpg";
+import kelvin from "@/assets/img/leadership/kelvin.jpg";
+import cheong from "@/assets/img/leadership/cheong.jpg";
+import alison from "@/assets/img/leadership/alison.jpg";
+import zac from "@/assets/img/leadership/zac.jpg";
+import zac2 from "@/assets/img/leadership/zac2.jpg";
+import jolene from "@/assets/img/leadership/jolene.jpg";
+import sherryn from "@/assets/img/leadership/sherryn.jpg";
+import jinny from "@/assets/img/leadership/jinny.jpg";
+import mable from "@/assets/img/leadership/mable.jpg";
+import pankhi from "@/assets/img/leadership/pankhi.jpg";
+import racheal from "@/assets/img/leadership/racheal.jpg";
 
 export const metadata = {
   title:
@@ -31,34 +44,36 @@ function Leadership() {
 
       <div className="leadership_grid">
         <div className="grid_row row">
-          <img src={AssetPath("Leadership+Team/Maton+Shukor.jpg")} alt="" />
+          <Image src={petrina} alt="Petrina Goh" />
           <div className="square" style={{ background: "#F4AF67" }}></div>
-          <img src={AssetPath("Leadership+Team/Alison+Tham.jpg")} alt="" />
+          <Image src={kelvin} alt="Kelvin Leow" />
         </div>
 
         <div className="grid_row row">
-          <img src={AssetPath("Leadership+Team/JoleneChan.jpg")} alt="" />
+          <Image src={cheong} alt="S.W. Cheong" />
           <div className="square" style={{ background: "#F25075" }}></div>
-          <img src={AssetPath("Leadership+Team/Gloey.jpg")} alt="" />
+          <Image src={alison} alt="Alison Tham" />
         </div>
         <div className="grid_row row">
-          <img src={AssetPath("Leadership+Team/Pankhismita.jpg")} alt="" />
-          <div className="square" style={{ background: "#ECE9DE" }}></div>
-          <img src={AssetPath("Leadership+Team/RachealD.jpg ")} alt="" />
-        </div>
-        <div className="grid_row row">
-          <img
-            className="mobile_hide"
-            src={AssetPath("Leadership/zac2.jpg")}
-            alt=""
-          />
-          <img src={AssetPath("Leadership+Team/Zac+Lam.jpg ")} alt="" />
+          <Image className="mobile_hide" src={zac2} alt="Zac Lam" />
+          <Image src={zac} alt="Zac Lam" />
           <div className="square" style={{ background: "#5B327C" }}></div>
         </div>
         <div className="grid_row row">
-          <img src={AssetPath("Leadership+Team/Jinny.jpg ")} alt="" />
+          <Image src={jolene} alt="Jolene Chan" />
+          <div className="square" style={{ background: "#ECE9DE" }}></div>
+          <Image src={sherryn} alt="Sherryn Tan" />
+        </div>
+
+        <div className="grid_row row">
+          <Image src={jinny} alt="Jinny Tiow" />
           <div className="square" style={{ background: "#D3DBF9" }}></div>
-          <img src={AssetPath("Leadership+Team/Ivy.jpg ")} alt="" />
+          <Image src={mable} alt="Mable Low" />
+        </div>
+        <div className="grid_row row">
+          <Image src={pankhi} alt="Pankhi B.Gohain" />
+          <div className="square" style={{ background: "#F9DAD3" }}></div>
+          <Image src={racheal} alt="Racheal D.Joseph" />
         </div>
       </div>
     </main>
