@@ -253,15 +253,16 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 99;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-items: center;
+  overflow: auto;
   .popup_window {
     background: white;
     border: solid 2px #d9dfe6;
     padding: 20px;
     border-radius: 15px;
     width: 95%;
+    margin: 10px 0;
   }
 }
 
