@@ -305,7 +305,7 @@ function EditMedia({ loadData = null, setOpenPopup, refreshData }) {
       slug: prev.title
         .toLowerCase() // Convert to lowercase
         .trim() // Remove leading and trailing whitespace
-        .replace(/[^a-z0-9 -]/g, "") // Remove special characters
+        .replace(/[^a-z0-9\u4e00-\u9fff -]/gi, "") // Remove special characters
         .replace(/\s+/g, "-") // Replace spaces with hyphens
         .replace(/-+/g, "-"), // Replace multiple hyphens with a single hyphen
     }));
