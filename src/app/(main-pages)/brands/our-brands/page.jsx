@@ -66,13 +66,13 @@ function OurBrands() {
     },
     {
       logo: "superkids",
-      link: "https://www.motherhood.com.my/superkids/main",
+      link: "https://www.motherhood.com.my/event/superkids",
       desc: "Invest in your child's future today with the Super Kids Club. Unlock exclusive discounts at theme parks and enrichment programs, along with gifts, samples, and trial classes. Enjoy on-the-go enrichment activities, access educational resources, and participate in exclusive real-life events. Aimed at fostering growth and development, the club offers a fun and enriching experience for children.",
       colors: ["#72B53A", "#8159A5", "#430B56"],
     },
     {
       logo: "mmcbt",
-      link: "https://www.motherhood.com.my/mamacubatry/main",
+      link: "https://m.motherhood.com.my/mamacubatry-product",
       desc: "The Mamacubatry Program invites mothers to join as testers, receiving free products to try and share experiences within our community of mothers. Through the program, mothers explore new products, offer feedback, and engage with fellow caregivers, fostering a supportive environment of shared insights.  ",
       colors: ["#fcb913", "#FFCE3B", "#9F1D20", "#8F5A24"],
     },
